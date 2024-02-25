@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="MattTools.Views.HomeView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:MattTools.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:MattTools.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:media="using:CommunityToolkit.WinUI.UI.Media"
+    xmlns:models="using:MattTools.Models"
+    xmlns:selectors="using:MattTools.Selectors"
+    xmlns:ui="using:CommunityToolkit.WinUI.UI"
+    Background="{ThemeResource DefaultPageBackgroundColor}"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+
+        <DataTemplate x:Key="MenuButton" x:DataType="models:NavItem">
+
+            <Button
+                Height="84"
+                Margin="0,0,12,12"
+                Padding="0"
+                Click="Button_Click"
+                ClickMode="Release"
+                CornerRadius="5">
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80" />
+                        <ColumnDefinition Width="200" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <ContentControl
+                            Height="32"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Content="{x:Bind Icon}" />
+                    </Grid>
+
+                    <StackPanel
+                        Grid.Column="1"
+                        Margin="0,0,12,0"
+                        VerticalAlignment="Top"
+                        Orientation="Vertical"
+                        Spacing="3">
+                        <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}" Text="{x:Bind Title}" />
+                        <TextBlock
+                            Opacity=".6"
+                            Style="{StaticResource CaptionTextBlockStyle}"
+                            Text="{x:Bind Description}"
+                            TextWrapping="Wrap" />
+                    </StackPanel>
+                </Grid>
+
+            </Button>
+
+        </DataTemplate>
+
+        <DataTemplate x:Key="MenuItem" x:DataType="models:NavItem">
+
+            <StackPanel>
+                <ContentControl Content="{x:Bind}" ContentTemplate="{StaticResource MenuButton}" />
+            </StackPanel>
+
+        </DataTemplate>
+
+        <DataTemplate x:Key="MenuItemParent" x:DataType="models:NavItem">
+
+            <StackPanel>
+                <TextBlock
+                    Padding="0,0,0,12"
+                    VerticalAlignment="Center"
+                    Style="{StaticResource SubtitleTextBlockStyle}"
+                    Text="{x:Bind Title}" />
+                <ItemsControl ItemTemplate="{StaticResource MenuItem}" ItemsSource="{x:Bind ChildItems}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <ItemsWrapGrid Orientation="Horizontal" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                </ItemsControl>
+            </StackPanel>
+
+        </DataTemplate>
+
+        <selectors:MenuItemTemplateSelector
+            x:Key="MenuChildTemplateSelector"
+            MenuItemParentTemplate="{StaticResource MenuItemParent}"
+            MenuItemTemplate="{StaticResource MenuItem}" />
+
+    </Page.Resources>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <Image
+            VerticalAlignment="Bottom"
+            Opacity="0.35"
+            Source="ms-appx:///Assets/Images/AnimatedHeaderBackground.gif"
+            Stretch="UniformToFill" />
+
+        <Grid Grid.Row="0" Padding="32,0,32,16">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" VerticalAlignment="Bottom">
+
+                <TextBlock
+                    Padding="0,0,0,8"
+                    Style="{StaticResource TitleTextBlockStyle}"
+                    Text="Matt's Toolbox" />
+
+                <Line
+                    Stroke="{ThemeResource TextFillColorPrimaryBrush}"
+                    StrokeThickness="1"
+                    X2="200" />
+
+                <TextBlock
+                    Padding="0,8,0,0"
+                    Style="{StaticResource CaptionTextBlockStyle}"
+                    Text="A collection of tools to help your work." />
+
+            </StackPanel>
+
+            <controls:Clock Grid.Column="1" />
+
+        </Grid>
+
+        <Grid Grid.Row="1" Padding="32,32,32,0">
+
+            <StackPanel VerticalAlignment="Top" Spacing="24">
+
+                <ItemsControl ItemTemplateSelector="{StaticResource MenuChildTemplateSelector}" ItemsSource="{x:Bind mainMenus}" />
+
+            </StackPanel>
+
+        </Grid>
+
+    </Grid>
+
+</Page>

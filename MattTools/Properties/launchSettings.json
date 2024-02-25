@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "MattTools (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "MattTools (Unpackaged)": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    x:Class="MattTools.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MattTools"
+    xmlns:media="using:CommunityToolkit.WinUI.UI.Media">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                <!--  Other merged dictionaries here  -->
+            </ResourceDictionary.MergedDictionaries>
+            <!--  Other app resources here  -->
+
+            <Thickness x:Key="NavigationViewContentMargin">0,48,0,0</Thickness>
+
+            <media:AttachedCardShadow
+                x:Key="CommonShadow"
+                BlurRadius="100"
+                CornerRadius="4"
+                Opacity=".1"
+                Offset="1" />
+
+            <media:AttachedCardShadow
+                x:Key="DropShadow"
+                BlurRadius="12"
+                CornerRadius="4"
+                Opacity=".25"
+                Offset="1" />
+
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="DefaultPageBackgroundColor" Color="{ThemeResource AcrylicBackgroundFillColorBaseBrush}" />
+                    <SolidColorBrush x:Key="AlertRedBackgroundColor" Color="#F4E1DF" />
+                    <SolidColorBrush x:Key="AlertGreenBackgroundColor" Color="#DDEFDD" />
+                    <SolidColorBrush x:Key="AlertBlueBackgroundColor" Color="#DAE9F4" />
+                    <SolidColorBrush x:Key="AlertYellowBackgroundColor" Color="#F3F4DA" />
+                    <SolidColorBrush
+                        x:Key="AlertRedBorderColor"
+                        Opacity="40"
+                        Color="#C42B1C" />
+                    <SolidColorBrush
+                        x:Key="AlertGreenBorderColor"
+                        Opacity="40"
+                        Color="#0F7B0F" />
+                    <SolidColorBrush
+                        x:Key="AlertBlueBorderColor"
+                        Opacity="40"
+                        Color="#0078d4" />
+                    <SolidColorBrush
+                        x:Key="AlertYellowBorderColor"
+                        Opacity="40"
+                        Color="#D4CB00" />
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Dark">
+                    <SolidColorBrush x:Key="DefaultPageBackgroundColor" Color="{ThemeResource AcrylicBackgroundFillColorBaseBrush}" />
+                    <SolidColorBrush x:Key="AlertRedBackgroundColor" Color="#4f322f" />
+                    <SolidColorBrush x:Key="AlertGreenBackgroundColor" Color="#2d412d" />
+                    <SolidColorBrush x:Key="AlertBlueBackgroundColor" Color="#274258" />
+                    <SolidColorBrush x:Key="AlertYellowBackgroundColor" Color="#515827" />
+                    <SolidColorBrush
+                        x:Key="AlertRedBorderColor"
+                        Opacity="40"
+                        Color="#C42B1C" />
+                    <SolidColorBrush
+                        x:Key="AlertGreenBorderColor"
+                        Opacity="40"
+                        Color="#0F7B0F" />
+                    <SolidColorBrush
+                        x:Key="AlertBlueBorderColor"
+                        Opacity="40"
+                        Color="#0078d4" />
+                    <SolidColorBrush
+                        x:Key="AlertYellowBorderColor"
+                        Opacity="40"
+                        Color="#D4CB00" />
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="HighContrast">
+                    <SolidColorBrush x:Key="DefaultPageBackgroundColor" Color="{ThemeResource AcrylicBackgroundFillColorBaseBrush}" />
+                    <SolidColorBrush x:Key="AlertRedBackgroundColor" Color="#4f322f" />
+                    <SolidColorBrush x:Key="AlertGreenBackgroundColor" Color="#2d412d" />
+                    <SolidColorBrush x:Key="AlertBlueBackgroundColor" Color="#274258" />
+                    <SolidColorBrush x:Key="AlertYellowBackgroundColor" Color="#515827" />
+                    <SolidColorBrush
+                        x:Key="AlertRedBorderColor"
+                        Opacity="40"
+                        Color="#C42B1C" />
+                    <SolidColorBrush
+                        x:Key="AlertGreenBorderColor"
+                        Opacity="40"
+                        Color="#0F7B0F" />
+                    <SolidColorBrush
+                        x:Key="AlertBlueBorderColor"
+                        Opacity="40"
+                        Color="#0078d4" />
+                    <SolidColorBrush
+                        x:Key="AlertYellowBorderColor"
+                        Opacity="40"
+                        Color="#D4CB00" />
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+

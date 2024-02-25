@@ -1,0 +1,9 @@
+App.xbf
+Controls\Clock.xbf
+Dialogs\MergeFileDialog.xbf
+MainWindow.xbf
+Views\HomeView.xbf
+Views\InvoiceMergerView.xbf
+Views\PageNotFoundView.xbf
+Views\RossumExtractorView.xbf
+Views\SettingView.xbf

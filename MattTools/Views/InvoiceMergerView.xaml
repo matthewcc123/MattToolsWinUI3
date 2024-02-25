@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="MattTools.Views.InvoiceMergerView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converters="using:MattTools.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dialogs="using:MattTools.Dialogs"
+    xmlns:interactions="using:MattTools.Interactions"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:MattTools.Models"
+    xmlns:viewmodels="using:MattTools.ViewModels"
+    Background="{ThemeResource DefaultPageBackgroundColor}"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <viewmodels:InvoiceMergerViewModel />
+    </Page.DataContext>
+
+    <Page.Resources>
+
+        <dialogs:MergeFileDialog x:Key="MergeFileDialog" />
+
+        <converters:MergeStatusIndicatorConverter
+            x:Key="StatusBackgroundConverter"
+            MergedBrush="{ThemeResource AlertGreenBackgroundColor}"
+            NotMatchBrush="{ThemeResource AlertRedBackgroundColor}"
+            ReadyBrush="{ThemeResource AlertBlueBackgroundColor}" />
+
+        <converters:MergeStatusIndicatorConverter
+            x:Key="StatusBorderConverter"
+            MergedBrush="{ThemeResource AlertGreenBorderColor}"
+            NotMatchBrush="{ThemeResource AlertRedBorderColor}"
+            ReadyBrush="{ThemeResource AlertBlueBorderColor}" />
+
+
+    </Page.Resources>
+
+    <Grid RowSpacing="16">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid
+            Grid.Row="0"
+            Padding="24,24,24,0"
+            VerticalAlignment="Center">
+            <TextBlock
+                VerticalAlignment="Center"
+                Style="{StaticResource TitleTextBlockStyle}"
+                Text="Invoice Merger" />
+        </Grid>
+
+
+        <StackPanel
+            Grid.Row="1"
+            Padding="24,0,24,0"
+            HorizontalAlignment="Left"
+            Orientation="Horizontal"
+            Spacing="8">
+
+            <Button
+                x:Name="SelectButton"
+                Width="90"
+                Padding="12,8,12,8"
+                Click="Select_Click">
+                <StackPanel Orientation="Horizontal" Spacing="4">
+                    <Viewbox Height="16">
+                        <FontIcon Margin="0,0,5,0" Glyph="&#xe838;" />
+                    </Viewbox>
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="Select" />
+                </StackPanel>
+            </Button>
+
+            <Button
+                x:Name="ClearButton"
+                Width="90"
+                Padding="12,8,12,8"
+                Click="Clear_Click">
+                <StackPanel Orientation="Horizontal" Spacing="4">
+                    <Viewbox Height="16">
+                        <FontIcon Glyph="&#xE74D;" />
+                    </Viewbox>
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="Clear" />
+                </StackPanel>
+            </Button>
+
+            <Button
+                x:Name="MergeButton"
+                Width="90"
+                Padding="12,8,12,8"
+                Click="Merge_Click"
+                Style="{ThemeResource AccentButtonStyle}">
+                <StackPanel Orientation="Horizontal" Spacing="4">
+                    <Viewbox Height="16">
+                        <SymbolIcon Margin="0,0,5,0" Symbol="Play" />
+                    </Viewbox>
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        Style="{StaticResource CaptionTextBlockStyle}"
+                        Text="Merge" />
+                </StackPanel>
+            </Button>
+
+            <AppBarSeparator Height="45" />
+
+            <Border
+                Height="38"
+                Padding="12,8,12,8"
+                Background="{ThemeResource ControlFillColorTertiaryBrush}"
+                BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}"
+                BorderThickness="1"
+                CornerRadius="4">
+                <TextBlock
+                    x:Name="InvoiceCounter"
+                    VerticalAlignment="Center"
+                    Style="{StaticResource CaptionTextBlockStyle}"
+                    Text="Invoices : 0" />
+            </Border>
+
+            <Border
+                Height="38"
+                Padding="12,8,12,8"
+                Background="{ThemeResource ControlFillColorTertiaryBrush}"
+                BorderBrush="{ThemeResource ControlStrokeColorSecondaryBrush}"
+                BorderThickness="1"
+                CornerRadius="4">
+                <TextBlock
+                    x:Name="TaxCounter"
+                    VerticalAlignment="Center"
+                    Style="{StaticResource CaptionTextBlockStyle}"
+                    Text="Tax Invoices : 0" />
+            </Border>
+
+        </StackPanel>
+
+        <Grid Grid.Row="2">
+
+            <ListView
+                x:Name="MergerListView"
+                Padding="24,12,24,24"
+                IsItemClickEnabled="True"
+                ItemClick="ListView_ItemClick"
+                ItemsSource="{Binding MergeFiles}"
+                SelectionMode="None">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="models:MergeFile">
+                        <Grid Height="46" XYFocusKeyboardNavigation="Disabled">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition x:Name="NumberColumn" Width="32" />
+                                <ColumnDefinition x:Name="InvoiceColumn" Width="1*" />
+                                <ColumnDefinition x:Name="TaxColumn" Width="1*" />
+                                <ColumnDefinition x:Name="StatusColumn" Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock
+                                x:Name="Index"
+                                Grid.Column="0"
+                                Margin="8"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                                Style="{StaticResource CaptionTextBlockStyle}"
+                                Text="#" />
+                            <TextBlock
+                                Grid.Column="1"
+                                Margin="8"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Style="{StaticResource CaptionTextBlockStyle}"
+                                Text="{Binding InvoiceNumber}" />
+                            <TextBlock
+                                Grid.Column="2"
+                                Margin="8"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Style="{StaticResource CaptionTextBlockStyle}"
+                                Text="{Binding TaxNumberFormarted}" />
+                            <Border
+                                x:Name="StatusIndicator"
+                                Grid.Column="3"
+                                Width="150"
+                                Margin="8"
+                                Padding="8,4,8,4"
+                                HorizontalAlignment="Right"
+                                Background="{Binding FileStatus, Converter={StaticResource StatusBackgroundConverter}}"
+                                BorderBrush="{Binding FileStatus, Converter={StaticResource StatusBorderConverter}}"
+                                BorderThickness="1"
+                                CornerRadius="4">
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontWeight="Medium"
+                                    Style="{StaticResource CaptionTextBlockStyle}"
+                                    Text="{Binding StatusFormated}" />
+                            </Border>
+
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+                <interactivity:Interaction.Behaviors>
+
+                    <interactions:AlternateListViewBehavior
+                        AltItemBackground="{ThemeResource ControlFillColorDefaultBrush}"
+                        AltItemBorder="{ThemeResource ControlStrokeColorDefaultBrush}"
+                        AltItemThickness="{StaticResource ButtonBorderThemeThickness}" />
+
+                    <interactions:ShowItemIndexBehavior />
+                </interactivity:Interaction.Behaviors>
+
+            </ListView>
+
+            <StackPanel
+                x:Name="EmptyMessage"
+                Padding="0,0,0,128"
+                VerticalAlignment="Center"
+                Spacing="12">
+                <Viewbox Width="40" HorizontalAlignment="Center">
+                    <SymbolIcon Symbol="Document" />
+                </Viewbox>
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    FontSize="32"
+                    Style="{StaticResource TitleLargeTextBlockStyle}"
+                    Text="Select Files" />
+                <TextBlock HorizontalAlignment="Center" Text="Select Billing Invoice and Tax Invoice files to merge." />
+            </StackPanel>
+
+            <ProgressBar
+                x:Name="ProgressIndicator"
+                VerticalAlignment="Top"
+                IsIndeterminate="False"
+                Visibility="Collapsed" />
+
+        </Grid>
+
+
+    </Grid>
+
+</Page>

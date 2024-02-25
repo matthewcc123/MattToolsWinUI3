@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AppIconSource>D:\Projects\Visual Studio\Project\Matt%27s Tools\WinUI3\MattTools\MattTools\Assets\Icons\AppIcon.png</AppIconSource>
+    <ActiveDebugProfile>MattTools (Unpackaged)</ActiveDebugProfile>
+    <Source>E:\Projects\Visual Studio\Project\Matt%27s Tools\WinUI3\MattTools\MattTools\Assets\Icons\AppIcon.png</Source>
+    <SmallTileSource>E:\Projects\Visual Studio\Project\Matt%27s Tools\WinUI3\MattTools\MattTools\Assets\Icons\AppIcon.png</SmallTileSource>
+    <MediumTileSource>E:\Projects\Visual Studio\Project\Matt%27s Tools\WinUI3\MattTools\MattTools\Assets\Icons\AppIcon.png</MediumTileSource>
+    <WideTileSource>E:\Projects\Visual Studio\Project\Matt%27s Tools\WinUI3\MattTools\MattTools\Assets\Icons\AppIcon.png</WideTileSource>
+    <LargeTileSource>E:\Projects\Visual Studio\Project\Matt%27s Tools\WinUI3\MattTools\MattTools\Assets\Icons\AppIcon.png</LargeTileSource>
+    <SplashScreenSource>E:\Projects\Visual Studio\Project\Matt%27s Tools\WinUI3\MattTools\MattTools\Assets\Icons\AppIcon.png</SplashScreenSource>
+    <PackageLogoSource>E:\Projects\Visual Studio\Project\Matt%27s Tools\WinUI3\MattTools\MattTools\Assets\Icons\AppIcon.png</PackageLogoSource>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="App.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <Page Update="Views\RossumExtractorView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SettingView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PageNotFoundView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\InvoiceMergerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <None Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
+    <Page Update="Views\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
