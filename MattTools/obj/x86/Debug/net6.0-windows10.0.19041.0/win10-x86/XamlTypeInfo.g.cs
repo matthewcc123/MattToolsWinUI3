@@ -224,7 +224,7 @@ namespace MattTools.MattTools_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[108];
+            _typeNameTable = new string[113];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -313,28 +313,33 @@ namespace MattTools.MattTools_XamlTypeInfo
             _typeNameTable[85] = "MattTools.Models.Rossum.RossumItem";
             _typeNameTable[86] = "System.DateTime";
             _typeNameTable[87] = "MattTools.Converters.RossumStatusIndicatorConverter";
-            _typeNameTable[88] = "MattTools.Interactions.SelectorItemDisableFix";
-            _typeNameTable[89] = "Microsoft.UI.Xaml.Controls.DropDownButton";
-            _typeNameTable[90] = "Microsoft.UI.Xaml.Controls.Button";
-            _typeNameTable[91] = "CommunityToolkit.WinUI.UI.Effects";
-            _typeNameTable[92] = "Microsoft.UI.Xaml.FrameworkElement";
-            _typeNameTable[93] = "MattTools.Views.RossumExtractorView";
-            _typeNameTable[94] = "CommunityToolkit.WinUI.Controls.SettingsCard";
-            _typeNameTable[95] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
-            _typeNameTable[96] = "CommunityToolkit.WinUI.Controls.ContentAlignment";
-            _typeNameTable[97] = "Microsoft.UI.Xaml.Controls.ImageIcon";
-            _typeNameTable[98] = "Microsoft.UI.Xaml.Media.ImageSource";
-            _typeNameTable[99] = "CommunityToolkit.WinUI.FontIconExtension";
-            _typeNameTable[100] = "CommunityToolkit.WinUI.TextIconExtension";
-            _typeNameTable[101] = "Microsoft.UI.Xaml.Markup.MarkupExtension";
-            _typeNameTable[102] = "Microsoft.UI.Xaml.Media.FontFamily";
-            _typeNameTable[103] = "Windows.UI.Text.FontWeight";
-            _typeNameTable[104] = "Windows.UI.Text.FontStyle";
-            _typeNameTable[105] = "MattTools.Views.SettingView";
-            _typeNameTable[106] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[107] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[88] = "Microsoft.UI.Xaml.Controls.DropDownButton";
+            _typeNameTable[89] = "Microsoft.UI.Xaml.Controls.Button";
+            _typeNameTable[90] = "CommunityToolkit.WinUI.UI.Effects";
+            _typeNameTable[91] = "Microsoft.UI.Xaml.FrameworkElement";
+            _typeNameTable[92] = "MattTools.Views.RossumExtractorView";
+            _typeNameTable[93] = "CommunityToolkit.WinUI.Controls.SettingsCard";
+            _typeNameTable[94] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
+            _typeNameTable[95] = "CommunityToolkit.WinUI.Controls.ContentAlignment";
+            _typeNameTable[96] = "Microsoft.UI.Xaml.Controls.ImageIcon";
+            _typeNameTable[97] = "Microsoft.UI.Xaml.Media.ImageSource";
+            _typeNameTable[98] = "CommunityToolkit.WinUI.FontIconExtension";
+            _typeNameTable[99] = "CommunityToolkit.WinUI.TextIconExtension";
+            _typeNameTable[100] = "Microsoft.UI.Xaml.Markup.MarkupExtension";
+            _typeNameTable[101] = "Microsoft.UI.Xaml.Media.FontFamily";
+            _typeNameTable[102] = "Windows.UI.Text.FontWeight";
+            _typeNameTable[103] = "Windows.UI.Text.FontStyle";
+            _typeNameTable[104] = "MattTools.Views.SettingView";
+            _typeNameTable[105] = "MattTools.ViewModels.SOAMergerViewModel";
+            _typeNameTable[106] = "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.SOAFile>";
+            _typeNameTable[107] = "System.Collections.ObjectModel.Collection`1<MattTools.Models.SOAFile>";
+            _typeNameTable[108] = "MattTools.Models.SOAFile";
+            _typeNameTable[109] = "NPOI.SS.UserModel.ISheet";
+            _typeNameTable[110] = "MattTools.Views.SOAMergerView";
+            _typeNameTable[111] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[112] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[108];
+            _typeTable = new global::System.Type[113];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -425,26 +430,31 @@ namespace MattTools.MattTools_XamlTypeInfo
             _typeTable[85] = typeof(global::MattTools.Models.Rossum.RossumItem);
             _typeTable[86] = typeof(global::System.DateTime);
             _typeTable[87] = typeof(global::MattTools.Converters.RossumStatusIndicatorConverter);
-            _typeTable[88] = typeof(global::MattTools.Interactions.SelectorItemDisableFix);
-            _typeTable[89] = typeof(global::Microsoft.UI.Xaml.Controls.DropDownButton);
-            _typeTable[90] = typeof(global::Microsoft.UI.Xaml.Controls.Button);
-            _typeTable[91] = typeof(global::CommunityToolkit.WinUI.UI.Effects);
-            _typeTable[92] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
-            _typeTable[93] = typeof(global::MattTools.Views.RossumExtractorView);
-            _typeTable[94] = typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard);
-            _typeTable[95] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
-            _typeTable[96] = typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment);
-            _typeTable[97] = typeof(global::Microsoft.UI.Xaml.Controls.ImageIcon);
-            _typeTable[98] = typeof(global::Microsoft.UI.Xaml.Media.ImageSource);
-            _typeTable[99] = typeof(global::CommunityToolkit.WinUI.FontIconExtension);
-            _typeTable[100] = typeof(global::CommunityToolkit.WinUI.TextIconExtension);
-            _typeTable[101] = typeof(global::Microsoft.UI.Xaml.Markup.MarkupExtension);
-            _typeTable[102] = typeof(global::Microsoft.UI.Xaml.Media.FontFamily);
-            _typeTable[103] = typeof(global::Windows.UI.Text.FontWeight);
-            _typeTable[104] = typeof(global::Windows.UI.Text.FontStyle);
-            _typeTable[105] = typeof(global::MattTools.Views.SettingView);
-            _typeTable[106] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[107] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[88] = typeof(global::Microsoft.UI.Xaml.Controls.DropDownButton);
+            _typeTable[89] = typeof(global::Microsoft.UI.Xaml.Controls.Button);
+            _typeTable[90] = typeof(global::CommunityToolkit.WinUI.UI.Effects);
+            _typeTable[91] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
+            _typeTable[92] = typeof(global::MattTools.Views.RossumExtractorView);
+            _typeTable[93] = typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard);
+            _typeTable[94] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
+            _typeTable[95] = typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment);
+            _typeTable[96] = typeof(global::Microsoft.UI.Xaml.Controls.ImageIcon);
+            _typeTable[97] = typeof(global::Microsoft.UI.Xaml.Media.ImageSource);
+            _typeTable[98] = typeof(global::CommunityToolkit.WinUI.FontIconExtension);
+            _typeTable[99] = typeof(global::CommunityToolkit.WinUI.TextIconExtension);
+            _typeTable[100] = typeof(global::Microsoft.UI.Xaml.Markup.MarkupExtension);
+            _typeTable[101] = typeof(global::Microsoft.UI.Xaml.Media.FontFamily);
+            _typeTable[102] = typeof(global::Windows.UI.Text.FontWeight);
+            _typeTable[103] = typeof(global::Windows.UI.Text.FontStyle);
+            _typeTable[104] = typeof(global::MattTools.Views.SettingView);
+            _typeTable[105] = typeof(global::MattTools.ViewModels.SOAMergerViewModel);
+            _typeTable[106] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.SOAFile>);
+            _typeTable[107] = typeof(global::System.Collections.ObjectModel.Collection<global::MattTools.Models.SOAFile>);
+            _typeTable[108] = typeof(global::MattTools.Models.SOAFile);
+            _typeTable[109] = typeof(global::NPOI.SS.UserModel.ISheet);
+            _typeTable[110] = typeof(global::MattTools.Views.SOAMergerView);
+            _typeTable[111] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[112] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -515,14 +525,18 @@ namespace MattTools.MattTools_XamlTypeInfo
         private object Activate_84_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MattTools.Models.Rossum.RossumItem>(); }
         private object Activate_85_RossumItem() { return new global::MattTools.Models.Rossum.RossumItem(); }
         private object Activate_87_RossumStatusIndicatorConverter() { return new global::MattTools.Converters.RossumStatusIndicatorConverter(); }
-        private object Activate_88_SelectorItemDisableFix() { return new global::MattTools.Interactions.SelectorItemDisableFix(); }
-        private object Activate_89_DropDownButton() { return new global::Microsoft.UI.Xaml.Controls.DropDownButton(); }
-        private object Activate_93_RossumExtractorView() { return new global::MattTools.Views.RossumExtractorView(); }
-        private object Activate_94_SettingsCard() { return new global::CommunityToolkit.WinUI.Controls.SettingsCard(); }
-        private object Activate_97_ImageIcon() { return new global::Microsoft.UI.Xaml.Controls.ImageIcon(); }
-        private object Activate_99_FontIconExtension() { return new global::CommunityToolkit.WinUI.FontIconExtension(); }
-        private object Activate_105_SettingView() { return new global::MattTools.Views.SettingView(); }
-        private object Activate_106_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_88_DropDownButton() { return new global::Microsoft.UI.Xaml.Controls.DropDownButton(); }
+        private object Activate_92_RossumExtractorView() { return new global::MattTools.Views.RossumExtractorView(); }
+        private object Activate_93_SettingsCard() { return new global::CommunityToolkit.WinUI.Controls.SettingsCard(); }
+        private object Activate_96_ImageIcon() { return new global::Microsoft.UI.Xaml.Controls.ImageIcon(); }
+        private object Activate_98_FontIconExtension() { return new global::CommunityToolkit.WinUI.FontIconExtension(); }
+        private object Activate_104_SettingView() { return new global::MattTools.Views.SettingView(); }
+        private object Activate_105_SOAMergerViewModel() { return new global::MattTools.ViewModels.SOAMergerViewModel(); }
+        private object Activate_106_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.SOAFile>(); }
+        private object Activate_107_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MattTools.Models.SOAFile>(); }
+        private object Activate_108_SOAFile() { return new global::MattTools.Models.SOAFile(); }
+        private object Activate_110_SOAMergerView() { return new global::MattTools.Views.SOAMergerView(); }
+        private object Activate_111_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -596,7 +610,19 @@ namespace MattTools.MattTools_XamlTypeInfo
             var newItem = (global::MattTools.Models.Rossum.RossumItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_107_IList(object instance, object item)
+        private void VectorAdd_106_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::MattTools.Models.SOAFile>)instance;
+            var newItem = (global::MattTools.Models.SOAFile)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_107_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::MattTools.Models.SOAFile>)instance;
+            var newItem = (global::MattTools.Models.SOAFile)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_112_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -1265,44 +1291,37 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 88:   //  MattTools.Interactions.SelectorItemDisableFix
-                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.ListViewBase>"));
-                userType.Activator = Activate_88_SelectorItemDisableFix;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 89:   //  Microsoft.UI.Xaml.Controls.DropDownButton
+            case 88:   //  Microsoft.UI.Xaml.Controls.DropDownButton
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Button"));
-                userType.Activator = Activate_89_DropDownButton;
+                userType.Activator = Activate_88_DropDownButton;
                 xamlType = userType;
                 break;
 
-            case 90:   //  Microsoft.UI.Xaml.Controls.Button
+            case 89:   //  Microsoft.UI.Xaml.Controls.Button
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 91:   //  CommunityToolkit.WinUI.UI.Effects
+            case 90:   //  CommunityToolkit.WinUI.UI.Effects
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Shadow");
                 xamlType = userType;
                 break;
 
-            case 92:   //  Microsoft.UI.Xaml.FrameworkElement
+            case 91:   //  Microsoft.UI.Xaml.FrameworkElement
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 93:   //  MattTools.Views.RossumExtractorView
+            case 92:   //  MattTools.Views.RossumExtractorView
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_93_RossumExtractorView;
+                userType.Activator = Activate_92_RossumExtractorView;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 94:   //  CommunityToolkit.WinUI.Controls.SettingsCard
+            case 93:   //  CommunityToolkit.WinUI.Controls.SettingsCard
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ButtonBase"));
-                userType.Activator = Activate_94_SettingsCard;
+                userType.Activator = Activate_93_SettingsCard;
                 userType.AddMemberName("Description");
                 userType.AddMemberName("Header");
                 userType.AddMemberName("HeaderIcon");
@@ -1314,11 +1333,11 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 95:   //  Microsoft.UI.Xaml.Controls.Primitives.ButtonBase
+            case 94:   //  Microsoft.UI.Xaml.Controls.Primitives.ButtonBase
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 96:   //  CommunityToolkit.WinUI.Controls.ContentAlignment
+            case 95:   //  CommunityToolkit.WinUI.Controls.ContentAlignment
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Right", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Right);
                 userType.AddEnumValue("Left", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Left);
@@ -1326,27 +1345,27 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 97:   //  Microsoft.UI.Xaml.Controls.ImageIcon
+            case 96:   //  Microsoft.UI.Xaml.Controls.ImageIcon
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.IconElement"));
-                userType.Activator = Activate_97_ImageIcon;
+                userType.Activator = Activate_96_ImageIcon;
                 userType.AddMemberName("Source");
                 xamlType = userType;
                 break;
 
-            case 98:   //  Microsoft.UI.Xaml.Media.ImageSource
+            case 97:   //  Microsoft.UI.Xaml.Media.ImageSource
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 99:   //  CommunityToolkit.WinUI.FontIconExtension
+            case 98:   //  CommunityToolkit.WinUI.FontIconExtension
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension"));
-                userType.Activator = Activate_99_FontIconExtension;
+                userType.Activator = Activate_98_FontIconExtension;
                 userType.AddMemberName("Glyph");
                 userType.AddMemberName("FontFamily");
                 userType.SetIsMarkupExtension();
                 xamlType = userType;
                 break;
 
-            case 100:   //  CommunityToolkit.WinUI.TextIconExtension
+            case 99:   //  CommunityToolkit.WinUI.TextIconExtension
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Markup.MarkupExtension"));
                 userType.AddMemberName("FontSize");
                 userType.AddMemberName("FontWeight");
@@ -1358,21 +1377,21 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 101:   //  Microsoft.UI.Xaml.Markup.MarkupExtension
+            case 100:   //  Microsoft.UI.Xaml.Markup.MarkupExtension
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 102:   //  Microsoft.UI.Xaml.Media.FontFamily
+            case 101:   //  Microsoft.UI.Xaml.Media.FontFamily
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 103:   //  Windows.UI.Text.FontWeight
+            case 102:   //  Windows.UI.Text.FontWeight
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 104:   //  Windows.UI.Text.FontStyle
+            case 103:   //  Windows.UI.Text.FontStyle
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Normal", global::Windows.UI.Text.FontStyle.Normal);
                 userType.AddEnumValue("Oblique", global::Windows.UI.Text.FontStyle.Oblique);
@@ -1380,16 +1399,64 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 105:   //  MattTools.Views.SettingView
+            case 104:   //  MattTools.Views.SettingView
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_105_SettingView;
+                userType.Activator = Activate_104_SettingView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 106:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 105:   //  MattTools.ViewModels.SOAMergerViewModel
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_105_SOAMergerViewModel;
+                userType.AddMemberName("SOAfiles");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 106:   //  System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.SOAFile>
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<MattTools.Models.SOAFile>"));
+                userType.CollectionAdd = VectorAdd_106_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 107:   //  System.Collections.ObjectModel.Collection`1<MattTools.Models.SOAFile>
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_107_Collection;
+                userType.CollectionAdd = VectorAdd_107_Collection;
+                xamlType = userType;
+                break;
+
+            case 108:   //  MattTools.Models.SOAFile
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MattTools.Models.PropertyChangedBaseModel"));
+                userType.Activator = Activate_108_SOAFile;
+                userType.AddMemberName("FileName");
+                userType.AddMemberName("Cabang");
+                userType.AddMemberName("FilePath");
+                userType.AddMemberName("OriginalSheet");
+                userType.AddMemberName("Sheet");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 109:   //  NPOI.SS.UserModel.ISheet
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 110:   //  MattTools.Views.SOAMergerView
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_110_SOAMergerView;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 111:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_106_TreeViewNode;
+                userType.Activator = Activate_111_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -1401,9 +1468,9 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 107:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 112:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_107_IList;
+                userType.CollectionAdd = VectorAdd_112_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
@@ -2898,52 +2965,122 @@ namespace MattTools.MattTools_XamlTypeInfo
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.MirroredWhenRightToLeft = (global::System.Boolean)Value;
         }
-        private object get_151_TreeViewNode_Children(object instance)
+        private object get_151_SOAMergerViewModel_SOAfiles(object instance)
+        {
+            var that = (global::MattTools.ViewModels.SOAMergerViewModel)instance;
+            return that.SOAfiles;
+        }
+        private void set_151_SOAMergerViewModel_SOAfiles(object instance, object Value)
+        {
+            var that = (global::MattTools.ViewModels.SOAMergerViewModel)instance;
+            that.SOAfiles = (global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.SOAFile>)Value;
+        }
+        private object get_152_SOAFile_FileName(object instance)
+        {
+            var that = (global::MattTools.Models.SOAFile)instance;
+            return that.FileName;
+        }
+        private void set_152_SOAFile_FileName(object instance, object Value)
+        {
+            var that = (global::MattTools.Models.SOAFile)instance;
+            that.FileName = (global::System.String)Value;
+        }
+        private object get_153_SOAFile_Cabang(object instance)
+        {
+            var that = (global::MattTools.Models.SOAFile)instance;
+            return that.Cabang;
+        }
+        private void set_153_SOAFile_Cabang(object instance, object Value)
+        {
+            var that = (global::MattTools.Models.SOAFile)instance;
+            that.Cabang = (global::System.String)Value;
+        }
+        private object get_154_SOAFile_FilePath(object instance)
+        {
+            var that = (global::MattTools.Models.SOAFile)instance;
+            return that.FilePath;
+        }
+        private void set_154_SOAFile_FilePath(object instance, object Value)
+        {
+            var that = (global::MattTools.Models.SOAFile)instance;
+            that.FilePath = (global::System.String)Value;
+        }
+        private object get_155_SOAFile_OriginalSheet(object instance)
+        {
+            var that = (global::MattTools.Models.SOAFile)instance;
+            return that.OriginalSheet;
+        }
+        private void set_155_SOAFile_OriginalSheet(object instance, object Value)
+        {
+            var that = (global::MattTools.Models.SOAFile)instance;
+            that.OriginalSheet = (global::NPOI.SS.UserModel.ISheet)Value;
+        }
+        private object get_156_SOAFile_Sheet(object instance)
+        {
+            var that = (global::MattTools.Models.SOAFile)instance;
+            return that.Sheet;
+        }
+        private void set_156_SOAFile_Sheet(object instance, object Value)
+        {
+            var that = (global::MattTools.Models.SOAFile)instance;
+            that.Sheet = (global::NPOI.SS.UserModel.ISheet)Value;
+        }
+        private object get_157_SOAMergerView_ViewModel(object instance)
+        {
+            var that = (global::MattTools.Views.SOAMergerView)instance;
+            return that.ViewModel;
+        }
+        private void set_157_SOAMergerView_ViewModel(object instance, object Value)
+        {
+            var that = (global::MattTools.Views.SOAMergerView)instance;
+            that.ViewModel = (global::MattTools.ViewModels.SOAMergerViewModel)Value;
+        }
+        private object get_158_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_152_TreeViewNode_Content(object instance)
+        private object get_159_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_152_TreeViewNode_Content(object instance, object Value)
+        private void set_159_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_153_TreeViewNode_Depth(object instance)
+        private object get_160_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_154_TreeViewNode_HasChildren(object instance)
+        private object get_161_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_155_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_162_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_155_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_162_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_156_TreeViewNode_IsExpanded(object instance)
+        private object get_163_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_156_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_163_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_157_TreeViewNode_Parent(object instance)
+        private object get_164_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -3942,50 +4079,92 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlMember.Getter = get_150_TextIconExtension_MirroredWhenRightToLeft;
                 xamlMember.Setter = set_150_TextIconExtension_MirroredWhenRightToLeft;
                 break;
+            case "MattTools.ViewModels.SOAMergerViewModel.SOAfiles":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.SOAMergerViewModel");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "SOAfiles", "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.SOAFile>");
+                xamlMember.Getter = get_151_SOAMergerViewModel_SOAfiles;
+                xamlMember.Setter = set_151_SOAMergerViewModel_SOAfiles;
+                break;
+            case "MattTools.Models.SOAFile.FileName":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.SOAFile");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "FileName", "String");
+                xamlMember.Getter = get_152_SOAFile_FileName;
+                xamlMember.Setter = set_152_SOAFile_FileName;
+                break;
+            case "MattTools.Models.SOAFile.Cabang":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.SOAFile");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Cabang", "String");
+                xamlMember.Getter = get_153_SOAFile_Cabang;
+                xamlMember.Setter = set_153_SOAFile_Cabang;
+                break;
+            case "MattTools.Models.SOAFile.FilePath":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.SOAFile");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "FilePath", "String");
+                xamlMember.Getter = get_154_SOAFile_FilePath;
+                xamlMember.Setter = set_154_SOAFile_FilePath;
+                break;
+            case "MattTools.Models.SOAFile.OriginalSheet":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.SOAFile");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "OriginalSheet", "NPOI.SS.UserModel.ISheet");
+                xamlMember.Getter = get_155_SOAFile_OriginalSheet;
+                xamlMember.Setter = set_155_SOAFile_OriginalSheet;
+                break;
+            case "MattTools.Models.SOAFile.Sheet":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.SOAFile");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Sheet", "NPOI.SS.UserModel.ISheet");
+                xamlMember.Getter = get_156_SOAFile_Sheet;
+                xamlMember.Setter = set_156_SOAFile_Sheet;
+                break;
+            case "MattTools.Views.SOAMergerView.ViewModel":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Views.SOAMergerView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ViewModel", "MattTools.ViewModels.SOAMergerViewModel");
+                xamlMember.Getter = get_157_SOAMergerView_ViewModel;
+                xamlMember.Setter = set_157_SOAMergerView_ViewModel;
+                break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_151_TreeViewNode_Children;
+                xamlMember.Getter = get_158_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_152_TreeViewNode_Content;
-                xamlMember.Setter = set_152_TreeViewNode_Content;
+                xamlMember.Getter = get_159_TreeViewNode_Content;
+                xamlMember.Setter = set_159_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_153_TreeViewNode_Depth;
+                xamlMember.Getter = get_160_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_154_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_161_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_155_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_155_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_162_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_162_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_156_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_156_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_163_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_163_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_157_TreeViewNode_Parent;
+                xamlMember.Getter = get_164_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

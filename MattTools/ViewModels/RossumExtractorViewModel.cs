@@ -143,6 +143,7 @@ namespace MattTools.ViewModels
         public async Task Find(string[] filters, string queueID)
         {
             RossumItems.Clear();
+            List<RossumItem> NewItems = new List<RossumItem>();
 
             foreach (var filter in filters)
             {
@@ -163,7 +164,7 @@ namespace MattTools.ViewModels
                     if (documents.Results.Count == 0)
                     {
                         //Add to List
-                        RossumItems.Add(rossumItem);
+                        NewItems.Add(rossumItem);
                         continue;
                     }
 
@@ -178,7 +179,7 @@ namespace MattTools.ViewModels
                         if (queueID != annotationQueue)
                         {
                             //Add to List
-                            RossumItems.Add(rossumItem);
+                            NewItems.Add(rossumItem);
                             continue;
                         }
                         else
@@ -189,12 +190,17 @@ namespace MattTools.ViewModels
                             rossumItem.Status = annotation.Status;
                             rossumItem.CreateDate = document.CreateDate.ToLocalTime();
                             //Add To List Complete Item
-                            RossumItems.Add(rossumItem);
+                            NewItems.Add(rossumItem);
                         }
 
                     }
 
                 }
+            }
+
+            foreach (var item in NewItems)
+            {
+                RossumItems.Add(item);
             }
 
         }

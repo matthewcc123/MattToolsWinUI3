@@ -250,7 +250,7 @@
                         <Grid Height="46" XYFocusKeyboardNavigation="Disabled">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition x:ConnectionId='13' x:Name="SelectColumn" Width="42" />
-                                <ColumnDefinition x:ConnectionId='14' x:Name="NumberColumn" Width="32" />
+                                <ColumnDefinition x:ConnectionId='14' x:Name="NumberColumn" Width="45" />
                                 <ColumnDefinition x:ConnectionId='15' x:Name="NameColumn" Width="1*" />
                                 <ColumnDefinition x:ConnectionId='16' x:Name="StatusColumn" Width="1*" />
                                 <ColumnDefinition x:ConnectionId='17' x:Name="DateColumn" Width="*" />
@@ -307,7 +307,7 @@
                             <DataTemplate                               >
                                 <Grid Height="46" XYFocusKeyboardNavigation="Disabled">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition x:Name="NumberColumn" Width="32" />
+                                        <ColumnDefinition x:Name="NumberColumn" Width="45" />
                                         <ColumnDefinition x:Name="NameColumn" Width="1*" />
                                         <ColumnDefinition x:Name="StatusColumn" Width="1*" />
                                         <ColumnDefinition x:Name="DateColumn" Width="*" />
@@ -365,7 +365,6 @@
                                 AltItemThickness="{StaticResource ButtonBorderThemeThickness}" />
 
                             <interactions:ShowItemIndexBehavior />
-                            <interactions:SelectorItemDisableFix />
                         </interactivity:Interaction.Behaviors>
 
                     </ListView>

@@ -78,7 +78,7 @@ namespace MattTools
             _navigationService.AddNavigation(new NavItem { Path = "Home", Title = "Home", PageType = typeof(HomeView), VisibleInMenu = false, Symbol = Symbol.Home });
             _navigationService.AddNavigation(new NavItem { Path = "Unilever", Title = "Unilever", PageType = null, UriSource = "Unilever.png", ExtendOnly = true });
             _navigationService.AddNavigation(new NavItem { Path = "Unilever/Merger", Title = "Invoice Merger", Description = "Merge Digital Invoice with the correct Tax Invoice.", PageType = typeof(InvoiceMergerView), UriSource = "Merger.png" });
-            _navigationService.AddNavigation(new NavItem { Path = "Unilever/SOA", Title = "SOA Merger", Description = "Merge Unilever SOA into Single File.", PageType = null, UriSource = "SOA.png" });
+            _navigationService.AddNavigation(new NavItem { Path = "Unilever/SOA", Title = "SOA Merger", Description = "Merge Unilever SOA into Single File.", PageType = typeof(SOAMergerView), UriSource = "SOA.png" });
             _navigationService.AddNavigation(new NavItem { Path = "Rossum", Title = "Rossum Extractor", Description = "Extract selected Rossum files into Json and Pdf without rename.", PageType = typeof(RossumExtractorView), UriSource = "Rossum.png" });
 
         }

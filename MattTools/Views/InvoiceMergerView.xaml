@@ -158,7 +158,7 @@
                     <DataTemplate x:DataType="models:MergeFile">
                         <Grid Height="46" XYFocusKeyboardNavigation="Disabled">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition x:Name="NumberColumn" Width="32" />
+                                <ColumnDefinition x:Name="NumberColumn" Width="45" />
                                 <ColumnDefinition x:Name="InvoiceColumn" Width="1*" />
                                 <ColumnDefinition x:Name="TaxColumn" Width="1*" />
                                 <ColumnDefinition x:Name="StatusColumn" Width="*" />
