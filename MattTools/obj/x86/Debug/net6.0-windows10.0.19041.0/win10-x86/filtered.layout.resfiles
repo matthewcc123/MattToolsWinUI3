@@ -1,3 +1,4 @@
+runtimes\win-x86\native\WebView2Loader.dll
 Assets\Icons\AppIcon.png
 Assets\Icons\AppIcon24.png
 Assets\Icons\AppIcon32.ico
@@ -6,6 +7,7 @@ Assets\Icons\Rossum.png
 Assets\Icons\SOA.png
 Assets\Icons\Toolbox.png
 Assets\Icons\Unilever.png
+Assets\Icons\Zesthub.png
 Assets\Images\AnimatedHeaderBackground.gif
 Assets\LargeTile.scale-100.png
 Assets\LargeTile.scale-125.png

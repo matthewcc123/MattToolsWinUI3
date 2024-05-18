@@ -10,11 +10,13 @@ namespace MattTools.Settings
     {
         public AppSetting App {  get; set; }
         public RossumSetting Rossum { get; set; }
+        public ZesthubSetting Zesthub { get; set; }
 
         public UserSetting() 
         { 
             App = new AppSetting(); 
             Rossum = new RossumSetting();
+            Zesthub = new ZesthubSetting();
         }
     }
 }

@@ -88,12 +88,18 @@
     <None Remove="Assets\Square44x44Logo.targetsize-256.png" />
     <None Remove="Assets\Square44x44Logo.targetsize-48.png" />
     <None Remove="Controls\Clock.xaml" />
+    <None Remove="Controls\LineBorder.xaml" />
+    <None Remove="Controls\SupplierInvoiceForm.xaml" />
+    <None Remove="Themes\CustomStyle.xaml" />
+    <None Remove="Themes\Dark.xaml" />
+    <None Remove="Themes\Light.xaml" />
     <None Remove="Views\HomeView.xaml" />
     <None Remove="Views\InvoiceMergerView.xaml" />
     <None Remove="Views\PageNotFoundView.xaml" />
     <None Remove="Views\RossumExtractorView.xaml" />
     <None Remove="Views\SettingView.xaml" />
     <None Remove="Views\SOAMergerView.xaml" />
+    <None Remove="Views\ZesthubView.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -106,14 +112,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommunityToolkit.WinUI.Controls.Segmented" Version="8.0.240109" />
     <PackageReference Include="CommunityToolkit.WinUI.Controls.SettingsControls" Version="8.0.240109" />
     <PackageReference Include="CommunityToolkit.WinUI.UI" Version="7.1.2" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Behaviors" Version="7.1.2" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls" Version="7.1.2" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Media" Version="7.1.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.230913002" />
-    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.756" />
+    <PackageReference Include="Microsoft.UI.Xaml" Version="2.8.6" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240404000" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.3233" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="NPOI" Version="2.6.2" />
     <PackageReference Include="PDFsharp" Version="6.0.0" />
@@ -130,6 +138,10 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Themes\Dark.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\HomeView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,6 +157,26 @@
   </PropertyGroup>
   <ItemGroup>
     <PRIResource Remove="Views\Components\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Themes\CustomStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\LineBorder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\SupplierInvoiceForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\ZesthubView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\SOAMergerView.xaml">
@@ -178,6 +210,11 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="ContentDialog\MergeFileDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Themes\Light.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

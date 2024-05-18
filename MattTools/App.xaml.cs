@@ -52,6 +52,7 @@ namespace MattTools
             services.AddSingleton<IUserService, UserService>();
             services.AddSingleton<INavigationService, NavigationService>();
             services.AddSingleton<IRossumService, RossumService>();
+            services.AddSingleton<IZesthubService, ZesthubService>();
 
             //Build Service Provider
             ServiceProvider = services.BuildServiceProvider();

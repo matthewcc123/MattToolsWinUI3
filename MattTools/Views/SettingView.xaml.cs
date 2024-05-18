@@ -18,6 +18,7 @@ using System.Diagnostics;
 using MattTools.Settings;
 using MattTools.Services;
 using Microsoft.Extensions.DependencyInjection;
+using MattTools.Helper;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -45,13 +46,25 @@ namespace MattTools.Views
 
         private void ThemeSetting_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Window window = (Application.Current as App).m_window;
 
             if (sender is ComboBox comboBox && comboBox.SelectedItem != null && comboBox.IsLoaded)
             {
                 ComboBoxItem comboBoxItem = comboBox.SelectedItem as ComboBoxItem;
                 ElementTheme selectedTheme = (ElementTheme)Convert.ToInt32(comboBoxItem.Tag);
-                (window.Content as FrameworkElement).RequestedTheme = selectedTheme;
+
+                foreach (Window window in WindowHelper.ActiveWindows)
+                {
+                    if (window.Content is FrameworkElement rootElement)
+                    {
+                        rootElement.RequestedTheme = selectedTheme;
+
+                        if (window is MainWindow main)
+                        {
+                            main.SetThemeResources(selectedTheme);
+                        }
+
+                    }
+                }
 
                 //Update UserSetting
                 _userService.SetUserSetting("App.Theme", selectedTheme);

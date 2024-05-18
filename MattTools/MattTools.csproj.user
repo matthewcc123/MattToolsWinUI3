@@ -18,6 +18,24 @@
     <None Update="App.xaml">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="Themes\CustomStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Dark.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Light.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\LineBorder.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\SupplierInvoiceForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ZesthubView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\SOAMergerView.xaml">
       <SubType>Designer</SubType>
     </Page>

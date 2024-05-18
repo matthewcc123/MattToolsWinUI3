@@ -70,9 +70,17 @@ namespace MattTools
                 this.SystemBackdrop = new DesktopAcrylicBackdrop();
             }
 
-            //Get Theme from UserSetting
-            (this.Content as FrameworkElement).RequestedTheme = _userService.GetUserSetting<ElementTheme>("App.Theme");
-            
+
+            // Set the initial theme resources
+            FrameworkElement windowFrameWork = (this.Content as FrameworkElement);
+            SetThemeResources(windowFrameWork.ActualTheme);
+
+            // Subscribe to the theme change event
+            windowFrameWork.ActualThemeChanged += MainWindow_ActualThemeChanged;
+
+            //Set Theme
+            SetThemeResources(_userService.GetUserSetting<ElementTheme>("App.Theme"));
+
             //Setup Navigation
             _navigationService.Init(AppFrame, AppNavView, typeof(PageNotFoundView));
             _navigationService.AddNavigation(new NavItem { Path = "Home", Title = "Home", PageType = typeof(HomeView), VisibleInMenu = false, Symbol = Symbol.Home });
@@ -80,6 +88,7 @@ namespace MattTools
             _navigationService.AddNavigation(new NavItem { Path = "Unilever/Merger", Title = "Invoice Merger", Description = "Merge Digital Invoice with the correct Tax Invoice.", PageType = typeof(InvoiceMergerView), UriSource = "Merger.png" });
             _navigationService.AddNavigation(new NavItem { Path = "Unilever/SOA", Title = "SOA Merger", Description = "Merge Unilever SOA into Single File.", PageType = typeof(SOAMergerView), UriSource = "SOA.png" });
             _navigationService.AddNavigation(new NavItem { Path = "Rossum", Title = "Rossum Extractor", Description = "Extract selected Rossum files into Json and Pdf without rename.", PageType = typeof(RossumExtractorView), UriSource = "Rossum.png" });
+            _navigationService.AddNavigation(new NavItem { Path = "Zesthub", Title = "ZestHub+", Description = "Speed up the ZestHub process..", PageType = typeof(ZesthubView), UriSource = "Zesthub.png" });
 
         }
 
@@ -135,5 +144,42 @@ namespace MattTools
                 _navigationService.Navigate(navItem.Path);
             }
         }
+
+        private void MainWindow_ActualThemeChanged(FrameworkElement sender, object args)
+        {
+            // Update the resources when the theme changes
+            SetThemeResources(sender.ActualTheme);
+        }
+
+        public void SetThemeResources(ElementTheme theme)
+        {
+            // Get the merged dictionaries from the application resources
+            var mergedDictionaries = ((App)Application.Current).Resources.MergedDictionaries;
+
+            // Determine the URI of the theme resource file
+            string themeSource = theme == ElementTheme.Dark ? "ms-appx:///Themes/Dark.xaml" : "ms-appx:///Themes/Light.xaml";
+
+            if (theme == ElementTheme.Default)
+            {
+                themeSource = Application.Current.RequestedTheme == ApplicationTheme.Dark ? "ms-appx:///Themes/Dark.xaml" : "ms-appx:///Themes/Light.xaml";
+            }
+
+            // Check if the theme dictionary already exists and remove it if necessary
+            var existingThemeDictionary = mergedDictionaries.FirstOrDefault(dict => dict.Source.ToString().Equals(themeSource));
+            if (existingThemeDictionary != null)
+            {
+                mergedDictionaries.Remove(existingThemeDictionary);
+            }
+
+            // Create a new ResourceDictionary for the selected theme
+            var newThemeDictionary = new ResourceDictionary { Source = new System.Uri(themeSource) };
+
+            // Add the new theme dictionary to the merged dictionaries
+            mergedDictionaries.Add(newThemeDictionary);
+
+            //Change Requested Theme
+            //(this.Content as FrameworkElement).RequestedTheme = theme;
+        }
+
     }
 }

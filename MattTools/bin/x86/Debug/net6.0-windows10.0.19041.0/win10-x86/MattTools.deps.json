@@ -9,14 +9,16 @@
     ".NETCoreApp,Version=v6.0/win10-x86": {
       "MattTools/1.0.0": {
         "dependencies": {
+          "CommunityToolkit.WinUI.Controls.Segmented": "8.0.240109",
           "CommunityToolkit.WinUI.Controls.SettingsControls": "8.0.240109",
           "CommunityToolkit.WinUI.UI": "7.1.2",
           "CommunityToolkit.WinUI.UI.Behaviors": "7.1.2",
           "CommunityToolkit.WinUI.UI.Controls": "7.1.2",
           "CommunityToolkit.WinUI.UI.Media": "7.1.2",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.756",
-          "Microsoft.WindowsAppSDK": "1.4.230913002",
+          "Microsoft.UI.Xaml": "2.8.6",
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.3233",
+          "Microsoft.WindowsAppSDK": "1.5.240404000",
           "NPOI": "2.6.2",
           "Newtonsoft.Json": "13.0.3",
           "PDFsharp": "6.0.0",
@@ -902,7 +904,7 @@
       "ColorCode.WinUI/2.0.13": {
         "dependencies": {
           "ColorCode.Core": "2.0.13",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net5.0-windows10.0.18362/ColorCode.WinUI.dll": {
@@ -922,7 +924,7 @@
       "CommunityToolkit.WinUI/7.1.2": {
         "dependencies": {
           "CommunityToolkit.Common": "8.2.1",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {
@@ -931,11 +933,24 @@
           }
         }
       },
+      "CommunityToolkit.WinUI.Controls.Segmented/8.0.240109": {
+        "dependencies": {
+          "CommunityToolkit.WinUI.Extensions": "8.0.240109",
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.3233",
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.Segmented.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
       "CommunityToolkit.WinUI.Controls.SettingsControls/8.0.240109": {
         "dependencies": {
           "CommunityToolkit.WinUI.Triggers": "8.0.240109",
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.756",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.3233",
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net6.0-windows10.0.19041/CommunityToolkit.WinUI.Controls.SettingsControls.dll": {
@@ -947,8 +962,8 @@
       "CommunityToolkit.WinUI.Extensions/8.0.240109": {
         "dependencies": {
           "CommunityToolkit.Common": "8.2.1",
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.756",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.3233",
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net6.0-windows10.0.19041/CommunityToolkit.WinUI.Extensions.dll": {
@@ -960,8 +975,8 @@
       "CommunityToolkit.WinUI.Helpers/8.0.240109": {
         "dependencies": {
           "CommunityToolkit.WinUI.Extensions": "8.0.240109",
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.756",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.3233",
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net6.0-windows10.0.19041/CommunityToolkit.WinUI.Helpers.dll": {
@@ -973,8 +988,8 @@
       "CommunityToolkit.WinUI.Triggers/8.0.240109": {
         "dependencies": {
           "CommunityToolkit.WinUI.Helpers": "8.0.240109",
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.756",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.3233",
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net6.0-windows10.0.19041/CommunityToolkit.WinUI.Triggers.dll": {
@@ -986,7 +1001,7 @@
       "CommunityToolkit.WinUI.UI/7.1.2": {
         "dependencies": {
           "CommunityToolkit.WinUI": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {
@@ -998,7 +1013,7 @@
       "CommunityToolkit.WinUI.UI.Animations/7.1.2": {
         "dependencies": {
           "CommunityToolkit.WinUI.UI": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.Animations.dll": {
@@ -1011,7 +1026,7 @@
         "dependencies": {
           "CommunityToolkit.WinUI.UI": "7.1.2",
           "CommunityToolkit.WinUI.UI.Animations": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.4.230913002",
+          "Microsoft.WindowsAppSDK": "1.5.240404000",
           "Microsoft.Xaml.Behaviors.WinUI.Managed": "2.0.8"
         },
         "runtime": {
@@ -1030,14 +1045,14 @@
           "CommunityToolkit.WinUI.UI.Controls.Markdown": "7.1.2",
           "CommunityToolkit.WinUI.UI.Controls.Media": "7.1.2",
           "CommunityToolkit.WinUI.UI.Controls.Primitives": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         }
       },
       "CommunityToolkit.WinUI.UI.Controls.Core/7.1.2": {
         "dependencies": {
           "CommunityToolkit.WinUI": "7.1.2",
           "CommunityToolkit.WinUI.UI.Controls.Primitives": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.Controls.Core.dll": {
@@ -1048,7 +1063,7 @@
       },
       "CommunityToolkit.WinUI.UI.Controls.DataGrid/7.1.2": {
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.Controls.DataGrid.dll": {
@@ -1060,7 +1075,7 @@
       "CommunityToolkit.WinUI.UI.Controls.Input/7.1.2": {
         "dependencies": {
           "CommunityToolkit.WinUI.UI.Controls.Primitives": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.Controls.Input.dll": {
@@ -1072,7 +1087,7 @@
       "CommunityToolkit.WinUI.UI.Controls.Layout/7.1.2": {
         "dependencies": {
           "CommunityToolkit.WinUI.UI": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.Controls.Layout.dll": {
@@ -1086,7 +1101,7 @@
           "ColorCode.WinUI": "2.0.13",
           "CommunityToolkit.WinUI.UI": "7.1.2",
           "CommunityToolkit.WinUI.UI.Controls.Core": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.Controls.Markdown.dll": {
@@ -1099,7 +1114,7 @@
         "dependencies": {
           "CommunityToolkit.WinUI.UI": "7.1.2",
           "Microsoft.Graphics.Win2D": "1.0.0.30",
-          "Microsoft.WindowsAppSDK": "1.4.230913002",
+          "Microsoft.WindowsAppSDK": "1.5.240404000",
           "System.Text.Json": "6.0.0"
         },
         "runtime": {
@@ -1112,7 +1127,7 @@
       "CommunityToolkit.WinUI.UI.Controls.Primitives/7.1.2": {
         "dependencies": {
           "CommunityToolkit.WinUI.UI": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.Controls.Primitives.dll": {
@@ -1125,7 +1140,7 @@
         "dependencies": {
           "CommunityToolkit.WinUI.UI.Animations": "7.1.2",
           "Microsoft.Graphics.Win2D": "1.0.0.30",
-          "Microsoft.WindowsAppSDK": "1.4.230913002",
+          "Microsoft.WindowsAppSDK": "1.5.240404000",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
@@ -1322,6 +1337,32 @@
       },
       "Microsoft.NETCore.Platforms/5.0.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.UI.Xaml/2.8.6": {
+        "dependencies": {
+          "Microsoft.Web.WebView2": "1.0.1264.42"
+        }
+      },
+      "Microsoft.Web.WebView2/1.0.1264.42": {
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.dll": {
+            "assemblyVersion": "1.0.1264.42",
+            "fileVersion": "1.0.1264.42"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.dll": {
+            "assemblyVersion": "1.0.1264.42",
+            "fileVersion": "1.0.1264.42"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.dll": {
+            "assemblyVersion": "1.0.1264.42",
+            "fileVersion": "1.0.1264.42"
+          }
+        },
+        "native": {
+          "runtimes/win-x86/native/WebView2Loader.dll": {
+            "fileVersion": "1.0.1264.42"
+          }
+        }
+      },
       "Microsoft.Win32.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -1338,78 +1379,82 @@
           }
         }
       },
-      "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {},
-      "Microsoft.WindowsAppSDK/1.4.230913002": {
+      "Microsoft.Windows.SDK.BuildTools/10.0.22621.3233": {},
+      "Microsoft.WindowsAppSDK/1.5.240404000": {
         "dependencies": {
-          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.756"
+          "Microsoft.Windows.SDK.BuildTools": "10.0.22621.3233"
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
             "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.22624.1040"
+            "fileVersion": "10.0.26100.1000"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.WinUI.dll": {
             "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.2309"
+            "fileVersion": "3.0.0.2404"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Builder.Projection.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Projection.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
+          },
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Management.Deployment.Projection.dll": {
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.PushNotifications.Projection.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Security.AccessControl.Projection.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           },
-          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Providers.Projection.dll": {
+          "lib/net6.0-windows10.0.18362.0/Microsoft.Windows.Widgets.Projection.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           },
           "lib/net6.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {
-            "assemblyVersion": "1.4.0.0",
-            "fileVersion": "1.4.0.0"
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
           }
         },
         "native": {
           "runtimes/win10-x86/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {
-            "fileVersion": "1.4.0.0"
+            "fileVersion": "1.5.0.0"
           }
         }
       },
       "Microsoft.Xaml.Behaviors.WinUI.Managed/2.0.8": {
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net5.0-windows10.0.18362.0/Microsoft.Xaml.Interactions.dll": {
@@ -2478,7 +2523,7 @@
       },
       "WinUIEx/2.3.3": {
         "dependencies": {
-          "Microsoft.WindowsAppSDK": "1.4.230913002"
+          "Microsoft.WindowsAppSDK": "1.5.240404000"
         },
         "runtime": {
           "lib/net6.0-windows10.0.18362/WinUIEx.dll": {
@@ -2539,6 +2584,13 @@
       "sha512": "sha512-0O6hCHy+/adJygcROD3r3yA41gRq972i/r6uGUfo8lfEbr/I1YGePTClAh1P9JYT7DdoI2IqeUhX05lq+rwrHg==",
       "path": "communitytoolkit.winui/7.1.2",
       "hashPath": "communitytoolkit.winui.7.1.2.nupkg.sha512"
+    },
+    "CommunityToolkit.WinUI.Controls.Segmented/8.0.240109": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-F/gfWjlYZoFMEBnMGzGiS1Pd9fIqKtGtYF5HAX9c4qL00BpNMj4MPw15eG6b/kQC0eEANR1GyOx7RXki2I+dSg==",
+      "path": "communitytoolkit.winui.controls.segmented/8.0.240109",
+      "hashPath": "communitytoolkit.winui.controls.segmented.8.0.240109.nupkg.sha512"
     },
     "CommunityToolkit.WinUI.Controls.SettingsControls/8.0.240109": {
       "type": "package",
@@ -2778,6 +2830,20 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
+    "Microsoft.UI.Xaml/2.8.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kdfCnoV/1bOu06EZcGYhQNvVjKWfsR5WRf6ftXtPbx1j4Q+ltMGNBW9TUTcscpt7qpwb6pB4R4KEjGGliWefzw==",
+      "path": "microsoft.ui.xaml/2.8.6",
+      "hashPath": "microsoft.ui.xaml.2.8.6.nupkg.sha512"
+    },
+    "Microsoft.Web.WebView2/1.0.1264.42": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7OBUTkzQ5VI/3gb0ufi5U4zjuCowAJwQg2li0zXXzqkM+S1kmOlivTy1R4jAW+gY5Vyg510M+qMAESCQUjrfgA==",
+      "path": "microsoft.web.webview2/1.0.1264.42",
+      "hashPath": "microsoft.web.webview2.1.0.1264.42.nupkg.sha512"
+    },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2792,19 +2858,19 @@
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
     },
-    "Microsoft.Windows.SDK.BuildTools/10.0.22621.756": {
+    "Microsoft.Windows.SDK.BuildTools/10.0.22621.3233": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7ZL2sFSioYm1Ry067Kw1hg0SCcW5kuVezC2SwjGbcPE61Nn+gTbH86T73G3LcEOVj0S3IZzNuE/29gZvOLS7VA==",
-      "path": "microsoft.windows.sdk.buildtools/10.0.22621.756",
-      "hashPath": "microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512"
+      "sha512": "sha512-v67zwCb9JOpfPxdSroZukIKHruU6FUB+KwcmSPcVvUFyYtcyvcUign5y8jPQNi54CVzWvaTg646e62LbanUkxg==",
+      "path": "microsoft.windows.sdk.buildtools/10.0.22621.3233",
+      "hashPath": "microsoft.windows.sdk.buildtools.10.0.22621.3233.nupkg.sha512"
     },
-    "Microsoft.WindowsAppSDK/1.4.230913002": {
+    "Microsoft.WindowsAppSDK/1.5.240404000": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-l+9RshN4TsTuxL0ijFp5smbs3Y07RO7CxKBHNM/RsrsGtWvuk6edITMp4oqL9C3ufEAmpYk3dqOZRSf+sFH4Zg==",
-      "path": "microsoft.windowsappsdk/1.4.230913002",
-      "hashPath": "microsoft.windowsappsdk.1.4.230913002.nupkg.sha512"
+      "sha512": "sha512-B06pJv0nH31vf4Df72Qoa8A+i12LBUQ/3LhpyWVEQ83opd2a5U49XnqqYrK/T8J6Zf4JTxfLvKBSM5fgXb1YXg==",
+      "path": "microsoft.windowsappsdk/1.5.240404000",
+      "hashPath": "microsoft.windowsappsdk.1.5.240404000.nupkg.sha512"
     },
     "Microsoft.Xaml.Behaviors.WinUI.Managed/2.0.8": {
       "type": "package",
