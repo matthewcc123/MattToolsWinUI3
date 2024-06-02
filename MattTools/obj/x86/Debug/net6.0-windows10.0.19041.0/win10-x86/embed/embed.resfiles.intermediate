@@ -10,6 +10,8 @@ Themes\Light.xbf
 Views\HomeView.xbf
 Views\InvoiceMergerView.xbf
 Views\PageNotFoundView.xbf
+Views\PdfCompressorView.xbf
+Views\PdfOrganizerView.xbf
 Views\RossumExtractorView.xbf
 Views\SettingView.xbf
 Views\SOAMergerView.xbf

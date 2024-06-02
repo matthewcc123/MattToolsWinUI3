@@ -224,7 +224,7 @@ namespace MattTools.MattTools_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[134];
+            _typeNameTable = new string[167];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -232,135 +232,168 @@ namespace MattTools.MattTools_XamlTypeInfo
             _typeNameTable[4] = "Converters.TextBlockFormatConverter";
             _typeNameTable[5] = "Converters.NumberFormatConverter";
             _typeNameTable[6] = "Converters.DateTimeConverter";
-            _typeNameTable[7] = "Microsoft.UI.Xaml.Thickness";
-            _typeNameTable[8] = "System.ValueType";
-            _typeNameTable[9] = "Double";
-            _typeNameTable[10] = "CommunityToolkit.WinUI.UI.Media.AttachedCardShadow";
-            _typeNameTable[11] = "CommunityToolkit.WinUI.UI.AttachedShadowBase";
-            _typeNameTable[12] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[13] = "String";
-            _typeNameTable[14] = "Windows.UI.Color";
-            _typeNameTable[15] = "Microsoft.UI.Xaml.Controls.Button";
-            _typeNameTable[16] = "MattTools.Controls.Clock";
-            _typeNameTable[17] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[18] = "Controls.LineBorder";
-            _typeNameTable[19] = "Microsoft.UI.Xaml.Controls.InfoBar";
-            _typeNameTable[20] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[21] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
-            _typeNameTable[22] = "System.Windows.Input.ICommand";
-            _typeNameTable[23] = "Microsoft.UI.Xaml.Style";
-            _typeNameTable[24] = "Microsoft.UI.Xaml.DataTemplate";
-            _typeNameTable[25] = "Microsoft.UI.Xaml.Controls.IconSource";
-            _typeNameTable[26] = "Microsoft.UI.Xaml.Controls.InfoBarSeverity";
-            _typeNameTable[27] = "System.Enum";
-            _typeNameTable[28] = "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings";
-            _typeNameTable[29] = "Microsoft.UI.Xaml.Controls.Expander";
-            _typeNameTable[30] = "Microsoft.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.ExpandDirection";
-            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings";
-            _typeNameTable[34] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[35] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[36] = "Microsoft.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[37] = "MattTools.Interactions.LineItemListViewBehavior";
-            _typeNameTable[38] = "Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.ListView>";
-            _typeNameTable[39] = "Microsoft.Xaml.Interactivity.Behavior";
-            _typeNameTable[40] = "Microsoft.UI.Xaml.Media.Brush";
-            _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.ListView";
-            _typeNameTable[42] = "MattTools.Interactions.ShowItemIndexBehavior";
-            _typeNameTable[43] = "Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.ListViewBase>";
-            _typeNameTable[44] = "Microsoft.UI.Xaml.Controls.ListViewBase";
-            _typeNameTable[45] = "Controls.SupplierInvoiceForm";
-            _typeNameTable[46] = "MattTools.ViewModels.ZesthubViewModel";
-            _typeNameTable[47] = "MattTools.Models.PropertyChangedBaseModel";
-            _typeNameTable[48] = "System.Collections.Generic.List`1<Models.Zesthub.Account>";
-            _typeNameTable[49] = "Models.Zesthub.Account";
-            _typeNameTable[50] = "Int32";
-            _typeNameTable[51] = "System.Nullable`1<System.DateTime>";
-            _typeNameTable[52] = "System.DateTime";
-            _typeNameTable[53] = "MattTools.Models.Zesthub.InvoiceData";
-            _typeNameTable[54] = "Models.Zesthub.SupplierInvoiceData";
-            _typeNameTable[55] = "MattTools.Dialogs.MergeFileDialog";
-            _typeNameTable[56] = "Microsoft.UI.Xaml.Controls.ContentDialog";
-            _typeNameTable[57] = "WinUIEx.WindowEx";
-            _typeNameTable[58] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[59] = "Microsoft.UI.Windowing.AppWindow";
-            _typeNameTable[60] = "WinUIEx.Icon";
-            _typeNameTable[61] = "WinUIEx.WindowState";
-            _typeNameTable[62] = "Microsoft.UI.Windowing.AppWindowPresenter";
-            _typeNameTable[63] = "Microsoft.UI.Windowing.AppWindowPresenterKind";
-            _typeNameTable[64] = "WinUIEx.SystemBackdrop";
-            _typeNameTable[65] = "Microsoft.UI.Xaml.Controls.NavigationView";
-            _typeNameTable[66] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
-            _typeNameTable[67] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
-            _typeNameTable[68] = "Microsoft.UI.Xaml.UIElement";
-            _typeNameTable[69] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
-            _typeNameTable[70] = "System.Collections.Generic.IList`1<Object>";
-            _typeNameTable[71] = "Microsoft.UI.Xaml.Controls.StyleSelector";
-            _typeNameTable[72] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
-            _typeNameTable[73] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
-            _typeNameTable[74] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
-            _typeNameTable[75] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
-            _typeNameTable[76] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
-            _typeNameTable[77] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
-            _typeNameTable[78] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
-            _typeNameTable[79] = "Microsoft.UI.Xaml.Controls.IconElement";
-            _typeNameTable[80] = "Microsoft.UI.Xaml.Controls.InfoBadge";
-            _typeNameTable[81] = "MattTools.MainWindow";
-            _typeNameTable[82] = "MattTools.Selectors.MenuItemTemplateSelector";
-            _typeNameTable[83] = "MattTools.Views.HomeView";
-            _typeNameTable[84] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[85] = "MattTools.ViewModels.InvoiceMergerViewModel";
-            _typeNameTable[86] = "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.MergeFile>";
-            _typeNameTable[87] = "System.Collections.ObjectModel.Collection`1<MattTools.Models.MergeFile>";
-            _typeNameTable[88] = "MattTools.Models.MergeFile";
-            _typeNameTable[89] = "MattTools.Models.MergeFileStatus";
-            _typeNameTable[90] = "MattTools.Converters.MergeStatusIndicatorConverter";
-            _typeNameTable[91] = "Microsoft.UI.Xaml.Media.SolidColorBrush";
-            _typeNameTable[92] = "Microsoft.UI.Xaml.Controls.ProgressBar";
-            _typeNameTable[93] = "Microsoft.UI.Xaml.Controls.Primitives.RangeBase";
-            _typeNameTable[94] = "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings";
-            _typeNameTable[95] = "MattTools.Interactions.AlternateListViewBehavior";
-            _typeNameTable[96] = "MattTools.Views.InvoiceMergerView";
-            _typeNameTable[97] = "MattTools.Views.PageNotFoundView";
-            _typeNameTable[98] = "MattTools.ViewModels.RossumExtractorViewModel";
-            _typeNameTable[99] = "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.Workspace>";
-            _typeNameTable[100] = "System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.Workspace>";
-            _typeNameTable[101] = "MattTools.Models.Rossum.Workspace";
-            _typeNameTable[102] = "System.Collections.Generic.List`1<String>";
-            _typeNameTable[103] = "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.Queue>";
-            _typeNameTable[104] = "System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.Queue>";
-            _typeNameTable[105] = "MattTools.Models.Rossum.Queue";
-            _typeNameTable[106] = "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.RossumItem>";
-            _typeNameTable[107] = "System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.RossumItem>";
-            _typeNameTable[108] = "MattTools.Models.Rossum.RossumItem";
-            _typeNameTable[109] = "MattTools.Converters.RossumStatusIndicatorConverter";
-            _typeNameTable[110] = "Microsoft.UI.Xaml.Controls.DropDownButton";
-            _typeNameTable[111] = "CommunityToolkit.WinUI.UI.Effects";
-            _typeNameTable[112] = "Microsoft.UI.Xaml.FrameworkElement";
-            _typeNameTable[113] = "MattTools.Views.RossumExtractorView";
-            _typeNameTable[114] = "CommunityToolkit.WinUI.Controls.SettingsCard";
-            _typeNameTable[115] = "CommunityToolkit.WinUI.Controls.ContentAlignment";
-            _typeNameTable[116] = "Microsoft.UI.Xaml.Controls.ImageIcon";
-            _typeNameTable[117] = "Microsoft.UI.Xaml.Media.ImageSource";
-            _typeNameTable[118] = "CommunityToolkit.WinUI.FontIconExtension";
-            _typeNameTable[119] = "CommunityToolkit.WinUI.TextIconExtension";
-            _typeNameTable[120] = "Microsoft.UI.Xaml.Markup.MarkupExtension";
-            _typeNameTable[121] = "Microsoft.UI.Xaml.Media.FontFamily";
-            _typeNameTable[122] = "Windows.UI.Text.FontWeight";
-            _typeNameTable[123] = "Windows.UI.Text.FontStyle";
-            _typeNameTable[124] = "MattTools.Views.SettingView";
-            _typeNameTable[125] = "MattTools.ViewModels.SOAMergerViewModel";
-            _typeNameTable[126] = "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.SOAFile>";
-            _typeNameTable[127] = "System.Collections.ObjectModel.Collection`1<MattTools.Models.SOAFile>";
-            _typeNameTable[128] = "MattTools.Models.SOAFile";
-            _typeNameTable[129] = "NPOI.SS.UserModel.ISheet";
-            _typeNameTable[130] = "MattTools.Views.SOAMergerView";
-            _typeNameTable[131] = "MattTools.Views.ZesthubView";
-            _typeNameTable[132] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[133] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[7] = "Converters.BoolToVisibilityConverter";
+            _typeNameTable[8] = "Microsoft.UI.Xaml.Thickness";
+            _typeNameTable[9] = "System.ValueType";
+            _typeNameTable[10] = "Double";
+            _typeNameTable[11] = "CommunityToolkit.WinUI.UI.Media.AttachedCardShadow";
+            _typeNameTable[12] = "CommunityToolkit.WinUI.UI.AttachedShadowBase";
+            _typeNameTable[13] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[14] = "String";
+            _typeNameTable[15] = "Windows.UI.Color";
+            _typeNameTable[16] = "Microsoft.UI.Xaml.Controls.Button";
+            _typeNameTable[17] = "MattTools.Controls.Clock";
+            _typeNameTable[18] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[19] = "Controls.LineBorder";
+            _typeNameTable[20] = "Microsoft.UI.Xaml.Controls.InfoBar";
+            _typeNameTable[21] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[22] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
+            _typeNameTable[23] = "System.Windows.Input.ICommand";
+            _typeNameTable[24] = "Microsoft.UI.Xaml.Style";
+            _typeNameTable[25] = "Microsoft.UI.Xaml.DataTemplate";
+            _typeNameTable[26] = "Microsoft.UI.Xaml.Controls.IconSource";
+            _typeNameTable[27] = "Microsoft.UI.Xaml.Controls.InfoBarSeverity";
+            _typeNameTable[28] = "System.Enum";
+            _typeNameTable[29] = "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings";
+            _typeNameTable[30] = "Microsoft.UI.Xaml.Controls.Expander";
+            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.ExpandDirection";
+            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings";
+            _typeNameTable[35] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[36] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[37] = "Microsoft.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[38] = "MattTools.Interactions.LineItemListViewBehavior";
+            _typeNameTable[39] = "Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.ListView>";
+            _typeNameTable[40] = "Microsoft.Xaml.Interactivity.Behavior";
+            _typeNameTable[41] = "Microsoft.UI.Xaml.Media.Brush";
+            _typeNameTable[42] = "Microsoft.UI.Xaml.Controls.ListView";
+            _typeNameTable[43] = "MattTools.Interactions.ShowItemIndexBehavior";
+            _typeNameTable[44] = "Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.ListViewBase>";
+            _typeNameTable[45] = "Microsoft.UI.Xaml.Controls.ListViewBase";
+            _typeNameTable[46] = "Controls.SupplierInvoiceForm";
+            _typeNameTable[47] = "MattTools.ViewModels.ZesthubViewModel";
+            _typeNameTable[48] = "MattTools.Models.PropertyChangedBaseModel";
+            _typeNameTable[49] = "System.Collections.Generic.List`1<Models.Zesthub.Account>";
+            _typeNameTable[50] = "Models.Zesthub.Account";
+            _typeNameTable[51] = "Int32";
+            _typeNameTable[52] = "System.Nullable`1<System.DateTime>";
+            _typeNameTable[53] = "System.DateTime";
+            _typeNameTable[54] = "MattTools.Models.Zesthub.InvoiceData";
+            _typeNameTable[55] = "Models.Zesthub.SupplierInvoiceData";
+            _typeNameTable[56] = "MattTools.Dialogs.MergeFileDialog";
+            _typeNameTable[57] = "Microsoft.UI.Xaml.Controls.ContentDialog";
+            _typeNameTable[58] = "WinUIEx.WindowEx";
+            _typeNameTable[59] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[60] = "Microsoft.UI.Windowing.AppWindow";
+            _typeNameTable[61] = "WinUIEx.Icon";
+            _typeNameTable[62] = "WinUIEx.WindowState";
+            _typeNameTable[63] = "Microsoft.UI.Windowing.AppWindowPresenter";
+            _typeNameTable[64] = "Microsoft.UI.Windowing.AppWindowPresenterKind";
+            _typeNameTable[65] = "WinUIEx.SystemBackdrop";
+            _typeNameTable[66] = "Microsoft.UI.Xaml.Controls.NavigationView";
+            _typeNameTable[67] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
+            _typeNameTable[68] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
+            _typeNameTable[69] = "Microsoft.UI.Xaml.UIElement";
+            _typeNameTable[70] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
+            _typeNameTable[71] = "System.Collections.Generic.IList`1<Object>";
+            _typeNameTable[72] = "Microsoft.UI.Xaml.Controls.StyleSelector";
+            _typeNameTable[73] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
+            _typeNameTable[74] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
+            _typeNameTable[75] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
+            _typeNameTable[76] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
+            _typeNameTable[77] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
+            _typeNameTable[78] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
+            _typeNameTable[79] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
+            _typeNameTable[80] = "Microsoft.UI.Xaml.Controls.IconElement";
+            _typeNameTable[81] = "Microsoft.UI.Xaml.Controls.InfoBadge";
+            _typeNameTable[82] = "MattTools.MainWindow";
+            _typeNameTable[83] = "MattTools.Selectors.MenuItemTemplateSelector";
+            _typeNameTable[84] = "MattTools.Views.HomeView";
+            _typeNameTable[85] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[86] = "MattTools.ViewModels.InvoiceMergerViewModel";
+            _typeNameTable[87] = "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.MergeFile>";
+            _typeNameTable[88] = "System.Collections.ObjectModel.Collection`1<MattTools.Models.MergeFile>";
+            _typeNameTable[89] = "MattTools.Models.MergeFile";
+            _typeNameTable[90] = "MattTools.Models.MergeFileStatus";
+            _typeNameTable[91] = "MattTools.Converters.MergeStatusIndicatorConverter";
+            _typeNameTable[92] = "Microsoft.UI.Xaml.Media.SolidColorBrush";
+            _typeNameTable[93] = "Microsoft.UI.Xaml.Controls.ProgressBar";
+            _typeNameTable[94] = "Microsoft.UI.Xaml.Controls.Primitives.RangeBase";
+            _typeNameTable[95] = "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings";
+            _typeNameTable[96] = "MattTools.Interactions.AlternateListViewBehavior";
+            _typeNameTable[97] = "MattTools.Views.InvoiceMergerView";
+            _typeNameTable[98] = "MattTools.Views.PageNotFoundView";
+            _typeNameTable[99] = "ViewModels.PdfEditorViewModel";
+            _typeNameTable[100] = "System.Collections.ObjectModel.ObservableCollection`1<Models.PdfEditor.PDoc>";
+            _typeNameTable[101] = "System.Collections.ObjectModel.Collection`1<Models.PdfEditor.PDoc>";
+            _typeNameTable[102] = "Models.PdfEditor.PDoc";
+            _typeNameTable[103] = "PdfSharp.Pdf.PdfDocument";
+            _typeNameTable[104] = "PdfSharp.Pdf.PdfObject";
+            _typeNameTable[105] = "PdfSharp.Pdf.PdfItem";
+            _typeNameTable[106] = "System.Collections.Generic.List`1<Models.PdfEditor.PPage>";
+            _typeNameTable[107] = "Models.PdfEditor.PPage";
+            _typeNameTable[108] = "Microsoft.UI.Xaml.Media.Imaging.BitmapImage";
+            _typeNameTable[109] = "PdfSharp.Pdf.PdfPage";
+            _typeNameTable[110] = "PdfSharp.Pdf.PdfDictionary";
+            _typeNameTable[111] = "System.Collections.ObjectModel.ObservableCollection`1<Models.PdfEditor.PPage>";
+            _typeNameTable[112] = "System.Collections.ObjectModel.Collection`1<Models.PdfEditor.PPage>";
+            _typeNameTable[113] = "Microsoft.UI.Xaml.Controls.ProgressRing";
+            _typeNameTable[114] = "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings";
+            _typeNameTable[115] = "Views.PdfCompressorView";
+            _typeNameTable[116] = "CommunityToolkit.WinUI.UI.Effects";
+            _typeNameTable[117] = "Microsoft.UI.Xaml.FrameworkElement";
+            _typeNameTable[118] = "Microsoft.UI.Xaml.Controls.ScrollView";
+            _typeNameTable[119] = "Microsoft.UI.Xaml.Visibility";
+            _typeNameTable[120] = "Microsoft.UI.Xaml.Controls.ScrollingScrollMode";
+            _typeNameTable[121] = "Microsoft.UI.Xaml.Controls.ScrollingContentOrientation";
+            _typeNameTable[122] = "Microsoft.UI.Composition.CompositionPropertySet";
+            _typeNameTable[123] = "Microsoft.UI.Composition.CompositionObject";
+            _typeNameTable[124] = "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility";
+            _typeNameTable[125] = "Microsoft.UI.Xaml.Controls.ScrollingChainMode";
+            _typeNameTable[126] = "Microsoft.UI.Xaml.Controls.ScrollingRailMode";
+            _typeNameTable[127] = "Microsoft.UI.Xaml.Controls.ScrollingInputKinds";
+            _typeNameTable[128] = "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter";
+            _typeNameTable[129] = "Microsoft.UI.Xaml.Controls.ScrollingInteractionState";
+            _typeNameTable[130] = "Single";
+            _typeNameTable[131] = "Microsoft.UI.Xaml.Controls.ScrollingZoomMode";
+            _typeNameTable[132] = "Views.PdfOrganizerView";
+            _typeNameTable[133] = "MattTools.ViewModels.RossumExtractorViewModel";
+            _typeNameTable[134] = "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.Workspace>";
+            _typeNameTable[135] = "System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.Workspace>";
+            _typeNameTable[136] = "MattTools.Models.Rossum.Workspace";
+            _typeNameTable[137] = "System.Collections.Generic.List`1<String>";
+            _typeNameTable[138] = "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.Queue>";
+            _typeNameTable[139] = "System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.Queue>";
+            _typeNameTable[140] = "MattTools.Models.Rossum.Queue";
+            _typeNameTable[141] = "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.RossumItem>";
+            _typeNameTable[142] = "System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.RossumItem>";
+            _typeNameTable[143] = "MattTools.Models.Rossum.RossumItem";
+            _typeNameTable[144] = "MattTools.Converters.RossumStatusIndicatorConverter";
+            _typeNameTable[145] = "Microsoft.UI.Xaml.Controls.DropDownButton";
+            _typeNameTable[146] = "MattTools.Views.RossumExtractorView";
+            _typeNameTable[147] = "CommunityToolkit.WinUI.Controls.SettingsCard";
+            _typeNameTable[148] = "CommunityToolkit.WinUI.Controls.ContentAlignment";
+            _typeNameTable[149] = "Microsoft.UI.Xaml.Controls.ImageIcon";
+            _typeNameTable[150] = "Microsoft.UI.Xaml.Media.ImageSource";
+            _typeNameTable[151] = "CommunityToolkit.WinUI.FontIconExtension";
+            _typeNameTable[152] = "CommunityToolkit.WinUI.TextIconExtension";
+            _typeNameTable[153] = "Microsoft.UI.Xaml.Markup.MarkupExtension";
+            _typeNameTable[154] = "Microsoft.UI.Xaml.Media.FontFamily";
+            _typeNameTable[155] = "Windows.UI.Text.FontWeight";
+            _typeNameTable[156] = "Windows.UI.Text.FontStyle";
+            _typeNameTable[157] = "MattTools.Views.SettingView";
+            _typeNameTable[158] = "MattTools.ViewModels.SOAMergerViewModel";
+            _typeNameTable[159] = "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.SOAFile>";
+            _typeNameTable[160] = "System.Collections.ObjectModel.Collection`1<MattTools.Models.SOAFile>";
+            _typeNameTable[161] = "MattTools.Models.SOAFile";
+            _typeNameTable[162] = "NPOI.SS.UserModel.ISheet";
+            _typeNameTable[163] = "MattTools.Views.SOAMergerView";
+            _typeNameTable[164] = "MattTools.Views.ZesthubView";
+            _typeNameTable[165] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[166] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[134];
+            _typeTable = new global::System.Type[167];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -368,135 +401,168 @@ namespace MattTools.MattTools_XamlTypeInfo
             _typeTable[4] = typeof(global::Converters.TextBlockFormatConverter);
             _typeTable[5] = typeof(global::Converters.NumberFormatConverter);
             _typeTable[6] = typeof(global::Converters.DateTimeConverter);
-            _typeTable[7] = typeof(global::Microsoft.UI.Xaml.Thickness);
-            _typeTable[8] = typeof(global::System.ValueType);
-            _typeTable[9] = typeof(global::System.Double);
-            _typeTable[10] = typeof(global::CommunityToolkit.WinUI.UI.Media.AttachedCardShadow);
-            _typeTable[11] = typeof(global::CommunityToolkit.WinUI.UI.AttachedShadowBase);
-            _typeTable[12] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[13] = typeof(global::System.String);
-            _typeTable[14] = typeof(global::Windows.UI.Color);
-            _typeTable[15] = typeof(global::Microsoft.UI.Xaml.Controls.Button);
-            _typeTable[16] = typeof(global::MattTools.Controls.Clock);
-            _typeTable[17] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[18] = typeof(global::Controls.LineBorder);
-            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBar);
-            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[21] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
-            _typeTable[22] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Style);
-            _typeTable[24] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
-            _typeTable[25] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
-            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarSeverity);
-            _typeTable[27] = typeof(global::System.Enum);
-            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings);
-            _typeTable[29] = typeof(global::Microsoft.UI.Xaml.Controls.Expander);
-            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
-            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection);
-            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings);
-            _typeTable[34] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[35] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.DependencyObjectCollection);
-            _typeTable[37] = typeof(global::MattTools.Interactions.LineItemListViewBehavior);
-            _typeTable[38] = typeof(global::Microsoft.Xaml.Interactivity.Behavior<global::Microsoft.UI.Xaml.Controls.ListView>);
-            _typeTable[39] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
-            _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Media.Brush);
-            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.ListView);
-            _typeTable[42] = typeof(global::MattTools.Interactions.ShowItemIndexBehavior);
-            _typeTable[43] = typeof(global::Microsoft.Xaml.Interactivity.Behavior<global::Microsoft.UI.Xaml.Controls.ListViewBase>);
-            _typeTable[44] = typeof(global::Microsoft.UI.Xaml.Controls.ListViewBase);
-            _typeTable[45] = typeof(global::Controls.SupplierInvoiceForm);
-            _typeTable[46] = typeof(global::MattTools.ViewModels.ZesthubViewModel);
-            _typeTable[47] = typeof(global::MattTools.Models.PropertyChangedBaseModel);
-            _typeTable[48] = typeof(global::System.Collections.Generic.List<global::Models.Zesthub.Account>);
-            _typeTable[49] = typeof(global::Models.Zesthub.Account);
-            _typeTable[50] = typeof(global::System.Int32);
-            _typeTable[51] = typeof(global::System.Nullable<global::System.DateTime>);
-            _typeTable[52] = typeof(global::System.DateTime);
-            _typeTable[53] = typeof(global::MattTools.Models.Zesthub.InvoiceData);
-            _typeTable[54] = typeof(global::Models.Zesthub.SupplierInvoiceData);
-            _typeTable[55] = typeof(global::MattTools.Dialogs.MergeFileDialog);
-            _typeTable[56] = typeof(global::Microsoft.UI.Xaml.Controls.ContentDialog);
-            _typeTable[57] = typeof(global::WinUIEx.WindowEx);
-            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[59] = typeof(global::Microsoft.UI.Windowing.AppWindow);
-            _typeTable[60] = typeof(global::WinUIEx.Icon);
-            _typeTable[61] = typeof(global::WinUIEx.WindowState);
-            _typeTable[62] = typeof(global::Microsoft.UI.Windowing.AppWindowPresenter);
-            _typeTable[63] = typeof(global::Microsoft.UI.Windowing.AppWindowPresenterKind);
+            _typeTable[7] = typeof(global::Converters.BoolToVisibilityConverter);
+            _typeTable[8] = typeof(global::Microsoft.UI.Xaml.Thickness);
+            _typeTable[9] = typeof(global::System.ValueType);
+            _typeTable[10] = typeof(global::System.Double);
+            _typeTable[11] = typeof(global::CommunityToolkit.WinUI.UI.Media.AttachedCardShadow);
+            _typeTable[12] = typeof(global::CommunityToolkit.WinUI.UI.AttachedShadowBase);
+            _typeTable[13] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[14] = typeof(global::System.String);
+            _typeTable[15] = typeof(global::Windows.UI.Color);
+            _typeTable[16] = typeof(global::Microsoft.UI.Xaml.Controls.Button);
+            _typeTable[17] = typeof(global::MattTools.Controls.Clock);
+            _typeTable[18] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[19] = typeof(global::Controls.LineBorder);
+            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBar);
+            _typeTable[21] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
+            _typeTable[23] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[24] = typeof(global::Microsoft.UI.Xaml.Style);
+            _typeTable[25] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
+            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
+            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarSeverity);
+            _typeTable[28] = typeof(global::System.Enum);
+            _typeTable[29] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings);
+            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Controls.Expander);
+            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
+            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection);
+            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings);
+            _typeTable[35] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[36] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.DependencyObjectCollection);
+            _typeTable[38] = typeof(global::MattTools.Interactions.LineItemListViewBehavior);
+            _typeTable[39] = typeof(global::Microsoft.Xaml.Interactivity.Behavior<global::Microsoft.UI.Xaml.Controls.ListView>);
+            _typeTable[40] = typeof(global::Microsoft.Xaml.Interactivity.Behavior);
+            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Media.Brush);
+            _typeTable[42] = typeof(global::Microsoft.UI.Xaml.Controls.ListView);
+            _typeTable[43] = typeof(global::MattTools.Interactions.ShowItemIndexBehavior);
+            _typeTable[44] = typeof(global::Microsoft.Xaml.Interactivity.Behavior<global::Microsoft.UI.Xaml.Controls.ListViewBase>);
+            _typeTable[45] = typeof(global::Microsoft.UI.Xaml.Controls.ListViewBase);
+            _typeTable[46] = typeof(global::Controls.SupplierInvoiceForm);
+            _typeTable[47] = typeof(global::MattTools.ViewModels.ZesthubViewModel);
+            _typeTable[48] = typeof(global::MattTools.Models.PropertyChangedBaseModel);
+            _typeTable[49] = typeof(global::System.Collections.Generic.List<global::Models.Zesthub.Account>);
+            _typeTable[50] = typeof(global::Models.Zesthub.Account);
+            _typeTable[51] = typeof(global::System.Int32);
+            _typeTable[52] = typeof(global::System.Nullable<global::System.DateTime>);
+            _typeTable[53] = typeof(global::System.DateTime);
+            _typeTable[54] = typeof(global::MattTools.Models.Zesthub.InvoiceData);
+            _typeTable[55] = typeof(global::Models.Zesthub.SupplierInvoiceData);
+            _typeTable[56] = typeof(global::MattTools.Dialogs.MergeFileDialog);
+            _typeTable[57] = typeof(global::Microsoft.UI.Xaml.Controls.ContentDialog);
+            _typeTable[58] = typeof(global::WinUIEx.WindowEx);
+            _typeTable[59] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[60] = typeof(global::Microsoft.UI.Windowing.AppWindow);
+            _typeTable[61] = typeof(global::WinUIEx.Icon);
+            _typeTable[62] = typeof(global::WinUIEx.WindowState);
+            _typeTable[63] = typeof(global::Microsoft.UI.Windowing.AppWindowPresenter);
+            _typeTable[64] = typeof(global::Microsoft.UI.Windowing.AppWindowPresenterKind);
 #pragma warning disable 0618  //   Warning on Deprecated usage
-            _typeTable[64] = typeof(global::WinUIEx.SystemBackdrop);
+            _typeTable[65] = typeof(global::WinUIEx.SystemBackdrop);
 #pragma warning restore 0618
-            _typeTable[65] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
-            _typeTable[66] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
-            _typeTable[67] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
-            _typeTable[68] = typeof(global::Microsoft.UI.Xaml.UIElement);
-            _typeTable[69] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
-            _typeTable[70] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
-            _typeTable[71] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
-            _typeTable[72] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
-            _typeTable[73] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
-            _typeTable[74] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
-            _typeTable[75] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
-            _typeTable[76] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
-            _typeTable[77] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
-            _typeTable[78] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
-            _typeTable[79] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
-            _typeTable[80] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
-            _typeTable[81] = typeof(global::MattTools.MainWindow);
-            _typeTable[82] = typeof(global::MattTools.Selectors.MenuItemTemplateSelector);
-            _typeTable[83] = typeof(global::MattTools.Views.HomeView);
-            _typeTable[84] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[85] = typeof(global::MattTools.ViewModels.InvoiceMergerViewModel);
-            _typeTable[86] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.MergeFile>);
-            _typeTable[87] = typeof(global::System.Collections.ObjectModel.Collection<global::MattTools.Models.MergeFile>);
-            _typeTable[88] = typeof(global::MattTools.Models.MergeFile);
-            _typeTable[89] = typeof(global::MattTools.Models.MergeFileStatus);
-            _typeTable[90] = typeof(global::MattTools.Converters.MergeStatusIndicatorConverter);
-            _typeTable[91] = typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush);
-            _typeTable[92] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar);
-            _typeTable[93] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.RangeBase);
-            _typeTable[94] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings);
-            _typeTable[95] = typeof(global::MattTools.Interactions.AlternateListViewBehavior);
-            _typeTable[96] = typeof(global::MattTools.Views.InvoiceMergerView);
-            _typeTable[97] = typeof(global::MattTools.Views.PageNotFoundView);
-            _typeTable[98] = typeof(global::MattTools.ViewModels.RossumExtractorViewModel);
-            _typeTable[99] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.Workspace>);
-            _typeTable[100] = typeof(global::System.Collections.ObjectModel.Collection<global::MattTools.Models.Rossum.Workspace>);
-            _typeTable[101] = typeof(global::MattTools.Models.Rossum.Workspace);
-            _typeTable[102] = typeof(global::System.Collections.Generic.List<global::System.String>);
-            _typeTable[103] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.Queue>);
-            _typeTable[104] = typeof(global::System.Collections.ObjectModel.Collection<global::MattTools.Models.Rossum.Queue>);
-            _typeTable[105] = typeof(global::MattTools.Models.Rossum.Queue);
-            _typeTable[106] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.RossumItem>);
-            _typeTable[107] = typeof(global::System.Collections.ObjectModel.Collection<global::MattTools.Models.Rossum.RossumItem>);
-            _typeTable[108] = typeof(global::MattTools.Models.Rossum.RossumItem);
-            _typeTable[109] = typeof(global::MattTools.Converters.RossumStatusIndicatorConverter);
-            _typeTable[110] = typeof(global::Microsoft.UI.Xaml.Controls.DropDownButton);
-            _typeTable[111] = typeof(global::CommunityToolkit.WinUI.UI.Effects);
-            _typeTable[112] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
-            _typeTable[113] = typeof(global::MattTools.Views.RossumExtractorView);
-            _typeTable[114] = typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard);
-            _typeTable[115] = typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment);
-            _typeTable[116] = typeof(global::Microsoft.UI.Xaml.Controls.ImageIcon);
-            _typeTable[117] = typeof(global::Microsoft.UI.Xaml.Media.ImageSource);
-            _typeTable[118] = typeof(global::CommunityToolkit.WinUI.FontIconExtension);
-            _typeTable[119] = typeof(global::CommunityToolkit.WinUI.TextIconExtension);
-            _typeTable[120] = typeof(global::Microsoft.UI.Xaml.Markup.MarkupExtension);
-            _typeTable[121] = typeof(global::Microsoft.UI.Xaml.Media.FontFamily);
-            _typeTable[122] = typeof(global::Windows.UI.Text.FontWeight);
-            _typeTable[123] = typeof(global::Windows.UI.Text.FontStyle);
-            _typeTable[124] = typeof(global::MattTools.Views.SettingView);
-            _typeTable[125] = typeof(global::MattTools.ViewModels.SOAMergerViewModel);
-            _typeTable[126] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.SOAFile>);
-            _typeTable[127] = typeof(global::System.Collections.ObjectModel.Collection<global::MattTools.Models.SOAFile>);
-            _typeTable[128] = typeof(global::MattTools.Models.SOAFile);
-            _typeTable[129] = typeof(global::NPOI.SS.UserModel.ISheet);
-            _typeTable[130] = typeof(global::MattTools.Views.SOAMergerView);
-            _typeTable[131] = typeof(global::MattTools.Views.ZesthubView);
-            _typeTable[132] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[133] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[66] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
+            _typeTable[67] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
+            _typeTable[68] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
+            _typeTable[69] = typeof(global::Microsoft.UI.Xaml.UIElement);
+            _typeTable[70] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
+            _typeTable[71] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
+            _typeTable[72] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
+            _typeTable[73] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
+            _typeTable[74] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
+            _typeTable[75] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
+            _typeTable[76] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
+            _typeTable[77] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
+            _typeTable[78] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
+            _typeTable[79] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
+            _typeTable[80] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
+            _typeTable[81] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
+            _typeTable[82] = typeof(global::MattTools.MainWindow);
+            _typeTable[83] = typeof(global::MattTools.Selectors.MenuItemTemplateSelector);
+            _typeTable[84] = typeof(global::MattTools.Views.HomeView);
+            _typeTable[85] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[86] = typeof(global::MattTools.ViewModels.InvoiceMergerViewModel);
+            _typeTable[87] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.MergeFile>);
+            _typeTable[88] = typeof(global::System.Collections.ObjectModel.Collection<global::MattTools.Models.MergeFile>);
+            _typeTable[89] = typeof(global::MattTools.Models.MergeFile);
+            _typeTable[90] = typeof(global::MattTools.Models.MergeFileStatus);
+            _typeTable[91] = typeof(global::MattTools.Converters.MergeStatusIndicatorConverter);
+            _typeTable[92] = typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush);
+            _typeTable[93] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar);
+            _typeTable[94] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.RangeBase);
+            _typeTable[95] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings);
+            _typeTable[96] = typeof(global::MattTools.Interactions.AlternateListViewBehavior);
+            _typeTable[97] = typeof(global::MattTools.Views.InvoiceMergerView);
+            _typeTable[98] = typeof(global::MattTools.Views.PageNotFoundView);
+            _typeTable[99] = typeof(global::ViewModels.PdfEditorViewModel);
+            _typeTable[100] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Models.PdfEditor.PDoc>);
+            _typeTable[101] = typeof(global::System.Collections.ObjectModel.Collection<global::Models.PdfEditor.PDoc>);
+            _typeTable[102] = typeof(global::Models.PdfEditor.PDoc);
+            _typeTable[103] = typeof(global::PdfSharp.Pdf.PdfDocument);
+            _typeTable[104] = typeof(global::PdfSharp.Pdf.PdfObject);
+            _typeTable[105] = typeof(global::PdfSharp.Pdf.PdfItem);
+            _typeTable[106] = typeof(global::System.Collections.Generic.List<global::Models.PdfEditor.PPage>);
+            _typeTable[107] = typeof(global::Models.PdfEditor.PPage);
+            _typeTable[108] = typeof(global::Microsoft.UI.Xaml.Media.Imaging.BitmapImage);
+            _typeTable[109] = typeof(global::PdfSharp.Pdf.PdfPage);
+            _typeTable[110] = typeof(global::PdfSharp.Pdf.PdfDictionary);
+            _typeTable[111] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Models.PdfEditor.PPage>);
+            _typeTable[112] = typeof(global::System.Collections.ObjectModel.Collection<global::Models.PdfEditor.PPage>);
+            _typeTable[113] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing);
+            _typeTable[114] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings);
+            _typeTable[115] = typeof(global::Views.PdfCompressorView);
+            _typeTable[116] = typeof(global::CommunityToolkit.WinUI.UI.Effects);
+            _typeTable[117] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
+            _typeTable[118] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollView);
+            _typeTable[119] = typeof(global::Microsoft.UI.Xaml.Visibility);
+            _typeTable[120] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode);
+            _typeTable[121] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation);
+            _typeTable[122] = typeof(global::Microsoft.UI.Composition.CompositionPropertySet);
+            _typeTable[123] = typeof(global::Microsoft.UI.Composition.CompositionObject);
+            _typeTable[124] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility);
+            _typeTable[125] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingChainMode);
+            _typeTable[126] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingRailMode);
+            _typeTable[127] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds);
+            _typeTable[128] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter);
+            _typeTable[129] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState);
+            _typeTable[130] = typeof(global::System.Single);
+            _typeTable[131] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode);
+            _typeTable[132] = typeof(global::Views.PdfOrganizerView);
+            _typeTable[133] = typeof(global::MattTools.ViewModels.RossumExtractorViewModel);
+            _typeTable[134] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.Workspace>);
+            _typeTable[135] = typeof(global::System.Collections.ObjectModel.Collection<global::MattTools.Models.Rossum.Workspace>);
+            _typeTable[136] = typeof(global::MattTools.Models.Rossum.Workspace);
+            _typeTable[137] = typeof(global::System.Collections.Generic.List<global::System.String>);
+            _typeTable[138] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.Queue>);
+            _typeTable[139] = typeof(global::System.Collections.ObjectModel.Collection<global::MattTools.Models.Rossum.Queue>);
+            _typeTable[140] = typeof(global::MattTools.Models.Rossum.Queue);
+            _typeTable[141] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.RossumItem>);
+            _typeTable[142] = typeof(global::System.Collections.ObjectModel.Collection<global::MattTools.Models.Rossum.RossumItem>);
+            _typeTable[143] = typeof(global::MattTools.Models.Rossum.RossumItem);
+            _typeTable[144] = typeof(global::MattTools.Converters.RossumStatusIndicatorConverter);
+            _typeTable[145] = typeof(global::Microsoft.UI.Xaml.Controls.DropDownButton);
+            _typeTable[146] = typeof(global::MattTools.Views.RossumExtractorView);
+            _typeTable[147] = typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard);
+            _typeTable[148] = typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment);
+            _typeTable[149] = typeof(global::Microsoft.UI.Xaml.Controls.ImageIcon);
+            _typeTable[150] = typeof(global::Microsoft.UI.Xaml.Media.ImageSource);
+            _typeTable[151] = typeof(global::CommunityToolkit.WinUI.FontIconExtension);
+            _typeTable[152] = typeof(global::CommunityToolkit.WinUI.TextIconExtension);
+            _typeTable[153] = typeof(global::Microsoft.UI.Xaml.Markup.MarkupExtension);
+            _typeTable[154] = typeof(global::Microsoft.UI.Xaml.Media.FontFamily);
+            _typeTable[155] = typeof(global::Windows.UI.Text.FontWeight);
+            _typeTable[156] = typeof(global::Windows.UI.Text.FontStyle);
+            _typeTable[157] = typeof(global::MattTools.Views.SettingView);
+            _typeTable[158] = typeof(global::MattTools.ViewModels.SOAMergerViewModel);
+            _typeTable[159] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.SOAFile>);
+            _typeTable[160] = typeof(global::System.Collections.ObjectModel.Collection<global::MattTools.Models.SOAFile>);
+            _typeTable[161] = typeof(global::MattTools.Models.SOAFile);
+            _typeTable[162] = typeof(global::NPOI.SS.UserModel.ISheet);
+            _typeTable[163] = typeof(global::MattTools.Views.SOAMergerView);
+            _typeTable[164] = typeof(global::MattTools.Views.ZesthubView);
+            _typeTable[165] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[166] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -535,65 +601,82 @@ namespace MattTools.MattTools_XamlTypeInfo
         private object Activate_4_TextBlockFormatConverter() { return new global::Converters.TextBlockFormatConverter(); }
         private object Activate_5_NumberFormatConverter() { return new global::Converters.NumberFormatConverter(); }
         private object Activate_6_DateTimeConverter() { return new global::Converters.DateTimeConverter(); }
-        private object Activate_10_AttachedCardShadow() { return new global::CommunityToolkit.WinUI.UI.Media.AttachedCardShadow(); }
-        private object Activate_16_Clock() { return new global::MattTools.Controls.Clock(); }
-        private object Activate_18_LineBorder() { return new global::Controls.LineBorder(); }
-        private object Activate_19_InfoBar() { return new global::Microsoft.UI.Xaml.Controls.InfoBar(); }
-        private object Activate_28_InfoBarTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings(); }
-        private object Activate_29_Expander() { return new global::Microsoft.UI.Xaml.Controls.Expander(); }
-        private object Activate_35_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_37_LineItemListViewBehavior() { return new global::MattTools.Interactions.LineItemListViewBehavior(); }
-        private object Activate_42_ShowItemIndexBehavior() { return new global::MattTools.Interactions.ShowItemIndexBehavior(); }
-        private object Activate_45_SupplierInvoiceForm() { return new global::Controls.SupplierInvoiceForm(); }
-        private object Activate_46_ZesthubViewModel() { return new global::MattTools.ViewModels.ZesthubViewModel(); }
-        private object Activate_47_PropertyChangedBaseModel() { return new global::MattTools.Models.PropertyChangedBaseModel(); }
-        private object Activate_48_List() { return new global::System.Collections.Generic.List<global::Models.Zesthub.Account>(); }
-        private object Activate_49_Account() { return new global::Models.Zesthub.Account(); }
-        private object Activate_53_InvoiceData() { return new global::MattTools.Models.Zesthub.InvoiceData(); }
-        private object Activate_54_SupplierInvoiceData() { return new global::Models.Zesthub.SupplierInvoiceData(); }
-        private object Activate_55_MergeFileDialog() { return new global::MattTools.Dialogs.MergeFileDialog(); }
-        private object Activate_57_WindowEx() { return new global::WinUIEx.WindowEx(); }
-        private object Activate_65_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
-        private object Activate_76_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
-        private object Activate_77_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
-        private object Activate_80_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
-        private object Activate_81_MainWindow() { return new global::MattTools.MainWindow(); }
-        private object Activate_82_MenuItemTemplateSelector() { return new global::MattTools.Selectors.MenuItemTemplateSelector(); }
-        private object Activate_83_HomeView() { return new global::MattTools.Views.HomeView(); }
-        private object Activate_85_InvoiceMergerViewModel() { return new global::MattTools.ViewModels.InvoiceMergerViewModel(); }
-        private object Activate_86_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.MergeFile>(); }
-        private object Activate_87_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MattTools.Models.MergeFile>(); }
-        private object Activate_88_MergeFile() { return new global::MattTools.Models.MergeFile(); }
-        private object Activate_90_MergeStatusIndicatorConverter() { return new global::MattTools.Converters.MergeStatusIndicatorConverter(); }
-        private object Activate_92_ProgressBar() { return new global::Microsoft.UI.Xaml.Controls.ProgressBar(); }
-        private object Activate_95_AlternateListViewBehavior() { return new global::MattTools.Interactions.AlternateListViewBehavior(); }
-        private object Activate_96_InvoiceMergerView() { return new global::MattTools.Views.InvoiceMergerView(); }
-        private object Activate_97_PageNotFoundView() { return new global::MattTools.Views.PageNotFoundView(); }
-        private object Activate_98_RossumExtractorViewModel() { return new global::MattTools.ViewModels.RossumExtractorViewModel(); }
-        private object Activate_99_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.Workspace>(); }
-        private object Activate_100_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MattTools.Models.Rossum.Workspace>(); }
-        private object Activate_101_Workspace() { return new global::MattTools.Models.Rossum.Workspace(); }
-        private object Activate_102_List() { return new global::System.Collections.Generic.List<global::System.String>(); }
-        private object Activate_103_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.Queue>(); }
-        private object Activate_104_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MattTools.Models.Rossum.Queue>(); }
-        private object Activate_105_Queue() { return new global::MattTools.Models.Rossum.Queue(); }
-        private object Activate_106_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.RossumItem>(); }
-        private object Activate_107_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MattTools.Models.Rossum.RossumItem>(); }
-        private object Activate_108_RossumItem() { return new global::MattTools.Models.Rossum.RossumItem(); }
-        private object Activate_109_RossumStatusIndicatorConverter() { return new global::MattTools.Converters.RossumStatusIndicatorConverter(); }
-        private object Activate_110_DropDownButton() { return new global::Microsoft.UI.Xaml.Controls.DropDownButton(); }
-        private object Activate_113_RossumExtractorView() { return new global::MattTools.Views.RossumExtractorView(); }
-        private object Activate_114_SettingsCard() { return new global::CommunityToolkit.WinUI.Controls.SettingsCard(); }
-        private object Activate_116_ImageIcon() { return new global::Microsoft.UI.Xaml.Controls.ImageIcon(); }
-        private object Activate_118_FontIconExtension() { return new global::CommunityToolkit.WinUI.FontIconExtension(); }
-        private object Activate_124_SettingView() { return new global::MattTools.Views.SettingView(); }
-        private object Activate_125_SOAMergerViewModel() { return new global::MattTools.ViewModels.SOAMergerViewModel(); }
-        private object Activate_126_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.SOAFile>(); }
-        private object Activate_127_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MattTools.Models.SOAFile>(); }
-        private object Activate_128_SOAFile() { return new global::MattTools.Models.SOAFile(); }
-        private object Activate_130_SOAMergerView() { return new global::MattTools.Views.SOAMergerView(); }
-        private object Activate_131_ZesthubView() { return new global::MattTools.Views.ZesthubView(); }
-        private object Activate_132_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_7_BoolToVisibilityConverter() { return new global::Converters.BoolToVisibilityConverter(); }
+        private object Activate_11_AttachedCardShadow() { return new global::CommunityToolkit.WinUI.UI.Media.AttachedCardShadow(); }
+        private object Activate_17_Clock() { return new global::MattTools.Controls.Clock(); }
+        private object Activate_19_LineBorder() { return new global::Controls.LineBorder(); }
+        private object Activate_20_InfoBar() { return new global::Microsoft.UI.Xaml.Controls.InfoBar(); }
+        private object Activate_29_InfoBarTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings(); }
+        private object Activate_30_Expander() { return new global::Microsoft.UI.Xaml.Controls.Expander(); }
+        private object Activate_36_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_38_LineItemListViewBehavior() { return new global::MattTools.Interactions.LineItemListViewBehavior(); }
+        private object Activate_43_ShowItemIndexBehavior() { return new global::MattTools.Interactions.ShowItemIndexBehavior(); }
+        private object Activate_46_SupplierInvoiceForm() { return new global::Controls.SupplierInvoiceForm(); }
+        private object Activate_47_ZesthubViewModel() { return new global::MattTools.ViewModels.ZesthubViewModel(); }
+        private object Activate_48_PropertyChangedBaseModel() { return new global::MattTools.Models.PropertyChangedBaseModel(); }
+        private object Activate_49_List() { return new global::System.Collections.Generic.List<global::Models.Zesthub.Account>(); }
+        private object Activate_50_Account() { return new global::Models.Zesthub.Account(); }
+        private object Activate_54_InvoiceData() { return new global::MattTools.Models.Zesthub.InvoiceData(); }
+        private object Activate_55_SupplierInvoiceData() { return new global::Models.Zesthub.SupplierInvoiceData(); }
+        private object Activate_56_MergeFileDialog() { return new global::MattTools.Dialogs.MergeFileDialog(); }
+        private object Activate_58_WindowEx() { return new global::WinUIEx.WindowEx(); }
+        private object Activate_66_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
+        private object Activate_77_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
+        private object Activate_78_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
+        private object Activate_81_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
+        private object Activate_82_MainWindow() { return new global::MattTools.MainWindow(); }
+        private object Activate_83_MenuItemTemplateSelector() { return new global::MattTools.Selectors.MenuItemTemplateSelector(); }
+        private object Activate_84_HomeView() { return new global::MattTools.Views.HomeView(); }
+        private object Activate_86_InvoiceMergerViewModel() { return new global::MattTools.ViewModels.InvoiceMergerViewModel(); }
+        private object Activate_87_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.MergeFile>(); }
+        private object Activate_88_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MattTools.Models.MergeFile>(); }
+        private object Activate_89_MergeFile() { return new global::MattTools.Models.MergeFile(); }
+        private object Activate_91_MergeStatusIndicatorConverter() { return new global::MattTools.Converters.MergeStatusIndicatorConverter(); }
+        private object Activate_93_ProgressBar() { return new global::Microsoft.UI.Xaml.Controls.ProgressBar(); }
+        private object Activate_96_AlternateListViewBehavior() { return new global::MattTools.Interactions.AlternateListViewBehavior(); }
+        private object Activate_97_InvoiceMergerView() { return new global::MattTools.Views.InvoiceMergerView(); }
+        private object Activate_98_PageNotFoundView() { return new global::MattTools.Views.PageNotFoundView(); }
+        private object Activate_99_PdfEditorViewModel() { return new global::ViewModels.PdfEditorViewModel(); }
+        private object Activate_100_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Models.PdfEditor.PDoc>(); }
+        private object Activate_101_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Models.PdfEditor.PDoc>(); }
+        private object Activate_102_PDoc() { return new global::Models.PdfEditor.PDoc(); }
+        private object Activate_103_PdfDocument() { return new global::PdfSharp.Pdf.PdfDocument(); }
+        private object Activate_106_List() { return new global::System.Collections.Generic.List<global::Models.PdfEditor.PPage>(); }
+        private object Activate_107_PPage() { return new global::Models.PdfEditor.PPage(); }
+        private object Activate_109_PdfPage() { return new global::PdfSharp.Pdf.PdfPage(); }
+        private object Activate_110_PdfDictionary() { return new global::PdfSharp.Pdf.PdfDictionary(); }
+        private object Activate_111_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Models.PdfEditor.PPage>(); }
+        private object Activate_112_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Models.PdfEditor.PPage>(); }
+        private object Activate_113_ProgressRing() { return new global::Microsoft.UI.Xaml.Controls.ProgressRing(); }
+        private object Activate_115_PdfCompressorView() { return new global::Views.PdfCompressorView(); }
+        private object Activate_118_ScrollView() { return new global::Microsoft.UI.Xaml.Controls.ScrollView(); }
+        private object Activate_128_ScrollPresenter() { return new global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter(); }
+        private object Activate_132_PdfOrganizerView() { return new global::Views.PdfOrganizerView(); }
+        private object Activate_133_RossumExtractorViewModel() { return new global::MattTools.ViewModels.RossumExtractorViewModel(); }
+        private object Activate_134_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.Workspace>(); }
+        private object Activate_135_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MattTools.Models.Rossum.Workspace>(); }
+        private object Activate_136_Workspace() { return new global::MattTools.Models.Rossum.Workspace(); }
+        private object Activate_137_List() { return new global::System.Collections.Generic.List<global::System.String>(); }
+        private object Activate_138_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.Queue>(); }
+        private object Activate_139_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MattTools.Models.Rossum.Queue>(); }
+        private object Activate_140_Queue() { return new global::MattTools.Models.Rossum.Queue(); }
+        private object Activate_141_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.RossumItem>(); }
+        private object Activate_142_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MattTools.Models.Rossum.RossumItem>(); }
+        private object Activate_143_RossumItem() { return new global::MattTools.Models.Rossum.RossumItem(); }
+        private object Activate_144_RossumStatusIndicatorConverter() { return new global::MattTools.Converters.RossumStatusIndicatorConverter(); }
+        private object Activate_145_DropDownButton() { return new global::Microsoft.UI.Xaml.Controls.DropDownButton(); }
+        private object Activate_146_RossumExtractorView() { return new global::MattTools.Views.RossumExtractorView(); }
+        private object Activate_147_SettingsCard() { return new global::CommunityToolkit.WinUI.Controls.SettingsCard(); }
+        private object Activate_149_ImageIcon() { return new global::Microsoft.UI.Xaml.Controls.ImageIcon(); }
+        private object Activate_151_FontIconExtension() { return new global::CommunityToolkit.WinUI.FontIconExtension(); }
+        private object Activate_157_SettingView() { return new global::MattTools.Views.SettingView(); }
+        private object Activate_158_SOAMergerViewModel() { return new global::MattTools.ViewModels.SOAMergerViewModel(); }
+        private object Activate_159_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.SOAFile>(); }
+        private object Activate_160_Collection() { return new global::System.Collections.ObjectModel.Collection<global::MattTools.Models.SOAFile>(); }
+        private object Activate_161_SOAFile() { return new global::MattTools.Models.SOAFile(); }
+        private object Activate_163_SOAMergerView() { return new global::MattTools.Views.SOAMergerView(); }
+        private object Activate_164_ZesthubView() { return new global::MattTools.Views.ZesthubView(); }
+        private object Activate_165_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -601,91 +684,121 @@ namespace MattTools.MattTools_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_35_BehaviorCollection(object instance, object item)
+        private void VectorAdd_36_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Microsoft.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_48_List(object instance, object item)
+        private void VectorAdd_49_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Models.Zesthub.Account>)instance;
             var newItem = (global::Models.Zesthub.Account)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_70_IList(object instance, object item)
+        private void VectorAdd_71_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_86_ObservableCollection(object instance, object item)
+        private void VectorAdd_87_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MattTools.Models.MergeFile>)instance;
             var newItem = (global::MattTools.Models.MergeFile)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_87_Collection(object instance, object item)
+        private void VectorAdd_88_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MattTools.Models.MergeFile>)instance;
             var newItem = (global::MattTools.Models.MergeFile)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_99_ObservableCollection(object instance, object item)
+        private void VectorAdd_100_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Models.PdfEditor.PDoc>)instance;
+            var newItem = (global::Models.PdfEditor.PDoc)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_101_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Models.PdfEditor.PDoc>)instance;
+            var newItem = (global::Models.PdfEditor.PDoc)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_106_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Models.PdfEditor.PPage>)instance;
+            var newItem = (global::Models.PdfEditor.PPage)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_111_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Models.PdfEditor.PPage>)instance;
+            var newItem = (global::Models.PdfEditor.PPage)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_112_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Models.PdfEditor.PPage>)instance;
+            var newItem = (global::Models.PdfEditor.PPage)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_134_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MattTools.Models.Rossum.Workspace>)instance;
             var newItem = (global::MattTools.Models.Rossum.Workspace)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_100_Collection(object instance, object item)
+        private void VectorAdd_135_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MattTools.Models.Rossum.Workspace>)instance;
             var newItem = (global::MattTools.Models.Rossum.Workspace)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_102_List(object instance, object item)
+        private void VectorAdd_137_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.String>)instance;
             var newItem = (global::System.String)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_103_ObservableCollection(object instance, object item)
+        private void VectorAdd_138_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MattTools.Models.Rossum.Queue>)instance;
             var newItem = (global::MattTools.Models.Rossum.Queue)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_104_Collection(object instance, object item)
+        private void VectorAdd_139_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MattTools.Models.Rossum.Queue>)instance;
             var newItem = (global::MattTools.Models.Rossum.Queue)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_106_ObservableCollection(object instance, object item)
+        private void VectorAdd_141_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MattTools.Models.Rossum.RossumItem>)instance;
             var newItem = (global::MattTools.Models.Rossum.RossumItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_107_Collection(object instance, object item)
+        private void VectorAdd_142_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MattTools.Models.Rossum.RossumItem>)instance;
             var newItem = (global::MattTools.Models.Rossum.RossumItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_126_ObservableCollection(object instance, object item)
+        private void VectorAdd_159_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MattTools.Models.SOAFile>)instance;
             var newItem = (global::MattTools.Models.SOAFile)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_127_Collection(object instance, object item)
+        private void VectorAdd_160_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MattTools.Models.SOAFile>)instance;
             var newItem = (global::MattTools.Models.SOAFile)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_133_IList(object instance, object item)
+        private void VectorAdd_166_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -743,7 +856,14 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 7:   //  Microsoft.UI.Xaml.Thickness
+            case 7:   //  Converters.BoolToVisibilityConverter
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_7_BoolToVisibilityConverter;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Microsoft.UI.Xaml.Thickness
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.AddMemberName("Left");
                 userType.AddMemberName("Top");
@@ -752,23 +872,23 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 8:   //  System.ValueType
+            case 9:   //  System.ValueType
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 9:   //  Double
+            case 10:   //  Double
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 10:   //  CommunityToolkit.WinUI.UI.Media.AttachedCardShadow
+            case 11:   //  CommunityToolkit.WinUI.UI.Media.AttachedCardShadow
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.WinUI.UI.AttachedShadowBase"));
-                userType.Activator = Activate_10_AttachedCardShadow;
+                userType.Activator = Activate_11_AttachedCardShadow;
                 userType.AddMemberName("CornerRadius");
                 xamlType = userType;
                 break;
 
-            case 11:   //  CommunityToolkit.WinUI.UI.AttachedShadowBase
+            case 12:   //  CommunityToolkit.WinUI.UI.AttachedShadowBase
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("BlurRadius");
                 userType.AddMemberName("Opacity");
@@ -777,45 +897,45 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 12:   //  Microsoft.UI.Xaml.DependencyObject
+            case 13:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 13:   //  String
+            case 14:   //  String
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 14:   //  Windows.UI.Color
+            case 15:   //  Windows.UI.Color
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 15:   //  Microsoft.UI.Xaml.Controls.Button
+            case 16:   //  Microsoft.UI.Xaml.Controls.Button
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 16:   //  MattTools.Controls.Clock
+            case 17:   //  MattTools.Controls.Clock
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_16_Clock;
+                userType.Activator = Activate_17_Clock;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  Microsoft.UI.Xaml.Controls.UserControl
+            case 18:   //  Microsoft.UI.Xaml.Controls.UserControl
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 18:   //  Controls.LineBorder
+            case 19:   //  Controls.LineBorder
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_18_LineBorder;
+                userType.Activator = Activate_19_LineBorder;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Microsoft.UI.Xaml.Controls.InfoBar
+            case 20:   //  Microsoft.UI.Xaml.Controls.InfoBar
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_19_InfoBar;
+                userType.Activator = Activate_20_InfoBar;
                 userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.InfoBar.Content");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Title");
@@ -834,33 +954,33 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 20:   //  Microsoft.UI.Xaml.Controls.Control
+            case 21:   //  Microsoft.UI.Xaml.Controls.Control
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 21:   //  Microsoft.UI.Xaml.Controls.Primitives.ButtonBase
+            case 22:   //  Microsoft.UI.Xaml.Controls.Primitives.ButtonBase
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 22:   //  System.Windows.Input.ICommand
+            case 23:   //  System.Windows.Input.ICommand
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 23:   //  Microsoft.UI.Xaml.Style
+            case 24:   //  Microsoft.UI.Xaml.Style
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 24:   //  Microsoft.UI.Xaml.DataTemplate
+            case 25:   //  Microsoft.UI.Xaml.DataTemplate
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 25:   //  Microsoft.UI.Xaml.Controls.IconSource
+            case 26:   //  Microsoft.UI.Xaml.Controls.IconSource
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 26:   //  Microsoft.UI.Xaml.Controls.InfoBarSeverity
+            case 27:   //  Microsoft.UI.Xaml.Controls.InfoBarSeverity
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Informational", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational);
                 userType.AddEnumValue("Success", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Success);
@@ -869,20 +989,20 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 27:   //  System.Enum
+            case 28:   //  System.Enum
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 28:   //  Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings
+            case 29:   //  Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 29:   //  Microsoft.UI.Xaml.Controls.Expander
+            case 30:   //  Microsoft.UI.Xaml.Controls.Expander
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_29_Expander;
+                userType.Activator = Activate_30_Expander;
                 userType.AddMemberName("Header");
                 userType.AddMemberName("ExpandDirection");
                 userType.AddMemberName("HeaderTemplate");
@@ -892,47 +1012,47 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 30:   //  Microsoft.UI.Xaml.Controls.ContentControl
+            case 31:   //  Microsoft.UI.Xaml.Controls.ContentControl
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 31:   //  Microsoft.UI.Xaml.Controls.ExpandDirection
+            case 32:   //  Microsoft.UI.Xaml.Controls.ExpandDirection
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Down", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Down);
                 userType.AddEnumValue("Up", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Up);
                 xamlType = userType;
                 break;
 
-            case 32:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
+            case 33:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 33:   //  Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings
+            case 34:   //  Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 34:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 35:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 35:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 36:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_35_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_36_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 36:   //  Microsoft.UI.Xaml.DependencyObjectCollection
+            case 37:   //  Microsoft.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 37:   //  MattTools.Interactions.LineItemListViewBehavior
+            case 38:   //  MattTools.Interactions.LineItemListViewBehavior
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.ListView>"));
-                userType.Activator = Activate_37_LineItemListViewBehavior;
+                userType.Activator = Activate_38_LineItemListViewBehavior;
                 userType.AddMemberName("BorderThickness");
                 userType.AddMemberName("MatchBackground");
                 userType.AddMemberName("MatchBorder");
@@ -942,46 +1062,46 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 38:   //  Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.ListView>
+            case 39:   //  Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.ListView>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 39:   //  Microsoft.Xaml.Interactivity.Behavior
+            case 40:   //  Microsoft.Xaml.Interactivity.Behavior
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 xamlType = userType;
                 break;
 
-            case 40:   //  Microsoft.UI.Xaml.Media.Brush
+            case 41:   //  Microsoft.UI.Xaml.Media.Brush
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 41:   //  Microsoft.UI.Xaml.Controls.ListView
+            case 42:   //  Microsoft.UI.Xaml.Controls.ListView
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 42:   //  MattTools.Interactions.ShowItemIndexBehavior
+            case 43:   //  MattTools.Interactions.ShowItemIndexBehavior
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.ListViewBase>"));
-                userType.Activator = Activate_42_ShowItemIndexBehavior;
+                userType.Activator = Activate_43_ShowItemIndexBehavior;
                 userType.AddMemberName("TextBlockName");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 43:   //  Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.ListViewBase>
+            case 44:   //  Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.ListViewBase>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior"));
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 44:   //  Microsoft.UI.Xaml.Controls.ListViewBase
+            case 45:   //  Microsoft.UI.Xaml.Controls.ListViewBase
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 45:   //  Controls.SupplierInvoiceForm
+            case 46:   //  Controls.SupplierInvoiceForm
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_45_SupplierInvoiceForm;
+                userType.Activator = Activate_46_SupplierInvoiceForm;
                 userType.AddMemberName("ViewModel");
                 userType.AddMemberName("Accounts");
                 userType.AddMemberName("Invoice");
@@ -990,9 +1110,9 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 46:   //  MattTools.ViewModels.ZesthubViewModel
+            case 47:   //  MattTools.ViewModels.ZesthubViewModel
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MattTools.Models.PropertyChangedBaseModel"));
-                userType.Activator = Activate_46_ZesthubViewModel;
+                userType.Activator = Activate_47_ZesthubViewModel;
                 userType.AddMemberName("supplierInvoiceFormControl");
                 userType.AddMemberName("InvoiceID");
                 userType.AddMemberName("SetAccountNumber");
@@ -1007,23 +1127,23 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 47:   //  MattTools.Models.PropertyChangedBaseModel
+            case 48:   //  MattTools.Models.PropertyChangedBaseModel
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_47_PropertyChangedBaseModel;
+                userType.Activator = Activate_48_PropertyChangedBaseModel;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 48:   //  System.Collections.Generic.List`1<Models.Zesthub.Account>
+            case 49:   //  System.Collections.Generic.List`1<Models.Zesthub.Account>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_48_List;
+                userType.CollectionAdd = VectorAdd_49_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 49:   //  Models.Zesthub.Account
+            case 50:   //  Models.Zesthub.Account
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_49_Account;
+                userType.Activator = Activate_50_Account;
                 userType.AddMemberName("ID");
                 userType.AddMemberName("CreatedAt");
                 userType.AddMemberName("DeletedAt");
@@ -1042,11 +1162,11 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 50:   //  Int32
+            case 51:   //  Int32
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 51:   //  System.Nullable`1<System.DateTime>
+            case 52:   //  System.Nullable`1<System.DateTime>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetBoxedType(GetXamlTypeByName("System.DateTime"));
                 userType.BoxInstance = userType.BoxType<global::System.DateTime>;
@@ -1054,41 +1174,41 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 52:   //  System.DateTime
+            case 53:   //  System.DateTime
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 53:   //  MattTools.Models.Zesthub.InvoiceData
+            case 54:   //  MattTools.Models.Zesthub.InvoiceData
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 54:   //  Models.Zesthub.SupplierInvoiceData
+            case 55:   //  Models.Zesthub.SupplierInvoiceData
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 55:   //  MattTools.Dialogs.MergeFileDialog
+            case 56:   //  MattTools.Dialogs.MergeFileDialog
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentDialog"));
-                userType.Activator = Activate_55_MergeFileDialog;
+                userType.Activator = Activate_56_MergeFileDialog;
                 userType.AddMemberName("InvoiceFileName");
                 userType.AddMemberName("TaxFileName");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 56:   //  Microsoft.UI.Xaml.Controls.ContentDialog
+            case 57:   //  Microsoft.UI.Xaml.Controls.ContentDialog
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 57:   //  WinUIEx.WindowEx
+            case 58:   //  WinUIEx.WindowEx
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_57_WindowEx;
+                userType.Activator = Activate_58_WindowEx;
                 userType.SetContentPropertyName("WinUIEx.WindowEx.WindowContent");
                 userType.AddMemberName("WindowContent");
                 userType.AddMemberName("Width");
@@ -1114,24 +1234,24 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 58:   //  Microsoft.UI.Xaml.Window
+            case 59:   //  Microsoft.UI.Xaml.Window
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 59:   //  Microsoft.UI.Windowing.AppWindow
+            case 60:   //  Microsoft.UI.Windowing.AppWindow
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 60:   //  WinUIEx.Icon
+            case 61:   //  WinUIEx.Icon
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.CreateFromStringMethod = global::WinUIEx.Icon.FromFile;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 61:   //  WinUIEx.WindowState
+            case 62:   //  WinUIEx.WindowState
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Normal", global::WinUIEx.WindowState.Normal);
                 userType.AddEnumValue("Minimized", global::WinUIEx.WindowState.Minimized);
@@ -1139,13 +1259,13 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 62:   //  Microsoft.UI.Windowing.AppWindowPresenter
+            case 63:   //  Microsoft.UI.Windowing.AppWindowPresenter
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 63:   //  Microsoft.UI.Windowing.AppWindowPresenterKind
+            case 64:   //  Microsoft.UI.Windowing.AppWindowPresenterKind
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Default", global::Microsoft.UI.Windowing.AppWindowPresenterKind.Default);
                 userType.AddEnumValue("CompactOverlay", global::Microsoft.UI.Windowing.AppWindowPresenterKind.CompactOverlay);
@@ -1154,15 +1274,15 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 64:   //  WinUIEx.SystemBackdrop
+            case 65:   //  WinUIEx.SystemBackdrop
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 65:   //  Microsoft.UI.Xaml.Controls.NavigationView
+            case 66:   //  Microsoft.UI.Xaml.Controls.NavigationView
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_65_NavigationView;
+                userType.Activator = Activate_66_NavigationView;
                 userType.AddMemberName("AlwaysShowHeader");
                 userType.AddMemberName("ExpandedModeThresholdWidth");
                 userType.AddMemberName("IsBackButtonVisible");
@@ -1203,7 +1323,7 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 66:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
+            case 67:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Collapsed", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Collapsed);
                 userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Visible);
@@ -1211,15 +1331,15 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 67:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
+            case 68:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 68:   //  Microsoft.UI.Xaml.UIElement
+            case 69:   //  Microsoft.UI.Xaml.UIElement
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 69:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
+            case 70:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Minimal", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Minimal);
                 userType.AddEnumValue("Compact", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Compact);
@@ -1227,25 +1347,25 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 70:   //  System.Collections.Generic.IList`1<Object>
+            case 71:   //  System.Collections.Generic.IList`1<Object>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_70_IList;
+                userType.CollectionAdd = VectorAdd_71_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 71:   //  Microsoft.UI.Xaml.Controls.StyleSelector
+            case 72:   //  Microsoft.UI.Xaml.Controls.StyleSelector
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 72:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
+            case 73:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("MoreLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.MoreLabel);
                 userType.AddEnumValue("NoLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.NoLabel);
                 xamlType = userType;
                 break;
 
-            case 73:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
+            case 74:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Auto);
                 userType.AddEnumValue("Left", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Left);
@@ -1255,14 +1375,14 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 74:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
+            case 75:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Disabled);
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Enabled);
                 xamlType = userType;
                 break;
 
-            case 75:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
+            case 76:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("WhenSelectionFollowsFocus", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.WhenSelectionFollowsFocus);
                 userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.Always);
@@ -1270,15 +1390,15 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 76:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
+            case 77:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 77:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
+            case 78:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase"));
-                userType.Activator = Activate_77_NavigationViewItem;
+                userType.Activator = Activate_78_NavigationViewItem;
                 userType.AddMemberName("Icon");
                 userType.AddMemberName("MenuItemsSource");
                 userType.AddMemberName("CompactPaneLength");
@@ -1291,76 +1411,76 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 78:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
+            case 79:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
                 userType.AddMemberName("IsSelected");
                 xamlType = userType;
                 break;
 
-            case 79:   //  Microsoft.UI.Xaml.Controls.IconElement
+            case 80:   //  Microsoft.UI.Xaml.Controls.IconElement
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 80:   //  Microsoft.UI.Xaml.Controls.InfoBadge
+            case 81:   //  Microsoft.UI.Xaml.Controls.InfoBadge
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 81:   //  MattTools.MainWindow
+            case 82:   //  MattTools.MainWindow
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinUIEx.WindowEx"));
-                userType.Activator = Activate_81_MainWindow;
+                userType.Activator = Activate_82_MainWindow;
                 userType.SetContentPropertyName("WinUIEx.WindowEx.WindowContent");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 82:   //  MattTools.Selectors.MenuItemTemplateSelector
+            case 83:   //  MattTools.Selectors.MenuItemTemplateSelector
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.DataTemplateSelector"));
-                userType.Activator = Activate_82_MenuItemTemplateSelector;
+                userType.Activator = Activate_83_MenuItemTemplateSelector;
                 userType.AddMemberName("MenuItemParentTemplate");
                 userType.AddMemberName("MenuItemTemplate");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 83:   //  MattTools.Views.HomeView
+            case 84:   //  MattTools.Views.HomeView
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_83_HomeView;
+                userType.Activator = Activate_84_HomeView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 84:   //  Microsoft.UI.Xaml.Controls.Page
+            case 85:   //  Microsoft.UI.Xaml.Controls.Page
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 85:   //  MattTools.ViewModels.InvoiceMergerViewModel
+            case 86:   //  MattTools.ViewModels.InvoiceMergerViewModel
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_85_InvoiceMergerViewModel;
+                userType.Activator = Activate_86_InvoiceMergerViewModel;
                 userType.AddMemberName("MergeFiles");
                 userType.AddMemberName("MergePath");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 86:   //  System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.MergeFile>
+            case 87:   //  System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.MergeFile>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<MattTools.Models.MergeFile>"));
-                userType.CollectionAdd = VectorAdd_86_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_87_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 87:   //  System.Collections.ObjectModel.Collection`1<MattTools.Models.MergeFile>
+            case 88:   //  System.Collections.ObjectModel.Collection`1<MattTools.Models.MergeFile>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_87_Collection;
-                userType.CollectionAdd = VectorAdd_87_Collection;
+                userType.Activator = Activate_88_Collection;
+                userType.CollectionAdd = VectorAdd_88_Collection;
                 xamlType = userType;
                 break;
 
-            case 88:   //  MattTools.Models.MergeFile
+            case 89:   //  MattTools.Models.MergeFile
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MattTools.Models.PropertyChangedBaseModel"));
-                userType.Activator = Activate_88_MergeFile;
+                userType.Activator = Activate_89_MergeFile;
                 userType.AddMemberName("InvoiceNumber");
                 userType.AddMemberName("TaxNumber");
                 userType.AddMemberName("InvoiceFileName");
@@ -1375,7 +1495,7 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 89:   //  MattTools.Models.MergeFileStatus
+            case 90:   //  MattTools.Models.MergeFileStatus
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("NotMatch", global::MattTools.Models.MergeFileStatus.NotMatch);
                 userType.AddEnumValue("Match", global::MattTools.Models.MergeFileStatus.Match);
@@ -1384,9 +1504,9 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 90:   //  MattTools.Converters.MergeStatusIndicatorConverter
+            case 91:   //  MattTools.Converters.MergeStatusIndicatorConverter
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_90_MergeStatusIndicatorConverter;
+                userType.Activator = Activate_91_MergeStatusIndicatorConverter;
                 userType.AddMemberName("MergedBrush");
                 userType.AddMemberName("NotMatchBrush");
                 userType.AddMemberName("ReadyBrush");
@@ -1394,13 +1514,13 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 91:   //  Microsoft.UI.Xaml.Media.SolidColorBrush
+            case 92:   //  Microsoft.UI.Xaml.Media.SolidColorBrush
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 92:   //  Microsoft.UI.Xaml.Controls.ProgressBar
+            case 93:   //  Microsoft.UI.Xaml.Controls.ProgressBar
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.RangeBase"));
-                userType.Activator = Activate_92_ProgressBar;
+                userType.Activator = Activate_93_ProgressBar;
                 userType.AddMemberName("IsIndeterminate");
                 userType.AddMemberName("ShowError");
                 userType.AddMemberName("ShowPaused");
@@ -1408,19 +1528,19 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 93:   //  Microsoft.UI.Xaml.Controls.Primitives.RangeBase
+            case 94:   //  Microsoft.UI.Xaml.Controls.Primitives.RangeBase
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 94:   //  Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings
+            case 95:   //  Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 95:   //  MattTools.Interactions.AlternateListViewBehavior
+            case 96:   //  MattTools.Interactions.AlternateListViewBehavior
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Xaml.Interactivity.Behavior`1<Microsoft.UI.Xaml.Controls.ListView>"));
-                userType.Activator = Activate_95_AlternateListViewBehavior;
+                userType.Activator = Activate_96_AlternateListViewBehavior;
                 userType.AddMemberName("AltItemBackground");
                 userType.AddMemberName("AltItemBorder");
                 userType.AddMemberName("AltItemThickness");
@@ -1428,24 +1548,311 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 96:   //  MattTools.Views.InvoiceMergerView
+            case 97:   //  MattTools.Views.InvoiceMergerView
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_96_InvoiceMergerView;
+                userType.Activator = Activate_97_InvoiceMergerView;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 97:   //  MattTools.Views.PageNotFoundView
+            case 98:   //  MattTools.Views.PageNotFoundView
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_97_PageNotFoundView;
+                userType.Activator = Activate_98_PageNotFoundView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 98:   //  MattTools.ViewModels.RossumExtractorViewModel
+            case 99:   //  ViewModels.PdfEditorViewModel
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_98_RossumExtractorViewModel;
+                userType.Activator = Activate_99_PdfEditorViewModel;
+                userType.AddMemberName("Documents");
+                userType.AddMemberName("Pages");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 100:   //  System.Collections.ObjectModel.ObservableCollection`1<Models.PdfEditor.PDoc>
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Models.PdfEditor.PDoc>"));
+                userType.CollectionAdd = VectorAdd_100_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 101:   //  System.Collections.ObjectModel.Collection`1<Models.PdfEditor.PDoc>
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_101_Collection;
+                userType.CollectionAdd = VectorAdd_101_Collection;
+                xamlType = userType;
+                break;
+
+            case 102:   //  Models.PdfEditor.PDoc
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MattTools.Models.PropertyChangedBaseModel"));
+                userType.Activator = Activate_102_PDoc;
+                userType.AddMemberName("PdfDoc");
+                userType.AddMemberName("FileName");
+                userType.AddMemberName("Path");
+                userType.AddMemberName("Pages");
+                userType.AddMemberName("ColorBrush");
+                userType.AddMemberName("ThumbnailImage");
+                userType.AddMemberName("FileSize");
+                userType.AddMemberName("CompressQuality");
+                userType.AddMemberName("CompressedFileSize");
+                userType.AddMemberName("IsCompressing");
+                userType.AddMemberName("IsCompressingInvert");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 103:   //  PdfSharp.Pdf.PdfDocument
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PdfSharp.Pdf.PdfObject"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 104:   //  PdfSharp.Pdf.PdfObject
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PdfSharp.Pdf.PdfItem"));
+                xamlType = userType;
+                break;
+
+            case 105:   //  PdfSharp.Pdf.PdfItem
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 106:   //  System.Collections.Generic.List`1<Models.PdfEditor.PPage>
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_106_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 107:   //  Models.PdfEditor.PPage
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MattTools.Models.PropertyChangedBaseModel"));
+                userType.Activator = Activate_107_PPage;
+                userType.AddMemberName("ParentPdf");
+                userType.AddMemberName("ThumbnailImage");
+                userType.AddMemberName("PdfSharpPage");
+                userType.AddMemberName("PageIndex");
+                userType.AddMemberName("ColorBrush");
+                userType.AddMemberName("PageNumber");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 108:   //  Microsoft.UI.Xaml.Media.Imaging.BitmapImage
+                xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 109:   //  PdfSharp.Pdf.PdfPage
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PdfSharp.Pdf.PdfDictionary"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 110:   //  PdfSharp.Pdf.PdfDictionary
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("PdfSharp.Pdf.PdfObject"));
+                userType.Activator = Activate_110_PdfDictionary;
+                xamlType = userType;
+                break;
+
+            case 111:   //  System.Collections.ObjectModel.ObservableCollection`1<Models.PdfEditor.PPage>
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Models.PdfEditor.PPage>"));
+                userType.CollectionAdd = VectorAdd_111_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 112:   //  System.Collections.ObjectModel.Collection`1<Models.PdfEditor.PPage>
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_112_Collection;
+                userType.CollectionAdd = VectorAdd_112_Collection;
+                xamlType = userType;
+                break;
+
+            case 113:   //  Microsoft.UI.Xaml.Controls.ProgressRing
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_113_ProgressRing;
+                userType.AddMemberName("IsActive");
+                userType.AddMemberName("IsIndeterminate");
+                userType.AddMemberName("Maximum");
+                userType.AddMemberName("Minimum");
+                userType.AddMemberName("TemplateSettings");
+                userType.AddMemberName("Value");
+                xamlType = userType;
+                break;
+
+            case 114:   //  Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 115:   //  Views.PdfCompressorView
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_115_PdfCompressorView;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 116:   //  CommunityToolkit.WinUI.UI.Effects
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.AddMemberName("Shadow");
+                xamlType = userType;
+                break;
+
+            case 117:   //  Microsoft.UI.Xaml.FrameworkElement
+                xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 118:   //  Microsoft.UI.Xaml.Controls.ScrollView
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_118_ScrollView;
+                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.ScrollView.Content");
+                userType.AddMemberName("Content");
+                userType.AddMemberName("ComputedHorizontalScrollBarVisibility");
+                userType.AddMemberName("ComputedHorizontalScrollMode");
+                userType.AddMemberName("ComputedVerticalScrollBarVisibility");
+                userType.AddMemberName("ComputedVerticalScrollMode");
+                userType.AddMemberName("ContentOrientation");
+                userType.AddMemberName("CurrentAnchor");
+                userType.AddMemberName("ExpressionAnimationSources");
+                userType.AddMemberName("ExtentHeight");
+                userType.AddMemberName("ExtentWidth");
+                userType.AddMemberName("HorizontalAnchorRatio");
+                userType.AddMemberName("HorizontalOffset");
+                userType.AddMemberName("HorizontalScrollBarVisibility");
+                userType.AddMemberName("HorizontalScrollChainMode");
+                userType.AddMemberName("HorizontalScrollMode");
+                userType.AddMemberName("HorizontalScrollRailMode");
+                userType.AddMemberName("IgnoredInputKinds");
+                userType.AddMemberName("MaxZoomFactor");
+                userType.AddMemberName("MinZoomFactor");
+                userType.AddMemberName("ScrollPresenter");
+                userType.AddMemberName("ScrollableHeight");
+                userType.AddMemberName("ScrollableWidth");
+                userType.AddMemberName("State");
+                userType.AddMemberName("VerticalAnchorRatio");
+                userType.AddMemberName("VerticalOffset");
+                userType.AddMemberName("VerticalScrollBarVisibility");
+                userType.AddMemberName("VerticalScrollChainMode");
+                userType.AddMemberName("VerticalScrollMode");
+                userType.AddMemberName("VerticalScrollRailMode");
+                userType.AddMemberName("ViewportHeight");
+                userType.AddMemberName("ViewportWidth");
+                userType.AddMemberName("ZoomChainMode");
+                userType.AddMemberName("ZoomFactor");
+                userType.AddMemberName("ZoomMode");
+                xamlType = userType;
+                break;
+
+            case 119:   //  Microsoft.UI.Xaml.Visibility
+                xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 120:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollMode
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Enabled);
+                userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Disabled);
+                userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Auto);
+                xamlType = userType;
+                break;
+
+            case 121:   //  Microsoft.UI.Xaml.Controls.ScrollingContentOrientation
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Vertical", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.Vertical);
+                userType.AddEnumValue("Horizontal", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.Horizontal);
+                userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.None);
+                userType.AddEnumValue("Both", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.Both);
+                xamlType = userType;
+                break;
+
+            case 122:   //  Microsoft.UI.Composition.CompositionPropertySet
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Composition.CompositionObject"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 123:   //  Microsoft.UI.Composition.CompositionObject
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 124:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Auto);
+                userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Visible);
+                userType.AddEnumValue("Hidden", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Hidden);
+                xamlType = userType;
+                break;
+
+            case 125:   //  Microsoft.UI.Xaml.Controls.ScrollingChainMode
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Auto);
+                userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Always);
+                userType.AddEnumValue("Never", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Never);
+                xamlType = userType;
+                break;
+
+            case 126:   //  Microsoft.UI.Xaml.Controls.ScrollingRailMode
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingRailMode.Enabled);
+                userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingRailMode.Disabled);
+                xamlType = userType;
+                break;
+
+            case 127:   //  Microsoft.UI.Xaml.Controls.ScrollingInputKinds
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.None);
+                userType.AddEnumValue("Touch", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Touch);
+                userType.AddEnumValue("Pen", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Pen);
+                userType.AddEnumValue("MouseWheel", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.MouseWheel);
+                userType.AddEnumValue("Keyboard", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Keyboard);
+                userType.AddEnumValue("Gamepad", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Gamepad);
+                userType.AddEnumValue("All", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.All);
+                xamlType = userType;
+                break;
+
+            case 128:   //  Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.FrameworkElement"));
+                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.Content");
+                userType.AddMemberName("Content");
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 129:   //  Microsoft.UI.Xaml.Controls.ScrollingInteractionState
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Idle", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Idle);
+                userType.AddEnumValue("Interaction", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Interaction);
+                userType.AddEnumValue("Inertia", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Inertia);
+                userType.AddEnumValue("Animation", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Animation);
+                xamlType = userType;
+                break;
+
+            case 130:   //  Single
+                xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 131:   //  Microsoft.UI.Xaml.Controls.ScrollingZoomMode
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode.Enabled);
+                userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode.Disabled);
+                xamlType = userType;
+                break;
+
+            case 132:   //  Views.PdfOrganizerView
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_132_PdfOrganizerView;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 133:   //  MattTools.ViewModels.RossumExtractorViewModel
+                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_133_RossumExtractorViewModel;
                 userType.AddMemberName("Workspaces");
                 userType.AddMemberName("Queues");
                 userType.AddMemberName("RossumItems");
@@ -1457,23 +1864,23 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 99:   //  System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.Workspace>
+            case 134:   //  System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.Workspace>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.Workspace>"));
-                userType.CollectionAdd = VectorAdd_99_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_134_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 100:   //  System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.Workspace>
+            case 135:   //  System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.Workspace>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_100_Collection;
-                userType.CollectionAdd = VectorAdd_100_Collection;
+                userType.Activator = Activate_135_Collection;
+                userType.CollectionAdd = VectorAdd_135_Collection;
                 xamlType = userType;
                 break;
 
-            case 101:   //  MattTools.Models.Rossum.Workspace
+            case 136:   //  MattTools.Models.Rossum.Workspace
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_101_Workspace;
+                userType.Activator = Activate_136_Workspace;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("Name");
                 userType.AddMemberName("QueuesURL");
@@ -1481,30 +1888,30 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 102:   //  System.Collections.Generic.List`1<String>
+            case 137:   //  System.Collections.Generic.List`1<String>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_102_List;
+                userType.CollectionAdd = VectorAdd_137_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 103:   //  System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.Queue>
+            case 138:   //  System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.Queue>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.Queue>"));
-                userType.CollectionAdd = VectorAdd_103_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_138_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 104:   //  System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.Queue>
+            case 139:   //  System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.Queue>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_104_Collection;
-                userType.CollectionAdd = VectorAdd_104_Collection;
+                userType.Activator = Activate_139_Collection;
+                userType.CollectionAdd = VectorAdd_139_Collection;
                 xamlType = userType;
                 break;
 
-            case 105:   //  MattTools.Models.Rossum.Queue
+            case 140:   //  MattTools.Models.Rossum.Queue
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_105_Queue;
+                userType.Activator = Activate_140_Queue;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("Name");
                 userType.AddMemberName("Status");
@@ -1512,23 +1919,23 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 106:   //  System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.RossumItem>
+            case 141:   //  System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.RossumItem>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.RossumItem>"));
-                userType.CollectionAdd = VectorAdd_106_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_141_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 107:   //  System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.RossumItem>
+            case 142:   //  System.Collections.ObjectModel.Collection`1<MattTools.Models.Rossum.RossumItem>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_107_Collection;
-                userType.CollectionAdd = VectorAdd_107_Collection;
+                userType.Activator = Activate_142_Collection;
+                userType.CollectionAdd = VectorAdd_142_Collection;
                 xamlType = userType;
                 break;
 
-            case 108:   //  MattTools.Models.Rossum.RossumItem
+            case 143:   //  MattTools.Models.Rossum.RossumItem
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_108_RossumItem;
+                userType.Activator = Activate_143_RossumItem;
                 userType.AddMemberName("Name");
                 userType.AddMemberName("AnnotationID");
                 userType.AddMemberName("DocumentID");
@@ -1539,9 +1946,9 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 109:   //  MattTools.Converters.RossumStatusIndicatorConverter
+            case 144:   //  MattTools.Converters.RossumStatusIndicatorConverter
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_109_RossumStatusIndicatorConverter;
+                userType.Activator = Activate_144_RossumStatusIndicatorConverter;
                 userType.AddMemberName("ConfirmedBrush");
                 userType.AddMemberName("DefaultBrush");
                 userType.AddMemberName("DeletedBrush");
@@ -1550,33 +1957,23 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 110:   //  Microsoft.UI.Xaml.Controls.DropDownButton
+            case 145:   //  Microsoft.UI.Xaml.Controls.DropDownButton
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Button"));
-                userType.Activator = Activate_110_DropDownButton;
+                userType.Activator = Activate_145_DropDownButton;
                 xamlType = userType;
                 break;
 
-            case 111:   //  CommunityToolkit.WinUI.UI.Effects
-                userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.AddMemberName("Shadow");
-                xamlType = userType;
-                break;
-
-            case 112:   //  Microsoft.UI.Xaml.FrameworkElement
-                xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 113:   //  MattTools.Views.RossumExtractorView
+            case 146:   //  MattTools.Views.RossumExtractorView
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_113_RossumExtractorView;
+                userType.Activator = Activate_146_RossumExtractorView;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 114:   //  CommunityToolkit.WinUI.Controls.SettingsCard
+            case 147:   //  CommunityToolkit.WinUI.Controls.SettingsCard
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ButtonBase"));
-                userType.Activator = Activate_114_SettingsCard;
+                userType.Activator = Activate_147_SettingsCard;
                 userType.AddMemberName("Description");
                 userType.AddMemberName("Header");
                 userType.AddMemberName("HeaderIcon");
@@ -1588,7 +1985,7 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 115:   //  CommunityToolkit.WinUI.Controls.ContentAlignment
+            case 148:   //  CommunityToolkit.WinUI.Controls.ContentAlignment
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Right", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Right);
                 userType.AddEnumValue("Left", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Left);
@@ -1596,27 +1993,27 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 116:   //  Microsoft.UI.Xaml.Controls.ImageIcon
+            case 149:   //  Microsoft.UI.Xaml.Controls.ImageIcon
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.IconElement"));
-                userType.Activator = Activate_116_ImageIcon;
+                userType.Activator = Activate_149_ImageIcon;
                 userType.AddMemberName("Source");
                 xamlType = userType;
                 break;
 
-            case 117:   //  Microsoft.UI.Xaml.Media.ImageSource
+            case 150:   //  Microsoft.UI.Xaml.Media.ImageSource
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 118:   //  CommunityToolkit.WinUI.FontIconExtension
+            case 151:   //  CommunityToolkit.WinUI.FontIconExtension
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension"));
-                userType.Activator = Activate_118_FontIconExtension;
+                userType.Activator = Activate_151_FontIconExtension;
                 userType.AddMemberName("Glyph");
                 userType.AddMemberName("FontFamily");
                 userType.SetIsMarkupExtension();
                 xamlType = userType;
                 break;
 
-            case 119:   //  CommunityToolkit.WinUI.TextIconExtension
+            case 152:   //  CommunityToolkit.WinUI.TextIconExtension
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Markup.MarkupExtension"));
                 userType.AddMemberName("FontSize");
                 userType.AddMemberName("FontWeight");
@@ -1628,21 +2025,21 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 120:   //  Microsoft.UI.Xaml.Markup.MarkupExtension
+            case 153:   //  Microsoft.UI.Xaml.Markup.MarkupExtension
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 121:   //  Microsoft.UI.Xaml.Media.FontFamily
+            case 154:   //  Microsoft.UI.Xaml.Media.FontFamily
                 xamlType = new global::MattTools.MattTools_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 122:   //  Windows.UI.Text.FontWeight
+            case 155:   //  Windows.UI.Text.FontWeight
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 123:   //  Windows.UI.Text.FontStyle
+            case 156:   //  Windows.UI.Text.FontStyle
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Normal", global::Windows.UI.Text.FontStyle.Normal);
                 userType.AddEnumValue("Oblique", global::Windows.UI.Text.FontStyle.Oblique);
@@ -1650,38 +2047,38 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 124:   //  MattTools.Views.SettingView
+            case 157:   //  MattTools.Views.SettingView
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_124_SettingView;
+                userType.Activator = Activate_157_SettingView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 125:   //  MattTools.ViewModels.SOAMergerViewModel
+            case 158:   //  MattTools.ViewModels.SOAMergerViewModel
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_125_SOAMergerViewModel;
+                userType.Activator = Activate_158_SOAMergerViewModel;
                 userType.AddMemberName("SOAfiles");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 126:   //  System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.SOAFile>
+            case 159:   //  System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.SOAFile>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<MattTools.Models.SOAFile>"));
-                userType.CollectionAdd = VectorAdd_126_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_159_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 127:   //  System.Collections.ObjectModel.Collection`1<MattTools.Models.SOAFile>
+            case 160:   //  System.Collections.ObjectModel.Collection`1<MattTools.Models.SOAFile>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_127_Collection;
-                userType.CollectionAdd = VectorAdd_127_Collection;
+                userType.Activator = Activate_160_Collection;
+                userType.CollectionAdd = VectorAdd_160_Collection;
                 xamlType = userType;
                 break;
 
-            case 128:   //  MattTools.Models.SOAFile
+            case 161:   //  MattTools.Models.SOAFile
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MattTools.Models.PropertyChangedBaseModel"));
-                userType.Activator = Activate_128_SOAFile;
+                userType.Activator = Activate_161_SOAFile;
                 userType.AddMemberName("FileName");
                 userType.AddMemberName("Cabang");
                 userType.AddMemberName("FilePath");
@@ -1691,31 +2088,31 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 129:   //  NPOI.SS.UserModel.ISheet
+            case 162:   //  NPOI.SS.UserModel.ISheet
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 130:   //  MattTools.Views.SOAMergerView
+            case 163:   //  MattTools.Views.SOAMergerView
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_130_SOAMergerView;
+                userType.Activator = Activate_163_SOAMergerView;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 131:   //  MattTools.Views.ZesthubView
+            case 164:   //  MattTools.Views.ZesthubView
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_131_ZesthubView;
+                userType.Activator = Activate_164_ZesthubView;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 132:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 165:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_132_TreeViewNode;
+                userType.Activator = Activate_165_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -1727,9 +2124,9 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 133:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 166:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::MattTools.MattTools_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_133_IList;
+                userType.CollectionAdd = VectorAdd_166_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
@@ -3243,610 +3640,1125 @@ namespace MattTools.MattTools_XamlTypeInfo
             var that = (global::MattTools.Views.InvoiceMergerView)instance;
             that.ViewModel = (global::MattTools.ViewModels.InvoiceMergerViewModel)Value;
         }
-        private object get_152_RossumExtractorViewModel_Workspaces(object instance)
+        private object get_152_PdfEditorViewModel_Documents(object instance)
+        {
+            var that = (global::ViewModels.PdfEditorViewModel)instance;
+            return that.Documents;
+        }
+        private void set_152_PdfEditorViewModel_Documents(object instance, object Value)
+        {
+            var that = (global::ViewModels.PdfEditorViewModel)instance;
+            that.Documents = (global::System.Collections.ObjectModel.ObservableCollection<global::Models.PdfEditor.PDoc>)Value;
+        }
+        private object get_153_PDoc_PdfDoc(object instance)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            return that.PdfDoc;
+        }
+        private void set_153_PDoc_PdfDoc(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            that.PdfDoc = (global::PdfSharp.Pdf.PdfDocument)Value;
+        }
+        private object get_154_PDoc_FileName(object instance)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            return that.FileName;
+        }
+        private void set_154_PDoc_FileName(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            that.FileName = (global::System.String)Value;
+        }
+        private object get_155_PDoc_Path(object instance)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            return that.Path;
+        }
+        private void set_155_PDoc_Path(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            that.Path = (global::System.String)Value;
+        }
+        private object get_156_PDoc_Pages(object instance)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            return that.Pages;
+        }
+        private void set_156_PDoc_Pages(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            that.Pages = (global::System.Collections.Generic.List<global::Models.PdfEditor.PPage>)Value;
+        }
+        private object get_157_PPage_ParentPdf(object instance)
+        {
+            var that = (global::Models.PdfEditor.PPage)instance;
+            return that.ParentPdf;
+        }
+        private void set_157_PPage_ParentPdf(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PPage)instance;
+            that.ParentPdf = (global::Models.PdfEditor.PDoc)Value;
+        }
+        private object get_158_PPage_ThumbnailImage(object instance)
+        {
+            var that = (global::Models.PdfEditor.PPage)instance;
+            return that.ThumbnailImage;
+        }
+        private void set_158_PPage_ThumbnailImage(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PPage)instance;
+            that.ThumbnailImage = (global::Microsoft.UI.Xaml.Media.Imaging.BitmapImage)Value;
+        }
+        private object get_159_PPage_PdfSharpPage(object instance)
+        {
+            var that = (global::Models.PdfEditor.PPage)instance;
+            return that.PdfSharpPage;
+        }
+        private void set_159_PPage_PdfSharpPage(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PPage)instance;
+            that.PdfSharpPage = (global::PdfSharp.Pdf.PdfPage)Value;
+        }
+        private object get_160_PPage_PageIndex(object instance)
+        {
+            var that = (global::Models.PdfEditor.PPage)instance;
+            return that.PageIndex;
+        }
+        private void set_160_PPage_PageIndex(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PPage)instance;
+            that.PageIndex = (global::System.Int32)Value;
+        }
+        private object get_161_PPage_ColorBrush(object instance)
+        {
+            var that = (global::Models.PdfEditor.PPage)instance;
+            return that.ColorBrush;
+        }
+        private void set_161_PPage_ColorBrush(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PPage)instance;
+            that.ColorBrush = (global::Microsoft.UI.Xaml.Media.SolidColorBrush)Value;
+        }
+        private object get_162_PPage_PageNumber(object instance)
+        {
+            var that = (global::Models.PdfEditor.PPage)instance;
+            return that.PageNumber;
+        }
+        private object get_163_PDoc_ColorBrush(object instance)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            return that.ColorBrush;
+        }
+        private void set_163_PDoc_ColorBrush(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            that.ColorBrush = (global::Microsoft.UI.Xaml.Media.SolidColorBrush)Value;
+        }
+        private object get_164_PDoc_ThumbnailImage(object instance)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            return that.ThumbnailImage;
+        }
+        private void set_164_PDoc_ThumbnailImage(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            that.ThumbnailImage = (global::Microsoft.UI.Xaml.Media.Imaging.BitmapImage)Value;
+        }
+        private object get_165_PDoc_FileSize(object instance)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            return that.FileSize;
+        }
+        private object get_166_PDoc_CompressQuality(object instance)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            return that.CompressQuality;
+        }
+        private void set_166_PDoc_CompressQuality(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            that.CompressQuality = (global::System.Int32)Value;
+        }
+        private object get_167_PDoc_CompressedFileSize(object instance)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            return that.CompressedFileSize;
+        }
+        private void set_167_PDoc_CompressedFileSize(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            that.CompressedFileSize = (global::System.String)Value;
+        }
+        private object get_168_PDoc_IsCompressing(object instance)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            return that.IsCompressing;
+        }
+        private void set_168_PDoc_IsCompressing(object instance, object Value)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            that.IsCompressing = (global::System.Boolean)Value;
+        }
+        private object get_169_PDoc_IsCompressingInvert(object instance)
+        {
+            var that = (global::Models.PdfEditor.PDoc)instance;
+            return that.IsCompressingInvert;
+        }
+        private object get_170_PdfEditorViewModel_Pages(object instance)
+        {
+            var that = (global::ViewModels.PdfEditorViewModel)instance;
+            return that.Pages;
+        }
+        private void set_170_PdfEditorViewModel_Pages(object instance, object Value)
+        {
+            var that = (global::ViewModels.PdfEditorViewModel)instance;
+            that.Pages = (global::System.Collections.ObjectModel.ObservableCollection<global::Models.PdfEditor.PPage>)Value;
+        }
+        private object get_171_ProgressRing_IsActive(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.IsActive;
+        }
+        private void set_171_ProgressRing_IsActive(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.IsActive = (global::System.Boolean)Value;
+        }
+        private object get_172_ProgressRing_IsIndeterminate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.IsIndeterminate;
+        }
+        private void set_172_ProgressRing_IsIndeterminate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.IsIndeterminate = (global::System.Boolean)Value;
+        }
+        private object get_173_ProgressRing_Maximum(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.Maximum;
+        }
+        private void set_173_ProgressRing_Maximum(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.Maximum = (global::System.Double)Value;
+        }
+        private object get_174_ProgressRing_Minimum(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.Minimum;
+        }
+        private void set_174_ProgressRing_Minimum(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.Minimum = (global::System.Double)Value;
+        }
+        private object get_175_ProgressRing_TemplateSettings(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.TemplateSettings;
+        }
+        private object get_176_ProgressRing_Value(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.Value;
+        }
+        private void set_176_ProgressRing_Value(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.Value = (global::System.Double)Value;
+        }
+        private object get_177_PdfCompressorView_ViewModel(object instance)
+        {
+            var that = (global::Views.PdfCompressorView)instance;
+            return that.ViewModel;
+        }
+        private void set_177_PdfCompressorView_ViewModel(object instance, object Value)
+        {
+            var that = (global::Views.PdfCompressorView)instance;
+            that.ViewModel = (global::ViewModels.PdfEditorViewModel)Value;
+        }
+        private object get_178_Effects_Shadow(object instance)
+        {
+            return global::CommunityToolkit.WinUI.UI.Effects.GetShadow((global::Microsoft.UI.Xaml.FrameworkElement)instance);
+        }
+        private void set_178_Effects_Shadow(object instance, object Value)
+        {
+            global::CommunityToolkit.WinUI.UI.Effects.SetShadow((global::Microsoft.UI.Xaml.FrameworkElement)instance, (global::CommunityToolkit.WinUI.UI.AttachedShadowBase)Value);
+        }
+        private object get_179_ScrollView_Content(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.Content;
+        }
+        private void set_179_ScrollView_Content(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.Content = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_180_ScrollView_ComputedHorizontalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedHorizontalScrollBarVisibility;
+        }
+        private object get_181_ScrollView_ComputedHorizontalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedHorizontalScrollMode;
+        }
+        private object get_182_ScrollView_ComputedVerticalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedVerticalScrollBarVisibility;
+        }
+        private object get_183_ScrollView_ComputedVerticalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedVerticalScrollMode;
+        }
+        private object get_184_ScrollView_ContentOrientation(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ContentOrientation;
+        }
+        private void set_184_ScrollView_ContentOrientation(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.ContentOrientation = (global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation)Value;
+        }
+        private object get_185_ScrollView_CurrentAnchor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.CurrentAnchor;
+        }
+        private object get_186_ScrollView_ExpressionAnimationSources(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ExpressionAnimationSources;
+        }
+        private object get_187_ScrollView_ExtentHeight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ExtentHeight;
+        }
+        private object get_188_ScrollView_ExtentWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ExtentWidth;
+        }
+        private object get_189_ScrollView_HorizontalAnchorRatio(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalAnchorRatio;
+        }
+        private void set_189_ScrollView_HorizontalAnchorRatio(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalAnchorRatio = (global::System.Double)Value;
+        }
+        private object get_190_ScrollView_HorizontalOffset(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalOffset;
+        }
+        private object get_191_ScrollView_HorizontalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollBarVisibility;
+        }
+        private void set_191_ScrollView_HorizontalScrollBarVisibility(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollBarVisibility = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility)Value;
+        }
+        private object get_192_ScrollView_HorizontalScrollChainMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollChainMode;
+        }
+        private void set_192_ScrollView_HorizontalScrollChainMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
+        }
+        private object get_193_ScrollView_HorizontalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollMode;
+        }
+        private void set_193_ScrollView_HorizontalScrollMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollMode = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode)Value;
+        }
+        private object get_194_ScrollView_HorizontalScrollRailMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollRailMode;
+        }
+        private void set_194_ScrollView_HorizontalScrollRailMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollRailMode = (global::Microsoft.UI.Xaml.Controls.ScrollingRailMode)Value;
+        }
+        private object get_195_ScrollView_IgnoredInputKinds(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.IgnoredInputKinds;
+        }
+        private void set_195_ScrollView_IgnoredInputKinds(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.IgnoredInputKinds = (global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds)Value;
+        }
+        private object get_196_ScrollView_MaxZoomFactor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.MaxZoomFactor;
+        }
+        private void set_196_ScrollView_MaxZoomFactor(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.MaxZoomFactor = (global::System.Double)Value;
+        }
+        private object get_197_ScrollView_MinZoomFactor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.MinZoomFactor;
+        }
+        private void set_197_ScrollView_MinZoomFactor(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.MinZoomFactor = (global::System.Double)Value;
+        }
+        private object get_198_ScrollView_ScrollPresenter(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ScrollPresenter;
+        }
+        private object get_199_ScrollPresenter_Content(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)instance;
+            return that.Content;
+        }
+        private void set_199_ScrollPresenter_Content(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)instance;
+            that.Content = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_200_ScrollView_ScrollableHeight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ScrollableHeight;
+        }
+        private object get_201_ScrollView_ScrollableWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ScrollableWidth;
+        }
+        private object get_202_ScrollView_State(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.State;
+        }
+        private object get_203_ScrollView_VerticalAnchorRatio(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalAnchorRatio;
+        }
+        private void set_203_ScrollView_VerticalAnchorRatio(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalAnchorRatio = (global::System.Double)Value;
+        }
+        private object get_204_ScrollView_VerticalOffset(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalOffset;
+        }
+        private object get_205_ScrollView_VerticalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollBarVisibility;
+        }
+        private void set_205_ScrollView_VerticalScrollBarVisibility(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollBarVisibility = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility)Value;
+        }
+        private object get_206_ScrollView_VerticalScrollChainMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollChainMode;
+        }
+        private void set_206_ScrollView_VerticalScrollChainMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
+        }
+        private object get_207_ScrollView_VerticalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollMode;
+        }
+        private void set_207_ScrollView_VerticalScrollMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollMode = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode)Value;
+        }
+        private object get_208_ScrollView_VerticalScrollRailMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollRailMode;
+        }
+        private void set_208_ScrollView_VerticalScrollRailMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollRailMode = (global::Microsoft.UI.Xaml.Controls.ScrollingRailMode)Value;
+        }
+        private object get_209_ScrollView_ViewportHeight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ViewportHeight;
+        }
+        private object get_210_ScrollView_ViewportWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ViewportWidth;
+        }
+        private object get_211_ScrollView_ZoomChainMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ZoomChainMode;
+        }
+        private void set_211_ScrollView_ZoomChainMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.ZoomChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
+        }
+        private object get_212_ScrollView_ZoomFactor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ZoomFactor;
+        }
+        private object get_213_ScrollView_ZoomMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ZoomMode;
+        }
+        private void set_213_ScrollView_ZoomMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.ZoomMode = (global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode)Value;
+        }
+        private object get_214_PdfOrganizerView_ViewModel(object instance)
+        {
+            var that = (global::Views.PdfOrganizerView)instance;
+            return that.ViewModel;
+        }
+        private void set_214_PdfOrganizerView_ViewModel(object instance, object Value)
+        {
+            var that = (global::Views.PdfOrganizerView)instance;
+            that.ViewModel = (global::ViewModels.PdfEditorViewModel)Value;
+        }
+        private object get_215_RossumExtractorViewModel_Workspaces(object instance)
         {
             var that = (global::MattTools.ViewModels.RossumExtractorViewModel)instance;
             return that.Workspaces;
         }
-        private void set_152_RossumExtractorViewModel_Workspaces(object instance, object Value)
+        private void set_215_RossumExtractorViewModel_Workspaces(object instance, object Value)
         {
             var that = (global::MattTools.ViewModels.RossumExtractorViewModel)instance;
             that.Workspaces = (global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.Workspace>)Value;
         }
-        private object get_153_Workspace_Id(object instance)
+        private object get_216_Workspace_Id(object instance)
         {
             var that = (global::MattTools.Models.Rossum.Workspace)instance;
             return that.Id;
         }
-        private void set_153_Workspace_Id(object instance, object Value)
+        private void set_216_Workspace_Id(object instance, object Value)
         {
             var that = (global::MattTools.Models.Rossum.Workspace)instance;
             that.Id = (global::System.Int32)Value;
         }
-        private object get_154_Workspace_Name(object instance)
+        private object get_217_Workspace_Name(object instance)
         {
             var that = (global::MattTools.Models.Rossum.Workspace)instance;
             return that.Name;
         }
-        private void set_154_Workspace_Name(object instance, object Value)
+        private void set_217_Workspace_Name(object instance, object Value)
         {
             var that = (global::MattTools.Models.Rossum.Workspace)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_155_Workspace_QueuesURL(object instance)
+        private object get_218_Workspace_QueuesURL(object instance)
         {
             var that = (global::MattTools.Models.Rossum.Workspace)instance;
             return that.QueuesURL;
         }
-        private void set_155_Workspace_QueuesURL(object instance, object Value)
+        private void set_218_Workspace_QueuesURL(object instance, object Value)
         {
             var that = (global::MattTools.Models.Rossum.Workspace)instance;
             that.QueuesURL = (global::System.Collections.Generic.List<global::System.String>)Value;
         }
-        private object get_156_RossumExtractorViewModel_Queues(object instance)
+        private object get_219_RossumExtractorViewModel_Queues(object instance)
         {
             var that = (global::MattTools.ViewModels.RossumExtractorViewModel)instance;
             return that.Queues;
         }
-        private void set_156_RossumExtractorViewModel_Queues(object instance, object Value)
+        private void set_219_RossumExtractorViewModel_Queues(object instance, object Value)
         {
             var that = (global::MattTools.ViewModels.RossumExtractorViewModel)instance;
             that.Queues = (global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.Queue>)Value;
         }
-        private object get_157_Queue_Id(object instance)
+        private object get_220_Queue_Id(object instance)
         {
             var that = (global::MattTools.Models.Rossum.Queue)instance;
             return that.Id;
         }
-        private void set_157_Queue_Id(object instance, object Value)
+        private void set_220_Queue_Id(object instance, object Value)
         {
             var that = (global::MattTools.Models.Rossum.Queue)instance;
             that.Id = (global::System.Int32)Value;
         }
-        private object get_158_Queue_Name(object instance)
+        private object get_221_Queue_Name(object instance)
         {
             var that = (global::MattTools.Models.Rossum.Queue)instance;
             return that.Name;
         }
-        private void set_158_Queue_Name(object instance, object Value)
+        private void set_221_Queue_Name(object instance, object Value)
         {
             var that = (global::MattTools.Models.Rossum.Queue)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_159_Queue_Status(object instance)
+        private object get_222_Queue_Status(object instance)
         {
             var that = (global::MattTools.Models.Rossum.Queue)instance;
             return that.Status;
         }
-        private void set_159_Queue_Status(object instance, object Value)
+        private void set_222_Queue_Status(object instance, object Value)
         {
             var that = (global::MattTools.Models.Rossum.Queue)instance;
             that.Status = (global::System.String)Value;
         }
-        private object get_160_RossumExtractorViewModel_RossumItems(object instance)
+        private object get_223_RossumExtractorViewModel_RossumItems(object instance)
         {
             var that = (global::MattTools.ViewModels.RossumExtractorViewModel)instance;
             return that.RossumItems;
         }
-        private void set_160_RossumExtractorViewModel_RossumItems(object instance, object Value)
+        private void set_223_RossumExtractorViewModel_RossumItems(object instance, object Value)
         {
             var that = (global::MattTools.ViewModels.RossumExtractorViewModel)instance;
             that.RossumItems = (global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.Rossum.RossumItem>)Value;
         }
-        private object get_161_RossumItem_Name(object instance)
+        private object get_224_RossumItem_Name(object instance)
         {
             var that = (global::MattTools.Models.Rossum.RossumItem)instance;
             return that.Name;
         }
-        private void set_161_RossumItem_Name(object instance, object Value)
+        private void set_224_RossumItem_Name(object instance, object Value)
         {
             var that = (global::MattTools.Models.Rossum.RossumItem)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_162_RossumItem_AnnotationID(object instance)
+        private object get_225_RossumItem_AnnotationID(object instance)
         {
             var that = (global::MattTools.Models.Rossum.RossumItem)instance;
             return that.AnnotationID;
         }
-        private void set_162_RossumItem_AnnotationID(object instance, object Value)
+        private void set_225_RossumItem_AnnotationID(object instance, object Value)
         {
             var that = (global::MattTools.Models.Rossum.RossumItem)instance;
             that.AnnotationID = (global::System.Int32)Value;
         }
-        private object get_163_RossumItem_DocumentID(object instance)
+        private object get_226_RossumItem_DocumentID(object instance)
         {
             var that = (global::MattTools.Models.Rossum.RossumItem)instance;
             return that.DocumentID;
         }
-        private void set_163_RossumItem_DocumentID(object instance, object Value)
+        private void set_226_RossumItem_DocumentID(object instance, object Value)
         {
             var that = (global::MattTools.Models.Rossum.RossumItem)instance;
             that.DocumentID = (global::System.Int32)Value;
         }
-        private object get_164_RossumItem_CreateDate(object instance)
+        private object get_227_RossumItem_CreateDate(object instance)
         {
             var that = (global::MattTools.Models.Rossum.RossumItem)instance;
             return that.CreateDate;
         }
-        private void set_164_RossumItem_CreateDate(object instance, object Value)
+        private void set_227_RossumItem_CreateDate(object instance, object Value)
         {
             var that = (global::MattTools.Models.Rossum.RossumItem)instance;
             that.CreateDate = (global::System.DateTime)Value;
         }
-        private object get_165_RossumItem_Status(object instance)
+        private object get_228_RossumItem_Status(object instance)
         {
             var that = (global::MattTools.Models.Rossum.RossumItem)instance;
             return that.Status;
         }
-        private void set_165_RossumItem_Status(object instance, object Value)
+        private void set_228_RossumItem_Status(object instance, object Value)
         {
             var that = (global::MattTools.Models.Rossum.RossumItem)instance;
             that.Status = (global::System.String)Value;
         }
-        private object get_166_RossumItem_StatusFormarted(object instance)
+        private object get_229_RossumItem_StatusFormarted(object instance)
         {
             var that = (global::MattTools.Models.Rossum.RossumItem)instance;
             return that.StatusFormarted;
         }
-        private object get_167_RossumExtractorViewModel_IsLoggedIn(object instance)
+        private object get_230_RossumExtractorViewModel_IsLoggedIn(object instance)
         {
             var that = (global::MattTools.ViewModels.RossumExtractorViewModel)instance;
             return that.IsLoggedIn;
         }
-        private void set_167_RossumExtractorViewModel_IsLoggedIn(object instance, object Value)
+        private void set_230_RossumExtractorViewModel_IsLoggedIn(object instance, object Value)
         {
             var that = (global::MattTools.ViewModels.RossumExtractorViewModel)instance;
             that.IsLoggedIn = (global::System.Boolean)Value;
         }
-        private object get_168_RossumExtractorViewModel_IsHaveUserKey(object instance)
+        private object get_231_RossumExtractorViewModel_IsHaveUserKey(object instance)
         {
             var that = (global::MattTools.ViewModels.RossumExtractorViewModel)instance;
             return that.IsHaveUserKey;
         }
-        private object get_169_RossumExtractorViewModel_SavedUsername(object instance)
+        private object get_232_RossumExtractorViewModel_SavedUsername(object instance)
         {
             var that = (global::MattTools.ViewModels.RossumExtractorViewModel)instance;
             return that.SavedUsername;
         }
-        private object get_170_RossumExtractorViewModel_UserKey(object instance)
+        private object get_233_RossumExtractorViewModel_UserKey(object instance)
         {
             var that = (global::MattTools.ViewModels.RossumExtractorViewModel)instance;
             return that.UserKey;
         }
-        private object get_171_RossumStatusIndicatorConverter_ConfirmedBrush(object instance)
+        private object get_234_RossumStatusIndicatorConverter_ConfirmedBrush(object instance)
         {
             var that = (global::MattTools.Converters.RossumStatusIndicatorConverter)instance;
             return that.ConfirmedBrush;
         }
-        private void set_171_RossumStatusIndicatorConverter_ConfirmedBrush(object instance, object Value)
+        private void set_234_RossumStatusIndicatorConverter_ConfirmedBrush(object instance, object Value)
         {
             var that = (global::MattTools.Converters.RossumStatusIndicatorConverter)instance;
             that.ConfirmedBrush = (global::Microsoft.UI.Xaml.Media.SolidColorBrush)Value;
         }
-        private object get_172_RossumStatusIndicatorConverter_DefaultBrush(object instance)
+        private object get_235_RossumStatusIndicatorConverter_DefaultBrush(object instance)
         {
             var that = (global::MattTools.Converters.RossumStatusIndicatorConverter)instance;
             return that.DefaultBrush;
         }
-        private void set_172_RossumStatusIndicatorConverter_DefaultBrush(object instance, object Value)
+        private void set_235_RossumStatusIndicatorConverter_DefaultBrush(object instance, object Value)
         {
             var that = (global::MattTools.Converters.RossumStatusIndicatorConverter)instance;
             that.DefaultBrush = (global::Microsoft.UI.Xaml.Media.SolidColorBrush)Value;
         }
-        private object get_173_RossumStatusIndicatorConverter_DeletedBrush(object instance)
+        private object get_236_RossumStatusIndicatorConverter_DeletedBrush(object instance)
         {
             var that = (global::MattTools.Converters.RossumStatusIndicatorConverter)instance;
             return that.DeletedBrush;
         }
-        private void set_173_RossumStatusIndicatorConverter_DeletedBrush(object instance, object Value)
+        private void set_236_RossumStatusIndicatorConverter_DeletedBrush(object instance, object Value)
         {
             var that = (global::MattTools.Converters.RossumStatusIndicatorConverter)instance;
             that.DeletedBrush = (global::Microsoft.UI.Xaml.Media.SolidColorBrush)Value;
         }
-        private object get_174_RossumStatusIndicatorConverter_ReviewBrush(object instance)
+        private object get_237_RossumStatusIndicatorConverter_ReviewBrush(object instance)
         {
             var that = (global::MattTools.Converters.RossumStatusIndicatorConverter)instance;
             return that.ReviewBrush;
         }
-        private void set_174_RossumStatusIndicatorConverter_ReviewBrush(object instance, object Value)
+        private void set_237_RossumStatusIndicatorConverter_ReviewBrush(object instance, object Value)
         {
             var that = (global::MattTools.Converters.RossumStatusIndicatorConverter)instance;
             that.ReviewBrush = (global::Microsoft.UI.Xaml.Media.SolidColorBrush)Value;
         }
-        private object get_175_Effects_Shadow(object instance)
-        {
-            return global::CommunityToolkit.WinUI.UI.Effects.GetShadow((global::Microsoft.UI.Xaml.FrameworkElement)instance);
-        }
-        private void set_175_Effects_Shadow(object instance, object Value)
-        {
-            global::CommunityToolkit.WinUI.UI.Effects.SetShadow((global::Microsoft.UI.Xaml.FrameworkElement)instance, (global::CommunityToolkit.WinUI.UI.AttachedShadowBase)Value);
-        }
-        private object get_176_RossumExtractorView_ViewModel(object instance)
+        private object get_238_RossumExtractorView_ViewModel(object instance)
         {
             var that = (global::MattTools.Views.RossumExtractorView)instance;
             return that.ViewModel;
         }
-        private void set_176_RossumExtractorView_ViewModel(object instance, object Value)
+        private void set_238_RossumExtractorView_ViewModel(object instance, object Value)
         {
             var that = (global::MattTools.Views.RossumExtractorView)instance;
             that.ViewModel = (global::MattTools.ViewModels.RossumExtractorViewModel)Value;
         }
-        private object get_177_SettingsCard_Description(object instance)
+        private object get_239_SettingsCard_Description(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.Description;
         }
-        private void set_177_SettingsCard_Description(object instance, object Value)
+        private void set_239_SettingsCard_Description(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.Description = (global::System.Object)Value;
         }
-        private object get_178_SettingsCard_Header(object instance)
+        private object get_240_SettingsCard_Header(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.Header;
         }
-        private void set_178_SettingsCard_Header(object instance, object Value)
+        private void set_240_SettingsCard_Header(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_179_SettingsCard_HeaderIcon(object instance)
+        private object get_241_SettingsCard_HeaderIcon(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.HeaderIcon;
         }
-        private void set_179_SettingsCard_HeaderIcon(object instance, object Value)
+        private void set_241_SettingsCard_HeaderIcon(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.HeaderIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
-        private object get_180_SettingsCard_ActionIcon(object instance)
+        private object get_242_SettingsCard_ActionIcon(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.ActionIcon;
         }
-        private void set_180_SettingsCard_ActionIcon(object instance, object Value)
+        private void set_242_SettingsCard_ActionIcon(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.ActionIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
-        private object get_181_SettingsCard_ActionIconToolTip(object instance)
+        private object get_243_SettingsCard_ActionIconToolTip(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.ActionIconToolTip;
         }
-        private void set_181_SettingsCard_ActionIconToolTip(object instance, object Value)
+        private void set_243_SettingsCard_ActionIconToolTip(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.ActionIconToolTip = (global::System.String)Value;
         }
-        private object get_182_SettingsCard_IsClickEnabled(object instance)
+        private object get_244_SettingsCard_IsClickEnabled(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.IsClickEnabled;
         }
-        private void set_182_SettingsCard_IsClickEnabled(object instance, object Value)
+        private void set_244_SettingsCard_IsClickEnabled(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.IsClickEnabled = (global::System.Boolean)Value;
         }
-        private object get_183_SettingsCard_ContentAlignment(object instance)
+        private object get_245_SettingsCard_ContentAlignment(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.ContentAlignment;
         }
-        private void set_183_SettingsCard_ContentAlignment(object instance, object Value)
+        private void set_245_SettingsCard_ContentAlignment(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.ContentAlignment = (global::CommunityToolkit.WinUI.Controls.ContentAlignment)Value;
         }
-        private object get_184_SettingsCard_IsActionIconVisible(object instance)
+        private object get_246_SettingsCard_IsActionIconVisible(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.IsActionIconVisible;
         }
-        private void set_184_SettingsCard_IsActionIconVisible(object instance, object Value)
+        private void set_246_SettingsCard_IsActionIconVisible(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.IsActionIconVisible = (global::System.Boolean)Value;
         }
-        private object get_185_ImageIcon_Source(object instance)
+        private object get_247_ImageIcon_Source(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ImageIcon)instance;
             return that.Source;
         }
-        private void set_185_ImageIcon_Source(object instance, object Value)
+        private void set_247_ImageIcon_Source(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ImageIcon)instance;
             that.Source = (global::Microsoft.UI.Xaml.Media.ImageSource)Value;
         }
-        private object get_186_FontIconExtension_Glyph(object instance)
+        private object get_248_FontIconExtension_Glyph(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             return that.Glyph;
         }
-        private void set_186_FontIconExtension_Glyph(object instance, object Value)
+        private void set_248_FontIconExtension_Glyph(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             that.Glyph = (global::System.String)Value;
         }
-        private object get_187_FontIconExtension_FontFamily(object instance)
+        private object get_249_FontIconExtension_FontFamily(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             return that.FontFamily;
         }
-        private void set_187_FontIconExtension_FontFamily(object instance, object Value)
+        private void set_249_FontIconExtension_FontFamily(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             that.FontFamily = (global::Microsoft.UI.Xaml.Media.FontFamily)Value;
         }
-        private object get_188_TextIconExtension_FontSize(object instance)
+        private object get_250_TextIconExtension_FontSize(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.FontSize;
         }
-        private void set_188_TextIconExtension_FontSize(object instance, object Value)
+        private void set_250_TextIconExtension_FontSize(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.FontSize = (global::System.Double)Value;
         }
-        private object get_189_TextIconExtension_FontWeight(object instance)
+        private object get_251_TextIconExtension_FontWeight(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.FontWeight;
         }
-        private void set_189_TextIconExtension_FontWeight(object instance, object Value)
+        private void set_251_TextIconExtension_FontWeight(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.FontWeight = (global::Windows.UI.Text.FontWeight)Value;
         }
-        private object get_190_TextIconExtension_FontStyle(object instance)
+        private object get_252_TextIconExtension_FontStyle(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.FontStyle;
         }
-        private void set_190_TextIconExtension_FontStyle(object instance, object Value)
+        private void set_252_TextIconExtension_FontStyle(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
         }
-        private object get_191_TextIconExtension_Foreground(object instance)
+        private object get_253_TextIconExtension_Foreground(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.Foreground;
         }
-        private void set_191_TextIconExtension_Foreground(object instance, object Value)
+        private void set_253_TextIconExtension_Foreground(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.Foreground = (global::Microsoft.UI.Xaml.Media.Brush)Value;
         }
-        private object get_192_TextIconExtension_IsTextScaleFactorEnabled(object instance)
+        private object get_254_TextIconExtension_IsTextScaleFactorEnabled(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.IsTextScaleFactorEnabled;
         }
-        private void set_192_TextIconExtension_IsTextScaleFactorEnabled(object instance, object Value)
+        private void set_254_TextIconExtension_IsTextScaleFactorEnabled(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.IsTextScaleFactorEnabled = (global::System.Boolean)Value;
         }
-        private object get_193_TextIconExtension_MirroredWhenRightToLeft(object instance)
+        private object get_255_TextIconExtension_MirroredWhenRightToLeft(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.MirroredWhenRightToLeft;
         }
-        private void set_193_TextIconExtension_MirroredWhenRightToLeft(object instance, object Value)
+        private void set_255_TextIconExtension_MirroredWhenRightToLeft(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.MirroredWhenRightToLeft = (global::System.Boolean)Value;
         }
-        private object get_194_SOAMergerViewModel_SOAfiles(object instance)
+        private object get_256_SOAMergerViewModel_SOAfiles(object instance)
         {
             var that = (global::MattTools.ViewModels.SOAMergerViewModel)instance;
             return that.SOAfiles;
         }
-        private void set_194_SOAMergerViewModel_SOAfiles(object instance, object Value)
+        private void set_256_SOAMergerViewModel_SOAfiles(object instance, object Value)
         {
             var that = (global::MattTools.ViewModels.SOAMergerViewModel)instance;
             that.SOAfiles = (global::System.Collections.ObjectModel.ObservableCollection<global::MattTools.Models.SOAFile>)Value;
         }
-        private object get_195_SOAFile_FileName(object instance)
+        private object get_257_SOAFile_FileName(object instance)
         {
             var that = (global::MattTools.Models.SOAFile)instance;
             return that.FileName;
         }
-        private void set_195_SOAFile_FileName(object instance, object Value)
+        private void set_257_SOAFile_FileName(object instance, object Value)
         {
             var that = (global::MattTools.Models.SOAFile)instance;
             that.FileName = (global::System.String)Value;
         }
-        private object get_196_SOAFile_Cabang(object instance)
+        private object get_258_SOAFile_Cabang(object instance)
         {
             var that = (global::MattTools.Models.SOAFile)instance;
             return that.Cabang;
         }
-        private void set_196_SOAFile_Cabang(object instance, object Value)
+        private void set_258_SOAFile_Cabang(object instance, object Value)
         {
             var that = (global::MattTools.Models.SOAFile)instance;
             that.Cabang = (global::System.String)Value;
         }
-        private object get_197_SOAFile_FilePath(object instance)
+        private object get_259_SOAFile_FilePath(object instance)
         {
             var that = (global::MattTools.Models.SOAFile)instance;
             return that.FilePath;
         }
-        private void set_197_SOAFile_FilePath(object instance, object Value)
+        private void set_259_SOAFile_FilePath(object instance, object Value)
         {
             var that = (global::MattTools.Models.SOAFile)instance;
             that.FilePath = (global::System.String)Value;
         }
-        private object get_198_SOAFile_OriginalSheet(object instance)
+        private object get_260_SOAFile_OriginalSheet(object instance)
         {
             var that = (global::MattTools.Models.SOAFile)instance;
             return that.OriginalSheet;
         }
-        private void set_198_SOAFile_OriginalSheet(object instance, object Value)
+        private void set_260_SOAFile_OriginalSheet(object instance, object Value)
         {
             var that = (global::MattTools.Models.SOAFile)instance;
             that.OriginalSheet = (global::NPOI.SS.UserModel.ISheet)Value;
         }
-        private object get_199_SOAFile_Sheet(object instance)
+        private object get_261_SOAFile_Sheet(object instance)
         {
             var that = (global::MattTools.Models.SOAFile)instance;
             return that.Sheet;
         }
-        private void set_199_SOAFile_Sheet(object instance, object Value)
+        private void set_261_SOAFile_Sheet(object instance, object Value)
         {
             var that = (global::MattTools.Models.SOAFile)instance;
             that.Sheet = (global::NPOI.SS.UserModel.ISheet)Value;
         }
-        private object get_200_SOAMergerView_ViewModel(object instance)
+        private object get_262_SOAMergerView_ViewModel(object instance)
         {
             var that = (global::MattTools.Views.SOAMergerView)instance;
             return that.ViewModel;
         }
-        private void set_200_SOAMergerView_ViewModel(object instance, object Value)
+        private void set_262_SOAMergerView_ViewModel(object instance, object Value)
         {
             var that = (global::MattTools.Views.SOAMergerView)instance;
             that.ViewModel = (global::MattTools.ViewModels.SOAMergerViewModel)Value;
         }
-        private object get_201_ZesthubViewModel_supplierInvoiceFormControl(object instance)
+        private object get_263_ZesthubViewModel_supplierInvoiceFormControl(object instance)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             return that.supplierInvoiceFormControl;
         }
-        private void set_201_ZesthubViewModel_supplierInvoiceFormControl(object instance, object Value)
+        private void set_263_ZesthubViewModel_supplierInvoiceFormControl(object instance, object Value)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             that.supplierInvoiceFormControl = (global::Controls.SupplierInvoiceForm)Value;
         }
-        private object get_202_ZesthubViewModel_InvoiceID(object instance)
+        private object get_264_ZesthubViewModel_InvoiceID(object instance)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             return that.InvoiceID;
         }
-        private void set_202_ZesthubViewModel_InvoiceID(object instance, object Value)
+        private void set_264_ZesthubViewModel_InvoiceID(object instance, object Value)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             that.InvoiceID = (global::System.Int32)Value;
         }
-        private object get_203_ZesthubViewModel_SetAccountNumber(object instance)
+        private object get_265_ZesthubViewModel_SetAccountNumber(object instance)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             return that.SetAccountNumber;
         }
-        private void set_203_ZesthubViewModel_SetAccountNumber(object instance, object Value)
+        private void set_265_ZesthubViewModel_SetAccountNumber(object instance, object Value)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             that.SetAccountNumber = (global::System.String)Value;
         }
-        private object get_204_ZesthubViewModel_SetDueDate(object instance)
+        private object get_266_ZesthubViewModel_SetDueDate(object instance)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             return that.SetDueDate;
         }
-        private void set_204_ZesthubViewModel_SetDueDate(object instance, object Value)
+        private void set_266_ZesthubViewModel_SetDueDate(object instance, object Value)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             that.SetDueDate = (global::System.Nullable<global::System.DateTime>)Value;
         }
-        private object get_205_ZesthubViewModel_SetPlanDate(object instance)
+        private object get_267_ZesthubViewModel_SetPlanDate(object instance)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             return that.SetPlanDate;
         }
-        private void set_205_ZesthubViewModel_SetPlanDate(object instance, object Value)
+        private void set_267_ZesthubViewModel_SetPlanDate(object instance, object Value)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             that.SetPlanDate = (global::System.Nullable<global::System.DateTime>)Value;
         }
-        private object get_206_ZesthubViewModel_IsLoggedIn(object instance)
+        private object get_268_ZesthubViewModel_IsLoggedIn(object instance)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             return that.IsLoggedIn;
         }
-        private void set_206_ZesthubViewModel_IsLoggedIn(object instance, object Value)
+        private void set_268_ZesthubViewModel_IsLoggedIn(object instance, object Value)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             that.IsLoggedIn = (global::System.Boolean)Value;
         }
-        private object get_207_ZesthubViewModel_IsHaveUserKey(object instance)
+        private object get_269_ZesthubViewModel_IsHaveUserKey(object instance)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             return that.IsHaveUserKey;
         }
-        private object get_208_ZesthubViewModel_SavedUsername(object instance)
+        private object get_270_ZesthubViewModel_SavedUsername(object instance)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             return that.SavedUsername;
         }
-        private object get_209_ZesthubViewModel_UserKey(object instance)
+        private object get_271_ZesthubViewModel_UserKey(object instance)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             return that.UserKey;
         }
-        private object get_210_ZesthubViewModel_LoginID(object instance)
+        private object get_272_ZesthubViewModel_LoginID(object instance)
         {
             var that = (global::MattTools.ViewModels.ZesthubViewModel)instance;
             return that.LoginID;
         }
-        private object get_211_ZesthubView_ViewModel(object instance)
+        private object get_273_ZesthubView_ViewModel(object instance)
         {
             var that = (global::MattTools.Views.ZesthubView)instance;
             return that.ViewModel;
         }
-        private void set_211_ZesthubView_ViewModel(object instance, object Value)
+        private void set_273_ZesthubView_ViewModel(object instance, object Value)
         {
             var that = (global::MattTools.Views.ZesthubView)instance;
             that.ViewModel = (global::MattTools.ViewModels.ZesthubViewModel)Value;
         }
-        private object get_212_TreeViewNode_Children(object instance)
+        private object get_274_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_213_TreeViewNode_Content(object instance)
+        private object get_275_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_213_TreeViewNode_Content(object instance, object Value)
+        private void set_275_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_214_TreeViewNode_Depth(object instance)
+        private object get_276_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_215_TreeViewNode_HasChildren(object instance)
+        private object get_277_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_216_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_278_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_216_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_278_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_217_TreeViewNode_IsExpanded(object instance)
+        private object get_279_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_217_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_279_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_218_TreeViewNode_Parent(object instance)
+        private object get_280_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -4860,425 +5772,825 @@ namespace MattTools.MattTools_XamlTypeInfo
                 xamlMember.Getter = get_151_InvoiceMergerView_ViewModel;
                 xamlMember.Setter = set_151_InvoiceMergerView_ViewModel;
                 break;
-            case "MattTools.ViewModels.RossumExtractorViewModel.Workspaces":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Workspaces", "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.Workspace>");
-                xamlMember.Getter = get_152_RossumExtractorViewModel_Workspaces;
-                xamlMember.Setter = set_152_RossumExtractorViewModel_Workspaces;
+            case "ViewModels.PdfEditorViewModel.Documents":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ViewModels.PdfEditorViewModel");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Documents", "System.Collections.ObjectModel.ObservableCollection`1<Models.PdfEditor.PDoc>");
+                xamlMember.Getter = get_152_PdfEditorViewModel_Documents;
+                xamlMember.Setter = set_152_PdfEditorViewModel_Documents;
                 break;
-            case "MattTools.Models.Rossum.Workspace.Id":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.Workspace");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Id", "Int32");
-                xamlMember.Getter = get_153_Workspace_Id;
-                xamlMember.Setter = set_153_Workspace_Id;
+            case "Models.PdfEditor.PDoc.PdfDoc":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PDoc");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "PdfDoc", "PdfSharp.Pdf.PdfDocument");
+                xamlMember.Getter = get_153_PDoc_PdfDoc;
+                xamlMember.Setter = set_153_PDoc_PdfDoc;
                 break;
-            case "MattTools.Models.Rossum.Workspace.Name":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.Workspace");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_154_Workspace_Name;
-                xamlMember.Setter = set_154_Workspace_Name;
+            case "Models.PdfEditor.PDoc.FileName":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PDoc");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "FileName", "String");
+                xamlMember.Getter = get_154_PDoc_FileName;
+                xamlMember.Setter = set_154_PDoc_FileName;
                 break;
-            case "MattTools.Models.Rossum.Workspace.QueuesURL":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.Workspace");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "QueuesURL", "System.Collections.Generic.List`1<String>");
-                xamlMember.Getter = get_155_Workspace_QueuesURL;
-                xamlMember.Setter = set_155_Workspace_QueuesURL;
+            case "Models.PdfEditor.PDoc.Path":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PDoc");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Path", "String");
+                xamlMember.Getter = get_155_PDoc_Path;
+                xamlMember.Setter = set_155_PDoc_Path;
                 break;
-            case "MattTools.ViewModels.RossumExtractorViewModel.Queues":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Queues", "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.Queue>");
-                xamlMember.Getter = get_156_RossumExtractorViewModel_Queues;
-                xamlMember.Setter = set_156_RossumExtractorViewModel_Queues;
+            case "Models.PdfEditor.PDoc.Pages":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PDoc");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Pages", "System.Collections.Generic.List`1<Models.PdfEditor.PPage>");
+                xamlMember.Getter = get_156_PDoc_Pages;
+                xamlMember.Setter = set_156_PDoc_Pages;
                 break;
-            case "MattTools.Models.Rossum.Queue.Id":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.Queue");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Id", "Int32");
-                xamlMember.Getter = get_157_Queue_Id;
-                xamlMember.Setter = set_157_Queue_Id;
+            case "Models.PdfEditor.PPage.ParentPdf":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PPage");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ParentPdf", "Models.PdfEditor.PDoc");
+                xamlMember.Getter = get_157_PPage_ParentPdf;
+                xamlMember.Setter = set_157_PPage_ParentPdf;
                 break;
-            case "MattTools.Models.Rossum.Queue.Name":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.Queue");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_158_Queue_Name;
-                xamlMember.Setter = set_158_Queue_Name;
+            case "Models.PdfEditor.PPage.ThumbnailImage":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PPage");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ThumbnailImage", "Microsoft.UI.Xaml.Media.Imaging.BitmapImage");
+                xamlMember.Getter = get_158_PPage_ThumbnailImage;
+                xamlMember.Setter = set_158_PPage_ThumbnailImage;
                 break;
-            case "MattTools.Models.Rossum.Queue.Status":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.Queue");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Status", "String");
-                xamlMember.Getter = get_159_Queue_Status;
-                xamlMember.Setter = set_159_Queue_Status;
+            case "Models.PdfEditor.PPage.PdfSharpPage":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PPage");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "PdfSharpPage", "PdfSharp.Pdf.PdfPage");
+                xamlMember.Getter = get_159_PPage_PdfSharpPage;
+                xamlMember.Setter = set_159_PPage_PdfSharpPage;
                 break;
-            case "MattTools.ViewModels.RossumExtractorViewModel.RossumItems":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "RossumItems", "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.RossumItem>");
-                xamlMember.Getter = get_160_RossumExtractorViewModel_RossumItems;
-                xamlMember.Setter = set_160_RossumExtractorViewModel_RossumItems;
+            case "Models.PdfEditor.PPage.PageIndex":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PPage");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "PageIndex", "Int32");
+                xamlMember.Getter = get_160_PPage_PageIndex;
+                xamlMember.Setter = set_160_PPage_PageIndex;
                 break;
-            case "MattTools.Models.Rossum.RossumItem.Name":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.RossumItem");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_161_RossumItem_Name;
-                xamlMember.Setter = set_161_RossumItem_Name;
+            case "Models.PdfEditor.PPage.ColorBrush":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PPage");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ColorBrush", "Microsoft.UI.Xaml.Media.SolidColorBrush");
+                xamlMember.Getter = get_161_PPage_ColorBrush;
+                xamlMember.Setter = set_161_PPage_ColorBrush;
                 break;
-            case "MattTools.Models.Rossum.RossumItem.AnnotationID":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.RossumItem");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "AnnotationID", "Int32");
-                xamlMember.Getter = get_162_RossumItem_AnnotationID;
-                xamlMember.Setter = set_162_RossumItem_AnnotationID;
-                break;
-            case "MattTools.Models.Rossum.RossumItem.DocumentID":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.RossumItem");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "DocumentID", "Int32");
-                xamlMember.Getter = get_163_RossumItem_DocumentID;
-                xamlMember.Setter = set_163_RossumItem_DocumentID;
-                break;
-            case "MattTools.Models.Rossum.RossumItem.CreateDate":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.RossumItem");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "CreateDate", "System.DateTime");
-                xamlMember.Getter = get_164_RossumItem_CreateDate;
-                xamlMember.Setter = set_164_RossumItem_CreateDate;
-                break;
-            case "MattTools.Models.Rossum.RossumItem.Status":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.RossumItem");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Status", "String");
-                xamlMember.Getter = get_165_RossumItem_Status;
-                xamlMember.Setter = set_165_RossumItem_Status;
-                break;
-            case "MattTools.Models.Rossum.RossumItem.StatusFormarted":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.RossumItem");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "StatusFormarted", "String");
-                xamlMember.Getter = get_166_RossumItem_StatusFormarted;
+            case "Models.PdfEditor.PPage.PageNumber":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PPage");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "PageNumber", "String");
+                xamlMember.Getter = get_162_PPage_PageNumber;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "MattTools.ViewModels.RossumExtractorViewModel.IsLoggedIn":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsLoggedIn", "Boolean");
-                xamlMember.Getter = get_167_RossumExtractorViewModel_IsLoggedIn;
-                xamlMember.Setter = set_167_RossumExtractorViewModel_IsLoggedIn;
+            case "Models.PdfEditor.PDoc.ColorBrush":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PDoc");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ColorBrush", "Microsoft.UI.Xaml.Media.SolidColorBrush");
+                xamlMember.Getter = get_163_PDoc_ColorBrush;
+                xamlMember.Setter = set_163_PDoc_ColorBrush;
                 break;
-            case "MattTools.ViewModels.RossumExtractorViewModel.IsHaveUserKey":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsHaveUserKey", "Boolean");
-                xamlMember.Getter = get_168_RossumExtractorViewModel_IsHaveUserKey;
+            case "Models.PdfEditor.PDoc.ThumbnailImage":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PDoc");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ThumbnailImage", "Microsoft.UI.Xaml.Media.Imaging.BitmapImage");
+                xamlMember.Getter = get_164_PDoc_ThumbnailImage;
+                xamlMember.Setter = set_164_PDoc_ThumbnailImage;
+                break;
+            case "Models.PdfEditor.PDoc.FileSize":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PDoc");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "FileSize", "String");
+                xamlMember.Getter = get_165_PDoc_FileSize;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "MattTools.ViewModels.RossumExtractorViewModel.SavedUsername":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "SavedUsername", "String");
-                xamlMember.Getter = get_169_RossumExtractorViewModel_SavedUsername;
+            case "Models.PdfEditor.PDoc.CompressQuality":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PDoc");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "CompressQuality", "Int32");
+                xamlMember.Getter = get_166_PDoc_CompressQuality;
+                xamlMember.Setter = set_166_PDoc_CompressQuality;
+                break;
+            case "Models.PdfEditor.PDoc.CompressedFileSize":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PDoc");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "CompressedFileSize", "String");
+                xamlMember.Getter = get_167_PDoc_CompressedFileSize;
+                xamlMember.Setter = set_167_PDoc_CompressedFileSize;
+                break;
+            case "Models.PdfEditor.PDoc.IsCompressing":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PDoc");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsCompressing", "Boolean");
+                xamlMember.Getter = get_168_PDoc_IsCompressing;
+                xamlMember.Setter = set_168_PDoc_IsCompressing;
+                break;
+            case "Models.PdfEditor.PDoc.IsCompressingInvert":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Models.PdfEditor.PDoc");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsCompressingInvert", "Boolean");
+                xamlMember.Getter = get_169_PDoc_IsCompressingInvert;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "MattTools.ViewModels.RossumExtractorViewModel.UserKey":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "UserKey", "String");
-                xamlMember.Getter = get_170_RossumExtractorViewModel_UserKey;
+            case "ViewModels.PdfEditorViewModel.Pages":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ViewModels.PdfEditorViewModel");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Pages", "System.Collections.ObjectModel.ObservableCollection`1<Models.PdfEditor.PPage>");
+                xamlMember.Getter = get_170_PdfEditorViewModel_Pages;
+                xamlMember.Setter = set_170_PdfEditorViewModel_Pages;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.IsActive":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsActive", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_171_ProgressRing_IsActive;
+                xamlMember.Setter = set_171_ProgressRing_IsActive;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.IsIndeterminate":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsIndeterminate", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_172_ProgressRing_IsIndeterminate;
+                xamlMember.Setter = set_172_ProgressRing_IsIndeterminate;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.Maximum":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Maximum", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_173_ProgressRing_Maximum;
+                xamlMember.Setter = set_173_ProgressRing_Maximum;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.Minimum":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Minimum", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_174_ProgressRing_Minimum;
+                xamlMember.Setter = set_174_ProgressRing_Minimum;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.TemplateSettings":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings");
+                xamlMember.Getter = get_175_ProgressRing_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "MattTools.Converters.RossumStatusIndicatorConverter.ConfirmedBrush":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Converters.RossumStatusIndicatorConverter");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ConfirmedBrush", "Microsoft.UI.Xaml.Media.SolidColorBrush");
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.Value":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Value", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_171_RossumStatusIndicatorConverter_ConfirmedBrush;
-                xamlMember.Setter = set_171_RossumStatusIndicatorConverter_ConfirmedBrush;
+                xamlMember.Getter = get_176_ProgressRing_Value;
+                xamlMember.Setter = set_176_ProgressRing_Value;
                 break;
-            case "MattTools.Converters.RossumStatusIndicatorConverter.DefaultBrush":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Converters.RossumStatusIndicatorConverter");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "DefaultBrush", "Microsoft.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_172_RossumStatusIndicatorConverter_DefaultBrush;
-                xamlMember.Setter = set_172_RossumStatusIndicatorConverter_DefaultBrush;
-                break;
-            case "MattTools.Converters.RossumStatusIndicatorConverter.DeletedBrush":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Converters.RossumStatusIndicatorConverter");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "DeletedBrush", "Microsoft.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_173_RossumStatusIndicatorConverter_DeletedBrush;
-                xamlMember.Setter = set_173_RossumStatusIndicatorConverter_DeletedBrush;
-                break;
-            case "MattTools.Converters.RossumStatusIndicatorConverter.ReviewBrush":
-                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Converters.RossumStatusIndicatorConverter");
-                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ReviewBrush", "Microsoft.UI.Xaml.Media.SolidColorBrush");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_174_RossumStatusIndicatorConverter_ReviewBrush;
-                xamlMember.Setter = set_174_RossumStatusIndicatorConverter_ReviewBrush;
+            case "Views.PdfCompressorView.ViewModel":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Views.PdfCompressorView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ViewModel", "ViewModels.PdfEditorViewModel");
+                xamlMember.Getter = get_177_PdfCompressorView_ViewModel;
+                xamlMember.Setter = set_177_PdfCompressorView_ViewModel;
                 break;
             case "CommunityToolkit.WinUI.UI.Effects.Shadow":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.UI.Effects");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Shadow", "CommunityToolkit.WinUI.UI.AttachedShadowBase");
                 xamlMember.SetTargetTypeName("Microsoft.UI.Xaml.FrameworkElement");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_175_Effects_Shadow;
-                xamlMember.Setter = set_175_Effects_Shadow;
+                xamlMember.Getter = get_178_Effects_Shadow;
+                xamlMember.Setter = set_178_Effects_Shadow;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.Content":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Content", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_179_ScrollView_Content;
+                xamlMember.Setter = set_179_ScrollView_Content;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedHorizontalScrollBarVisibility":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ComputedHorizontalScrollBarVisibility", "Microsoft.UI.Xaml.Visibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_180_ScrollView_ComputedHorizontalScrollBarVisibility;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedHorizontalScrollMode":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ComputedHorizontalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_181_ScrollView_ComputedHorizontalScrollMode;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedVerticalScrollBarVisibility":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ComputedVerticalScrollBarVisibility", "Microsoft.UI.Xaml.Visibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_182_ScrollView_ComputedVerticalScrollBarVisibility;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedVerticalScrollMode":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ComputedVerticalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_183_ScrollView_ComputedVerticalScrollMode;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ContentOrientation":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ContentOrientation", "Microsoft.UI.Xaml.Controls.ScrollingContentOrientation");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_184_ScrollView_ContentOrientation;
+                xamlMember.Setter = set_184_ScrollView_ContentOrientation;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.CurrentAnchor":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "CurrentAnchor", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.Getter = get_185_ScrollView_CurrentAnchor;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ExpressionAnimationSources":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ExpressionAnimationSources", "Microsoft.UI.Composition.CompositionPropertySet");
+                xamlMember.Getter = get_186_ScrollView_ExpressionAnimationSources;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ExtentHeight":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ExtentHeight", "Double");
+                xamlMember.Getter = get_187_ScrollView_ExtentHeight;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ExtentWidth":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ExtentWidth", "Double");
+                xamlMember.Getter = get_188_ScrollView_ExtentWidth;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalAnchorRatio":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "HorizontalAnchorRatio", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_189_ScrollView_HorizontalAnchorRatio;
+                xamlMember.Setter = set_189_ScrollView_HorizontalAnchorRatio;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalOffset":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "HorizontalOffset", "Double");
+                xamlMember.Getter = get_190_ScrollView_HorizontalOffset;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollBarVisibility":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "HorizontalScrollBarVisibility", "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_191_ScrollView_HorizontalScrollBarVisibility;
+                xamlMember.Setter = set_191_ScrollView_HorizontalScrollBarVisibility;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollChainMode":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "HorizontalScrollChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_192_ScrollView_HorizontalScrollChainMode;
+                xamlMember.Setter = set_192_ScrollView_HorizontalScrollChainMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollMode":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "HorizontalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_193_ScrollView_HorizontalScrollMode;
+                xamlMember.Setter = set_193_ScrollView_HorizontalScrollMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollRailMode":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "HorizontalScrollRailMode", "Microsoft.UI.Xaml.Controls.ScrollingRailMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_194_ScrollView_HorizontalScrollRailMode;
+                xamlMember.Setter = set_194_ScrollView_HorizontalScrollRailMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.IgnoredInputKinds":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IgnoredInputKinds", "Microsoft.UI.Xaml.Controls.ScrollingInputKinds");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_195_ScrollView_IgnoredInputKinds;
+                xamlMember.Setter = set_195_ScrollView_IgnoredInputKinds;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.MaxZoomFactor":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "MaxZoomFactor", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_196_ScrollView_MaxZoomFactor;
+                xamlMember.Setter = set_196_ScrollView_MaxZoomFactor;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.MinZoomFactor":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "MinZoomFactor", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_197_ScrollView_MinZoomFactor;
+                xamlMember.Setter = set_197_ScrollView_MinZoomFactor;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollPresenter":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ScrollPresenter", "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_198_ScrollView_ScrollPresenter;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.Content":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Content", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_199_ScrollPresenter_Content;
+                xamlMember.Setter = set_199_ScrollPresenter_Content;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollableHeight":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ScrollableHeight", "Double");
+                xamlMember.Getter = get_200_ScrollView_ScrollableHeight;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollableWidth":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ScrollableWidth", "Double");
+                xamlMember.Getter = get_201_ScrollView_ScrollableWidth;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.State":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "State", "Microsoft.UI.Xaml.Controls.ScrollingInteractionState");
+                xamlMember.Getter = get_202_ScrollView_State;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalAnchorRatio":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "VerticalAnchorRatio", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_203_ScrollView_VerticalAnchorRatio;
+                xamlMember.Setter = set_203_ScrollView_VerticalAnchorRatio;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalOffset":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "VerticalOffset", "Double");
+                xamlMember.Getter = get_204_ScrollView_VerticalOffset;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollBarVisibility":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "VerticalScrollBarVisibility", "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_205_ScrollView_VerticalScrollBarVisibility;
+                xamlMember.Setter = set_205_ScrollView_VerticalScrollBarVisibility;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollChainMode":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "VerticalScrollChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_206_ScrollView_VerticalScrollChainMode;
+                xamlMember.Setter = set_206_ScrollView_VerticalScrollChainMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollMode":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "VerticalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_207_ScrollView_VerticalScrollMode;
+                xamlMember.Setter = set_207_ScrollView_VerticalScrollMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollRailMode":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "VerticalScrollRailMode", "Microsoft.UI.Xaml.Controls.ScrollingRailMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_208_ScrollView_VerticalScrollRailMode;
+                xamlMember.Setter = set_208_ScrollView_VerticalScrollRailMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ViewportHeight":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ViewportHeight", "Double");
+                xamlMember.Getter = get_209_ScrollView_ViewportHeight;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ViewportWidth":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ViewportWidth", "Double");
+                xamlMember.Getter = get_210_ScrollView_ViewportWidth;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomChainMode":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ZoomChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_211_ScrollView_ZoomChainMode;
+                xamlMember.Setter = set_211_ScrollView_ZoomChainMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomFactor":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ZoomFactor", "Single");
+                xamlMember.Getter = get_212_ScrollView_ZoomFactor;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomMode":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ZoomMode", "Microsoft.UI.Xaml.Controls.ScrollingZoomMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_213_ScrollView_ZoomMode;
+                xamlMember.Setter = set_213_ScrollView_ZoomMode;
+                break;
+            case "Views.PdfOrganizerView.ViewModel":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Views.PdfOrganizerView");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ViewModel", "ViewModels.PdfEditorViewModel");
+                xamlMember.Getter = get_214_PdfOrganizerView_ViewModel;
+                xamlMember.Setter = set_214_PdfOrganizerView_ViewModel;
+                break;
+            case "MattTools.ViewModels.RossumExtractorViewModel.Workspaces":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Workspaces", "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.Workspace>");
+                xamlMember.Getter = get_215_RossumExtractorViewModel_Workspaces;
+                xamlMember.Setter = set_215_RossumExtractorViewModel_Workspaces;
+                break;
+            case "MattTools.Models.Rossum.Workspace.Id":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.Workspace");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Id", "Int32");
+                xamlMember.Getter = get_216_Workspace_Id;
+                xamlMember.Setter = set_216_Workspace_Id;
+                break;
+            case "MattTools.Models.Rossum.Workspace.Name":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.Workspace");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Name", "String");
+                xamlMember.Getter = get_217_Workspace_Name;
+                xamlMember.Setter = set_217_Workspace_Name;
+                break;
+            case "MattTools.Models.Rossum.Workspace.QueuesURL":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.Workspace");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "QueuesURL", "System.Collections.Generic.List`1<String>");
+                xamlMember.Getter = get_218_Workspace_QueuesURL;
+                xamlMember.Setter = set_218_Workspace_QueuesURL;
+                break;
+            case "MattTools.ViewModels.RossumExtractorViewModel.Queues":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Queues", "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.Queue>");
+                xamlMember.Getter = get_219_RossumExtractorViewModel_Queues;
+                xamlMember.Setter = set_219_RossumExtractorViewModel_Queues;
+                break;
+            case "MattTools.Models.Rossum.Queue.Id":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.Queue");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Id", "Int32");
+                xamlMember.Getter = get_220_Queue_Id;
+                xamlMember.Setter = set_220_Queue_Id;
+                break;
+            case "MattTools.Models.Rossum.Queue.Name":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.Queue");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Name", "String");
+                xamlMember.Getter = get_221_Queue_Name;
+                xamlMember.Setter = set_221_Queue_Name;
+                break;
+            case "MattTools.Models.Rossum.Queue.Status":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.Queue");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Status", "String");
+                xamlMember.Getter = get_222_Queue_Status;
+                xamlMember.Setter = set_222_Queue_Status;
+                break;
+            case "MattTools.ViewModels.RossumExtractorViewModel.RossumItems":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "RossumItems", "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.Rossum.RossumItem>");
+                xamlMember.Getter = get_223_RossumExtractorViewModel_RossumItems;
+                xamlMember.Setter = set_223_RossumExtractorViewModel_RossumItems;
+                break;
+            case "MattTools.Models.Rossum.RossumItem.Name":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.RossumItem");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Name", "String");
+                xamlMember.Getter = get_224_RossumItem_Name;
+                xamlMember.Setter = set_224_RossumItem_Name;
+                break;
+            case "MattTools.Models.Rossum.RossumItem.AnnotationID":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.RossumItem");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "AnnotationID", "Int32");
+                xamlMember.Getter = get_225_RossumItem_AnnotationID;
+                xamlMember.Setter = set_225_RossumItem_AnnotationID;
+                break;
+            case "MattTools.Models.Rossum.RossumItem.DocumentID":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.RossumItem");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "DocumentID", "Int32");
+                xamlMember.Getter = get_226_RossumItem_DocumentID;
+                xamlMember.Setter = set_226_RossumItem_DocumentID;
+                break;
+            case "MattTools.Models.Rossum.RossumItem.CreateDate":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.RossumItem");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "CreateDate", "System.DateTime");
+                xamlMember.Getter = get_227_RossumItem_CreateDate;
+                xamlMember.Setter = set_227_RossumItem_CreateDate;
+                break;
+            case "MattTools.Models.Rossum.RossumItem.Status":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.RossumItem");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Status", "String");
+                xamlMember.Getter = get_228_RossumItem_Status;
+                xamlMember.Setter = set_228_RossumItem_Status;
+                break;
+            case "MattTools.Models.Rossum.RossumItem.StatusFormarted":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.Rossum.RossumItem");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "StatusFormarted", "String");
+                xamlMember.Getter = get_229_RossumItem_StatusFormarted;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MattTools.ViewModels.RossumExtractorViewModel.IsLoggedIn":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsLoggedIn", "Boolean");
+                xamlMember.Getter = get_230_RossumExtractorViewModel_IsLoggedIn;
+                xamlMember.Setter = set_230_RossumExtractorViewModel_IsLoggedIn;
+                break;
+            case "MattTools.ViewModels.RossumExtractorViewModel.IsHaveUserKey":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsHaveUserKey", "Boolean");
+                xamlMember.Getter = get_231_RossumExtractorViewModel_IsHaveUserKey;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MattTools.ViewModels.RossumExtractorViewModel.SavedUsername":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "SavedUsername", "String");
+                xamlMember.Getter = get_232_RossumExtractorViewModel_SavedUsername;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MattTools.ViewModels.RossumExtractorViewModel.UserKey":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.RossumExtractorViewModel");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "UserKey", "String");
+                xamlMember.Getter = get_233_RossumExtractorViewModel_UserKey;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MattTools.Converters.RossumStatusIndicatorConverter.ConfirmedBrush":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Converters.RossumStatusIndicatorConverter");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ConfirmedBrush", "Microsoft.UI.Xaml.Media.SolidColorBrush");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_234_RossumStatusIndicatorConverter_ConfirmedBrush;
+                xamlMember.Setter = set_234_RossumStatusIndicatorConverter_ConfirmedBrush;
+                break;
+            case "MattTools.Converters.RossumStatusIndicatorConverter.DefaultBrush":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Converters.RossumStatusIndicatorConverter");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "DefaultBrush", "Microsoft.UI.Xaml.Media.SolidColorBrush");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_235_RossumStatusIndicatorConverter_DefaultBrush;
+                xamlMember.Setter = set_235_RossumStatusIndicatorConverter_DefaultBrush;
+                break;
+            case "MattTools.Converters.RossumStatusIndicatorConverter.DeletedBrush":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Converters.RossumStatusIndicatorConverter");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "DeletedBrush", "Microsoft.UI.Xaml.Media.SolidColorBrush");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_236_RossumStatusIndicatorConverter_DeletedBrush;
+                xamlMember.Setter = set_236_RossumStatusIndicatorConverter_DeletedBrush;
+                break;
+            case "MattTools.Converters.RossumStatusIndicatorConverter.ReviewBrush":
+                userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Converters.RossumStatusIndicatorConverter");
+                xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ReviewBrush", "Microsoft.UI.Xaml.Media.SolidColorBrush");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_237_RossumStatusIndicatorConverter_ReviewBrush;
+                xamlMember.Setter = set_237_RossumStatusIndicatorConverter_ReviewBrush;
                 break;
             case "MattTools.Views.RossumExtractorView.ViewModel":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Views.RossumExtractorView");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ViewModel", "MattTools.ViewModels.RossumExtractorViewModel");
-                xamlMember.Getter = get_176_RossumExtractorView_ViewModel;
-                xamlMember.Setter = set_176_RossumExtractorView_ViewModel;
+                xamlMember.Getter = get_238_RossumExtractorView_ViewModel;
+                xamlMember.Setter = set_238_RossumExtractorView_ViewModel;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.Description":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Description", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_177_SettingsCard_Description;
-                xamlMember.Setter = set_177_SettingsCard_Description;
+                xamlMember.Getter = get_239_SettingsCard_Description;
+                xamlMember.Setter = set_239_SettingsCard_Description;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.Header":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_178_SettingsCard_Header;
-                xamlMember.Setter = set_178_SettingsCard_Header;
+                xamlMember.Getter = get_240_SettingsCard_Header;
+                xamlMember.Setter = set_240_SettingsCard_Header;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.HeaderIcon":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_179_SettingsCard_HeaderIcon;
-                xamlMember.Setter = set_179_SettingsCard_HeaderIcon;
+                xamlMember.Getter = get_241_SettingsCard_HeaderIcon;
+                xamlMember.Setter = set_241_SettingsCard_HeaderIcon;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.ActionIcon":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ActionIcon", "Microsoft.UI.Xaml.Controls.IconElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_180_SettingsCard_ActionIcon;
-                xamlMember.Setter = set_180_SettingsCard_ActionIcon;
+                xamlMember.Getter = get_242_SettingsCard_ActionIcon;
+                xamlMember.Setter = set_242_SettingsCard_ActionIcon;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.ActionIconToolTip":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ActionIconToolTip", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_181_SettingsCard_ActionIconToolTip;
-                xamlMember.Setter = set_181_SettingsCard_ActionIconToolTip;
+                xamlMember.Getter = get_243_SettingsCard_ActionIconToolTip;
+                xamlMember.Setter = set_243_SettingsCard_ActionIconToolTip;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.IsClickEnabled":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsClickEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_182_SettingsCard_IsClickEnabled;
-                xamlMember.Setter = set_182_SettingsCard_IsClickEnabled;
+                xamlMember.Getter = get_244_SettingsCard_IsClickEnabled;
+                xamlMember.Setter = set_244_SettingsCard_IsClickEnabled;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.ContentAlignment":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ContentAlignment", "CommunityToolkit.WinUI.Controls.ContentAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_183_SettingsCard_ContentAlignment;
-                xamlMember.Setter = set_183_SettingsCard_ContentAlignment;
+                xamlMember.Getter = get_245_SettingsCard_ContentAlignment;
+                xamlMember.Setter = set_245_SettingsCard_ContentAlignment;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.IsActionIconVisible":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsActionIconVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_184_SettingsCard_IsActionIconVisible;
-                xamlMember.Setter = set_184_SettingsCard_IsActionIconVisible;
+                xamlMember.Getter = get_246_SettingsCard_IsActionIconVisible;
+                xamlMember.Setter = set_246_SettingsCard_IsActionIconVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.ImageIcon.Source":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ImageIcon");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Source", "Microsoft.UI.Xaml.Media.ImageSource");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_185_ImageIcon_Source;
-                xamlMember.Setter = set_185_ImageIcon_Source;
+                xamlMember.Getter = get_247_ImageIcon_Source;
+                xamlMember.Setter = set_247_ImageIcon_Source;
                 break;
             case "CommunityToolkit.WinUI.FontIconExtension.Glyph":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.FontIconExtension");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Glyph", "String");
-                xamlMember.Getter = get_186_FontIconExtension_Glyph;
-                xamlMember.Setter = set_186_FontIconExtension_Glyph;
+                xamlMember.Getter = get_248_FontIconExtension_Glyph;
+                xamlMember.Setter = set_248_FontIconExtension_Glyph;
                 break;
             case "CommunityToolkit.WinUI.FontIconExtension.FontFamily":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.FontIconExtension");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "FontFamily", "Microsoft.UI.Xaml.Media.FontFamily");
-                xamlMember.Getter = get_187_FontIconExtension_FontFamily;
-                xamlMember.Setter = set_187_FontIconExtension_FontFamily;
+                xamlMember.Getter = get_249_FontIconExtension_FontFamily;
+                xamlMember.Setter = set_249_FontIconExtension_FontFamily;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.FontSize":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
-                xamlMember.Getter = get_188_TextIconExtension_FontSize;
-                xamlMember.Setter = set_188_TextIconExtension_FontSize;
+                xamlMember.Getter = get_250_TextIconExtension_FontSize;
+                xamlMember.Setter = set_250_TextIconExtension_FontSize;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.FontWeight":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "FontWeight", "Windows.UI.Text.FontWeight");
-                xamlMember.Getter = get_189_TextIconExtension_FontWeight;
-                xamlMember.Setter = set_189_TextIconExtension_FontWeight;
+                xamlMember.Getter = get_251_TextIconExtension_FontWeight;
+                xamlMember.Setter = set_251_TextIconExtension_FontWeight;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.FontStyle":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "FontStyle", "Windows.UI.Text.FontStyle");
-                xamlMember.Getter = get_190_TextIconExtension_FontStyle;
-                xamlMember.Setter = set_190_TextIconExtension_FontStyle;
+                xamlMember.Getter = get_252_TextIconExtension_FontStyle;
+                xamlMember.Setter = set_252_TextIconExtension_FontStyle;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.Foreground":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Foreground", "Microsoft.UI.Xaml.Media.Brush");
-                xamlMember.Getter = get_191_TextIconExtension_Foreground;
-                xamlMember.Setter = set_191_TextIconExtension_Foreground;
+                xamlMember.Getter = get_253_TextIconExtension_Foreground;
+                xamlMember.Setter = set_253_TextIconExtension_Foreground;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.IsTextScaleFactorEnabled":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsTextScaleFactorEnabled", "Boolean");
-                xamlMember.Getter = get_192_TextIconExtension_IsTextScaleFactorEnabled;
-                xamlMember.Setter = set_192_TextIconExtension_IsTextScaleFactorEnabled;
+                xamlMember.Getter = get_254_TextIconExtension_IsTextScaleFactorEnabled;
+                xamlMember.Setter = set_254_TextIconExtension_IsTextScaleFactorEnabled;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.MirroredWhenRightToLeft":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "MirroredWhenRightToLeft", "Boolean");
-                xamlMember.Getter = get_193_TextIconExtension_MirroredWhenRightToLeft;
-                xamlMember.Setter = set_193_TextIconExtension_MirroredWhenRightToLeft;
+                xamlMember.Getter = get_255_TextIconExtension_MirroredWhenRightToLeft;
+                xamlMember.Setter = set_255_TextIconExtension_MirroredWhenRightToLeft;
                 break;
             case "MattTools.ViewModels.SOAMergerViewModel.SOAfiles":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.SOAMergerViewModel");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "SOAfiles", "System.Collections.ObjectModel.ObservableCollection`1<MattTools.Models.SOAFile>");
-                xamlMember.Getter = get_194_SOAMergerViewModel_SOAfiles;
-                xamlMember.Setter = set_194_SOAMergerViewModel_SOAfiles;
+                xamlMember.Getter = get_256_SOAMergerViewModel_SOAfiles;
+                xamlMember.Setter = set_256_SOAMergerViewModel_SOAfiles;
                 break;
             case "MattTools.Models.SOAFile.FileName":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.SOAFile");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "FileName", "String");
-                xamlMember.Getter = get_195_SOAFile_FileName;
-                xamlMember.Setter = set_195_SOAFile_FileName;
+                xamlMember.Getter = get_257_SOAFile_FileName;
+                xamlMember.Setter = set_257_SOAFile_FileName;
                 break;
             case "MattTools.Models.SOAFile.Cabang":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.SOAFile");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Cabang", "String");
-                xamlMember.Getter = get_196_SOAFile_Cabang;
-                xamlMember.Setter = set_196_SOAFile_Cabang;
+                xamlMember.Getter = get_258_SOAFile_Cabang;
+                xamlMember.Setter = set_258_SOAFile_Cabang;
                 break;
             case "MattTools.Models.SOAFile.FilePath":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.SOAFile");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "FilePath", "String");
-                xamlMember.Getter = get_197_SOAFile_FilePath;
-                xamlMember.Setter = set_197_SOAFile_FilePath;
+                xamlMember.Getter = get_259_SOAFile_FilePath;
+                xamlMember.Setter = set_259_SOAFile_FilePath;
                 break;
             case "MattTools.Models.SOAFile.OriginalSheet":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.SOAFile");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "OriginalSheet", "NPOI.SS.UserModel.ISheet");
-                xamlMember.Getter = get_198_SOAFile_OriginalSheet;
-                xamlMember.Setter = set_198_SOAFile_OriginalSheet;
+                xamlMember.Getter = get_260_SOAFile_OriginalSheet;
+                xamlMember.Setter = set_260_SOAFile_OriginalSheet;
                 break;
             case "MattTools.Models.SOAFile.Sheet":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Models.SOAFile");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Sheet", "NPOI.SS.UserModel.ISheet");
-                xamlMember.Getter = get_199_SOAFile_Sheet;
-                xamlMember.Setter = set_199_SOAFile_Sheet;
+                xamlMember.Getter = get_261_SOAFile_Sheet;
+                xamlMember.Setter = set_261_SOAFile_Sheet;
                 break;
             case "MattTools.Views.SOAMergerView.ViewModel":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Views.SOAMergerView");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ViewModel", "MattTools.ViewModels.SOAMergerViewModel");
-                xamlMember.Getter = get_200_SOAMergerView_ViewModel;
-                xamlMember.Setter = set_200_SOAMergerView_ViewModel;
+                xamlMember.Getter = get_262_SOAMergerView_ViewModel;
+                xamlMember.Setter = set_262_SOAMergerView_ViewModel;
                 break;
             case "MattTools.ViewModels.ZesthubViewModel.supplierInvoiceFormControl":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.ZesthubViewModel");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "supplierInvoiceFormControl", "Controls.SupplierInvoiceForm");
-                xamlMember.Getter = get_201_ZesthubViewModel_supplierInvoiceFormControl;
-                xamlMember.Setter = set_201_ZesthubViewModel_supplierInvoiceFormControl;
+                xamlMember.Getter = get_263_ZesthubViewModel_supplierInvoiceFormControl;
+                xamlMember.Setter = set_263_ZesthubViewModel_supplierInvoiceFormControl;
                 break;
             case "MattTools.ViewModels.ZesthubViewModel.InvoiceID":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.ZesthubViewModel");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "InvoiceID", "Int32");
-                xamlMember.Getter = get_202_ZesthubViewModel_InvoiceID;
-                xamlMember.Setter = set_202_ZesthubViewModel_InvoiceID;
+                xamlMember.Getter = get_264_ZesthubViewModel_InvoiceID;
+                xamlMember.Setter = set_264_ZesthubViewModel_InvoiceID;
                 break;
             case "MattTools.ViewModels.ZesthubViewModel.SetAccountNumber":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.ZesthubViewModel");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "SetAccountNumber", "String");
-                xamlMember.Getter = get_203_ZesthubViewModel_SetAccountNumber;
-                xamlMember.Setter = set_203_ZesthubViewModel_SetAccountNumber;
+                xamlMember.Getter = get_265_ZesthubViewModel_SetAccountNumber;
+                xamlMember.Setter = set_265_ZesthubViewModel_SetAccountNumber;
                 break;
             case "MattTools.ViewModels.ZesthubViewModel.SetDueDate":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.ZesthubViewModel");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "SetDueDate", "System.Nullable`1<System.DateTime>");
-                xamlMember.Getter = get_204_ZesthubViewModel_SetDueDate;
-                xamlMember.Setter = set_204_ZesthubViewModel_SetDueDate;
+                xamlMember.Getter = get_266_ZesthubViewModel_SetDueDate;
+                xamlMember.Setter = set_266_ZesthubViewModel_SetDueDate;
                 break;
             case "MattTools.ViewModels.ZesthubViewModel.SetPlanDate":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.ZesthubViewModel");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "SetPlanDate", "System.Nullable`1<System.DateTime>");
-                xamlMember.Getter = get_205_ZesthubViewModel_SetPlanDate;
-                xamlMember.Setter = set_205_ZesthubViewModel_SetPlanDate;
+                xamlMember.Getter = get_267_ZesthubViewModel_SetPlanDate;
+                xamlMember.Setter = set_267_ZesthubViewModel_SetPlanDate;
                 break;
             case "MattTools.ViewModels.ZesthubViewModel.IsLoggedIn":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.ZesthubViewModel");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsLoggedIn", "Boolean");
-                xamlMember.Getter = get_206_ZesthubViewModel_IsLoggedIn;
-                xamlMember.Setter = set_206_ZesthubViewModel_IsLoggedIn;
+                xamlMember.Getter = get_268_ZesthubViewModel_IsLoggedIn;
+                xamlMember.Setter = set_268_ZesthubViewModel_IsLoggedIn;
                 break;
             case "MattTools.ViewModels.ZesthubViewModel.IsHaveUserKey":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.ZesthubViewModel");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsHaveUserKey", "Boolean");
-                xamlMember.Getter = get_207_ZesthubViewModel_IsHaveUserKey;
+                xamlMember.Getter = get_269_ZesthubViewModel_IsHaveUserKey;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MattTools.ViewModels.ZesthubViewModel.SavedUsername":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.ZesthubViewModel");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "SavedUsername", "String");
-                xamlMember.Getter = get_208_ZesthubViewModel_SavedUsername;
+                xamlMember.Getter = get_270_ZesthubViewModel_SavedUsername;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MattTools.ViewModels.ZesthubViewModel.UserKey":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.ZesthubViewModel");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "UserKey", "String");
-                xamlMember.Getter = get_209_ZesthubViewModel_UserKey;
+                xamlMember.Getter = get_271_ZesthubViewModel_UserKey;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MattTools.ViewModels.ZesthubViewModel.LoginID":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.ViewModels.ZesthubViewModel");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "LoginID", "Int32");
-                xamlMember.Getter = get_210_ZesthubViewModel_LoginID;
+                xamlMember.Getter = get_272_ZesthubViewModel_LoginID;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MattTools.Views.ZesthubView.ViewModel":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MattTools.Views.ZesthubView");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "ViewModel", "MattTools.ViewModels.ZesthubViewModel");
-                xamlMember.Getter = get_211_ZesthubView_ViewModel;
-                xamlMember.Setter = set_211_ZesthubView_ViewModel;
+                xamlMember.Getter = get_273_ZesthubView_ViewModel;
+                xamlMember.Setter = set_273_ZesthubView_ViewModel;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_212_TreeViewNode_Children;
+                xamlMember.Getter = get_274_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_213_TreeViewNode_Content;
-                xamlMember.Setter = set_213_TreeViewNode_Content;
+                xamlMember.Getter = get_275_TreeViewNode_Content;
+                xamlMember.Setter = set_275_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_214_TreeViewNode_Depth;
+                xamlMember.Getter = get_276_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_215_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_277_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_216_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_216_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_278_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_278_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_217_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_217_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_279_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_279_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::MattTools.MattTools_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::MattTools.MattTools_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_218_TreeViewNode_Parent;
+                xamlMember.Getter = get_280_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

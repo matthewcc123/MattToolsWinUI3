@@ -141,7 +141,7 @@
 
             <StackPanel VerticalAlignment="Top" Spacing="24">
 
-                <Button Content="Test Button" Style="{ThemeResource RedButtonStyle}" />
+                <!--<Button Content="Test Button" Style="{ThemeResource RedButtonStyle}" />-->
                 <ItemsControl ItemTemplateSelector="{StaticResource MenuChildTemplateSelector}" ItemsSource="{x:Bind mainMenus}" />
 
             </StackPanel>

@@ -28,9 +28,9 @@
 
     <SolidColorBrush x:Key="RedButtonBackground" Color="#ea3321" />
     <SolidColorBrush x:Key="RedButtonBackgroundPointedOver" Color="#b62719" />
-    <SolidColorBrush x:Key="RedButtonBackgroundPressed" Color="#C94C40" />
+    <SolidColorBrush x:Key="RedButtonBackgroundPressed" Color="#D44638" />
     <SolidColorBrush x:Key="RedButtonForeground" Color="#000000" />
-    <SolidColorBrush x:Key="RedButtonForegroundPressed" Color="#5A1711" />
+    <SolidColorBrush x:Key="RedButtonForegroundPressed" Color="#1E0603" />
 
 
 </ResourceDictionary>

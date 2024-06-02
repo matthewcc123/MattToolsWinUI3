@@ -31,6 +31,7 @@ using Windows.UI.ViewManagement;
 using MattTools.Settings;
 using MattTools.Helper;
 using System.Threading.Tasks;
+using Views;
 
 
 // To learn more about WinUI, the WinUI project structure,
@@ -84,11 +85,18 @@ namespace MattTools
             //Setup Navigation
             _navigationService.Init(AppFrame, AppNavView, typeof(PageNotFoundView));
             _navigationService.AddNavigation(new NavItem { Path = "Home", Title = "Home", PageType = typeof(HomeView), VisibleInMenu = false, Symbol = Symbol.Home });
+            
             _navigationService.AddNavigation(new NavItem { Path = "Unilever", Title = "Unilever", PageType = null, UriSource = "Unilever.png", ExtendOnly = true });
             _navigationService.AddNavigation(new NavItem { Path = "Unilever/Merger", Title = "Invoice Merger", Description = "Merge Digital Invoice with the correct Tax Invoice.", PageType = typeof(InvoiceMergerView), UriSource = "Merger.png" });
             _navigationService.AddNavigation(new NavItem { Path = "Unilever/SOA", Title = "SOA Merger", Description = "Merge Unilever SOA into Single File.", PageType = typeof(SOAMergerView), UriSource = "SOA.png" });
+            
+            _navigationService.AddNavigation(new NavItem { Path = "PDF", Title = "PDF Editor", PageType = null, UriSource = "PDF.png", ExtendOnly = true });
+            _navigationService.AddNavigation(new NavItem { Path = "PDF/Organizer", Title = "PDF Organizer", Description = "Merge & Organize PDF File", PageType = typeof(PdfOrganizerView), UriSource = "PDF.png" });
+            _navigationService.AddNavigation(new NavItem { Path = "PDF/Compresser", Title = "PDF Compresser", Description = "Compress PDF File", PageType = typeof(PdfCompressorView), UriSource = "PDF.png" });
+            
             _navigationService.AddNavigation(new NavItem { Path = "Rossum", Title = "Rossum Extractor", Description = "Extract selected Rossum files into Json and Pdf without rename.", PageType = typeof(RossumExtractorView), UriSource = "Rossum.png" });
-            _navigationService.AddNavigation(new NavItem { Path = "Zesthub", Title = "ZestHub+", Description = "Speed up the ZestHub process..", PageType = typeof(ZesthubView), UriSource = "Zesthub.png" });
+            //_navigationService.AddNavigation(new NavItem { Path = "Zesthub", Title = "ZestHub+", Description = "Speed up the ZestHub process..", PageType = null, UriSource = "Zesthub.png" });
+
 
         }
 

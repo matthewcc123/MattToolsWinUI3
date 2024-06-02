@@ -16,11 +16,15 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.windows.sdk.buildtools\10.0.22621.3233\buildTransitive\Microsoft.Windows.SDK.BuildTools.props" Condition="Exists('$(NuGetPackageRoot)microsoft.windows.sdk.buildtools\10.0.22621.3233\buildTransitive\Microsoft.Windows.SDK.BuildTools.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.windowsappsdk\1.5.240404000\buildTransitive\Microsoft.WindowsAppSDK.props" Condition="Exists('$(NuGetPackageRoot)microsoft.windowsappsdk\1.5.240404000\buildTransitive\Microsoft.WindowsAppSDK.props')" />
+    <Import Project="$(NuGetPackageRoot)sixlabors.imagesharp\3.1.4\build\SixLabors.ImageSharp.props" Condition="Exists('$(NuGetPackageRoot)sixlabors.imagesharp\3.1.4\build\SixLabors.ImageSharp.props')" />
+    <Import Project="$(NuGetPackageRoot)pdfiumviewer.native.x86_64.v8-xfa\2018.4.8.256\Build\PdfiumViewer.Native.x86_64.v8-xfa.props" Condition="Exists('$(NuGetPackageRoot)pdfiumviewer.native.x86_64.v8-xfa\2018.4.8.256\Build\PdfiumViewer.Native.x86_64.v8-xfa.props')" />
+    <Import Project="$(NuGetPackageRoot)pdfiumviewer.native.x86.v8-xfa\2018.4.8.256\Build\PdfiumViewer.Native.x86.v8-xfa.props" Condition="Exists('$(NuGetPackageRoot)pdfiumviewer.native.x86.v8-xfa\2018.4.8.256\Build\PdfiumViewer.Native.x86.v8-xfa.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.ui.xaml\2.8.6\buildTransitive\Microsoft.UI.Xaml.props" Condition="Exists('$(NuGetPackageRoot)microsoft.ui.xaml\2.8.6\buildTransitive\Microsoft.UI.Xaml.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_WindowsAppSDK Condition=" '$(PkgMicrosoft_WindowsAppSDK)' == '' ">C:\Users\Matthew\.nuget\packages\microsoft.windowsappsdk\1.5.240404000</PkgMicrosoft_WindowsAppSDK>
     <PkgWinUIEx Condition=" '$(PkgWinUIEx)' == '' ">C:\Users\Matthew\.nuget\packages\winuiex\2.3.3</PkgWinUIEx>
+    <PkgPdfiumViewer Condition=" '$(PkgPdfiumViewer)' == '' ">C:\Users\Matthew\.nuget\packages\pdfiumviewer\2.13.0</PkgPdfiumViewer>
     <PkgMicrosoft_Web_WebView2 Condition=" '$(PkgMicrosoft_Web_WebView2)' == '' ">C:\Users\Matthew\.nuget\packages\microsoft.web.webview2\1.0.1264.42</PkgMicrosoft_Web_WebView2>
     <PkgMicrosoft_UI_Xaml Condition=" '$(PkgMicrosoft_UI_Xaml)' == '' ">C:\Users\Matthew\.nuget\packages\microsoft.ui.xaml\2.8.6</PkgMicrosoft_UI_Xaml>
     <PkgCommunityToolkit_WinUI_UI_Controls_Primitives Condition=" '$(PkgCommunityToolkit_WinUI_UI_Controls_Primitives)' == '' ">C:\Users\Matthew\.nuget\packages\communitytoolkit.winui.ui.controls.primitives\7.1.2</PkgCommunityToolkit_WinUI_UI_Controls_Primitives>

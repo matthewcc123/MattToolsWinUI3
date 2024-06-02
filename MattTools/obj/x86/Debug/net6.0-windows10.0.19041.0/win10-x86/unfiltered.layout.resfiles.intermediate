@@ -1,8 +1,15 @@
 runtimes\win-x86\native\WebView2Loader.dll
+x86\pdfium.dll
+x64\pdfium.dll
+Assets\Ghostscript\gsdll64.dll
+Assets\Ghostscript\gsdll64.lib
+Assets\Ghostscript\gswin64.exe
+Assets\Ghostscript\gswin64c.exe
 Assets\Icons\AppIcon.png
 Assets\Icons\AppIcon24.png
 Assets\Icons\AppIcon32.ico
 Assets\Icons\Merger.png
+Assets\Icons\PDF.png
 Assets\Icons\Rossum.png
 Assets\Icons\SOA.png
 Assets\Icons\Toolbox.png

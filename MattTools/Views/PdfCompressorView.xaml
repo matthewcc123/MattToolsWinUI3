@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="Views.PdfCompressorView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pdfeditor="using:Models.PdfEditor"
+    xmlns:ui="using:CommunityToolkit.WinUI.UI"
+    xmlns:viewmodels="using:ViewModels"
+    Background="{ThemeResource DefaultPageBackgroundColor}"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <viewmodels:PdfEditorViewModel />
+    </Page.DataContext>
+
+    <Grid x:Name="MainView" RowSpacing="16">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid
+            Grid.Row="0"
+            Padding="24,24,24,0"
+            VerticalAlignment="Center">
+            <TextBlock
+                VerticalAlignment="Center"
+                Style="{StaticResource TitleTextBlockStyle}"
+                Text="PDF Compressor" />
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="64" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Margin="24,0,24,0">
+
+                <StackPanel
+                    VerticalAlignment="Center"
+                    Orientation="Horizontal"
+                    Spacing="8">
+                    <Button
+                        x:Name="SelectButton"
+                        Padding="12,8,12,8"
+                        VerticalAlignment="Stretch"
+                        HorizontalContentAlignment="Left"
+                        Click="SelectButton_Click">
+                        <StackPanel Orientation="Horizontal" Spacing="4">
+                            <Viewbox Height="16">
+                                <FontIcon Margin="0,0,5,0" Glyph="&#xe838;" />
+                            </Viewbox>
+                            <TextBlock
+                                VerticalAlignment="Center"
+                                Style="{StaticResource CaptionTextBlockStyle}"
+                                Text="Select PDF" />
+                        </StackPanel>
+                    </Button>
+
+                    <Grid
+                        Padding="4"
+                        Background="{ThemeResource AlertBlueBackgroundColor}"
+                        BorderBrush="{ThemeResource AlertBlueBorderColor}"
+                        BorderThickness="1"
+                        CornerRadius="4">
+
+                        <StackPanel Orientation="Horizontal" Spacing="8">
+                            <Button
+                                x:Name="CompressAllButton"
+                                Padding="12,8,12,8"
+                                HorizontalContentAlignment="Left"
+                                Click="CompressAllButton_Click"
+                                IsEnabled="False"
+                                Style="{ThemeResource AccentButtonStyle}">
+                                <StackPanel Orientation="Horizontal" Spacing="4">
+                                    <Viewbox Height="16">
+                                        <SymbolIcon Margin="0,0,5,0" Symbol="Play" />
+                                    </Viewbox>
+                                    <TextBlock
+                                        VerticalAlignment="Center"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                        Text="Compress All" />
+                                </StackPanel>
+                            </Button>
+
+                            <ComboBox
+                                Name="AllQualityComboBox"
+                                Height="34"
+                                Padding="12,8,12,8"
+                                SelectedIndex="1">
+                                <ComboBoxItem>
+                                    <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="High" />
+                                </ComboBoxItem>
+                                <ComboBoxItem>
+                                    <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="Medium" />
+                                </ComboBoxItem>
+                                <ComboBoxItem>
+                                    <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="Low" />
+                                </ComboBoxItem>
+                            </ComboBox>
+                        </StackPanel>
+
+                    </Grid>
+
+                </StackPanel>
+                <ProgressBar
+                    x:Name="MainProgressBar"
+                    VerticalAlignment="Bottom"
+                    Visibility="Collapsed" />
+
+            </Grid>
+
+
+            <Grid Grid.Row="1" Padding="24,0,24,24">
+
+                <Border
+                    BorderBrush="{ThemeResource ControlStrokeColorDefaultBrush}"
+                    BorderThickness="1"
+                    CornerRadius="4" />
+
+                <GridView
+                    x:Name="SelectedFileListView"
+                    Padding="12,12,12,0"
+                    IsItemClickEnabled="True"
+                    ItemsSource="{Binding Documents}"
+                    SelectionMode="None">
+
+                    <GridView.ItemContainerStyle>
+                        <Style TargetType="GridViewItem">
+                            <Setter Property="Margin" Value="0,0,12,12" />
+                            <Setter Property="CornerRadius" Value="4" />
+                        </Style>
+                    </GridView.ItemContainerStyle>
+
+                    <GridView.ItemTemplate>
+                        <DataTemplate x:DataType="pdfeditor:PDoc">
+                            <Grid>
+                                <Border
+                                    Background="{Binding ColorBrush}"
+                                    CornerRadius="4"
+                                    Opacity=".5" />
+                                <Border
+                                    BorderBrush="{Binding ColorBrush}"
+                                    BorderThickness="1"
+                                    CornerRadius="4" />
+                                <StackPanel Orientation="Horizontal">
+                                    <Image
+                                        Width="160"
+                                        Height="160"
+                                        Margin="12"
+                                        Source="{Binding ThumbnailImage}" />
+                                    <StackPanel
+                                        Width="200"
+                                        Padding="0,12,12,12"
+                                        Orientation="Vertical"
+                                        Spacing="8">
+                                        <StackPanel>
+                                            <TextBlock
+                                                HorizontalAlignment="Stretch"
+                                                HorizontalTextAlignment="Left"
+                                                Style="{StaticResource BodyStrongTextBlockStyle}"
+                                                Text="{Binding FileName}"
+                                                TextWrapping="NoWrap" />
+                                            <TextBlock
+                                                Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                                                Style="{StaticResource CaptionTextBlockStyle}"
+                                                Text="{Binding FileSize, Converter={StaticResource TextBlockFormatConverter}, ConverterParameter='Size'}" />
+                                            <TextBlock
+                                                Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                                                Style="{StaticResource CaptionTextBlockStyle}"
+                                                Text="{Binding CompressedFileSize, Converter={StaticResource TextBlockFormatConverter}, ConverterParameter='Compressed Size'}" />
+                                        </StackPanel>
+
+                                        <TextBlock
+                                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                            Style="{StaticResource CaptionTextBlockStyle}"
+                                            Text="Compression Quality" />
+                                        <ComboBox
+                                            HorizontalAlignment="Stretch"
+                                            SelectedIndex="{Binding CompressQuality}"
+                                            SelectionChanged="QualityComboBox_Changed">
+                                            <ComboBoxItem>
+                                                <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="High" />
+                                            </ComboBoxItem>
+                                            <ComboBoxItem>
+                                                <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="Medium" />
+                                            </ComboBoxItem>
+                                            <ComboBoxItem>
+                                                <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="Low" />
+                                            </ComboBoxItem>
+                                        </ComboBox>
+
+                                        <Button
+                                            HorizontalAlignment="Stretch"
+                                            HorizontalContentAlignment="Left"
+                                            Click="CompressButton_Click">
+                                            <Grid>
+                                                <StackPanel Orientation="Horizontal" Spacing="8">
+                                                    <Viewbox
+                                                        Width="16"
+                                                        Height="16"
+                                                        Visibility="{Binding IsCompressing, Converter={StaticResource BoolToVisibilityConverter}, ConverterParameter='invert'}">
+                                                        <SymbolIcon Margin="0,0,5,0" Symbol="Play" />
+                                                    </Viewbox>
+                                                    <ProgressRing
+                                                        Width="16"
+                                                        Height="16"
+                                                        Margin="0,0,5,0"
+                                                        HorizontalAlignment="Right"
+                                                        IsActive="{Binding IsCompressing}"
+                                                        Visibility="{Binding IsCompressing, Converter={StaticResource BoolToVisibilityConverter}}" />
+                                                    <TextBlock
+                                                        VerticalAlignment="Center"
+                                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                                        Text="Compress" />
+                                                </StackPanel>
+
+                                            </Grid>
+                                        </Button>
+                                        <Button
+                                            HorizontalAlignment="Stretch"
+                                            HorizontalContentAlignment="Left"
+                                            Click="DeleteButton_Click">
+                                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                                <Viewbox Width="16" Height="16">
+                                                    <SymbolIcon Margin="0,0,5,0" Symbol="Delete" />
+                                                </Viewbox>
+                                                <TextBlock
+                                                    VerticalAlignment="Center"
+                                                    Style="{StaticResource CaptionTextBlockStyle}"
+                                                    Text="Delete" />
+                                            </StackPanel>
+                                        </Button>
+                                    </StackPanel>
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+
+                <StackPanel
+                    x:Name="EmptyMessage"
+                    Padding="24,0,24,128"
+                    VerticalAlignment="Center"
+                    Spacing="12"
+                    Visibility="Visible">
+                    <Viewbox Width="40" HorizontalAlignment="Center">
+                        <SymbolIcon Symbol="Page2" />
+                    </Viewbox>
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        FontSize="32"
+                        Style="{StaticResource TitleLargeTextBlockStyle}"
+                        Text="Select PDF File" />
+                    <TextBlock
+                        MaxWidth="500"
+                        HorizontalAlignment="Center"
+                        Text="Select PDF to be compressed."
+                        TextAlignment="Center"
+                        TextWrapping="Wrap" />
+                </StackPanel>
+
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Page>

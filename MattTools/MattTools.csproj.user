@@ -18,6 +18,12 @@
     <None Update="App.xaml">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="Views\PdfCompressorView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PdfOrganizerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\CustomStyle.xaml">
       <SubType>Designer</SubType>
     </Page>

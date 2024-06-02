@@ -96,6 +96,8 @@
     <None Remove="Views\HomeView.xaml" />
     <None Remove="Views\InvoiceMergerView.xaml" />
     <None Remove="Views\PageNotFoundView.xaml" />
+    <None Remove="Views\PdfCompressorView.xaml" />
+    <None Remove="Views\PdfOrganizerView.xaml" />
     <None Remove="Views\RossumExtractorView.xaml" />
     <None Remove="Views\SettingView.xaml" />
     <None Remove="Views\SOAMergerView.xaml" />
@@ -124,7 +126,11 @@
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.3233" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="NPOI" Version="2.6.2" />
+    <PackageReference Include="PdfiumViewer" Version="2.13.0" />
+    <PackageReference Include="PdfiumViewer.Native.x86.v8-xfa" Version="2018.4.8.256" />
+    <PackageReference Include="PdfiumViewer.Native.x86_64.v8-xfa" Version="2018.4.8.256" />
     <PackageReference Include="PDFsharp" Version="6.0.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.4" />
     <PackageReference Include="WinUIEx" Version="2.3.3" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
@@ -157,6 +163,11 @@
   </PropertyGroup>
   <ItemGroup>
     <PRIResource Remove="Views\Components\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\PdfCompressorView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Themes\CustomStyle.xaml">
@@ -215,6 +226,11 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Themes\Light.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\PdfOrganizerView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
