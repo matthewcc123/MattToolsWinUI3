@@ -91,9 +91,10 @@
 
                             <ComboBox x:ConnectionId='13'
                                 Name="AllQualityComboBox"
+                                Width="120"
                                 Height="34"
                                 Padding="12,8,12,8"
-                                SelectedIndex="1">
+                                SelectedIndex="0">
                                 <ComboBoxItem>
                                     <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="High" />
                                 </ComboBoxItem>
@@ -183,7 +184,7 @@
                                             Text="Compression Quality" />
                                         <ComboBox x:ConnectionId='7'
                                             HorizontalAlignment="Stretch"
-                                            SelectedIndex="{Binding CompressQuality}"
+                                            SelectedIndex="{Binding CompressQuality, Mode=TwoWay}"
                                                                                       >
                                             <ComboBoxItem>
                                                 <TextBlock Style="{StaticResource CaptionTextBlockStyle}" Text="High" />

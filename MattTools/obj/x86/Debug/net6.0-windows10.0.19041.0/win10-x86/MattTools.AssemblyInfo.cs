@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MattTools")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4417d8cad04ab1f3323a936341105a079b24ab95")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02a8055babcd79e53782017f486b9be55964ace1")]
 [assembly: System.Reflection.AssemblyProductAttribute("MattTools")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MattTools")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

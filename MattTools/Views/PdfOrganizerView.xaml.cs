@@ -116,7 +116,13 @@ namespace Views
         {
             isLoading = true;
 
-            await ViewModel.OrganizePDF(WindowHelper.GetWindowForElement(this));
+            string result = await ViewModel.OrganizePDF(WindowHelper.GetWindowForElement(this));
+
+            if (result != null)
+            {
+                DialogHelper.CreateDialog("Result", result, this);
+            }
+
             UpdateView();
 
             isLoading = false;

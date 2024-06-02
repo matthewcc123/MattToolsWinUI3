@@ -96,8 +96,13 @@ namespace Views
                 var listViewItemContainer = SelectedFileListView.ContainerFromItem(document) as SelectorItem;
 
                 listViewItemContainer.IsEnabled = false;
-                await ViewModel.CompressSinglePDF(document, WindowHelper.GetWindowForElement(this));
+                string result = await ViewModel.CompressSinglePDF(document, WindowHelper.GetWindowForElement(this));
                 listViewItemContainer.IsEnabled = true;
+
+                if (result != null)
+                {
+                    DialogHelper.CreateDialog("Result", result, this);
+                }
 
             }
         }
@@ -106,7 +111,12 @@ namespace Views
         {
             isLoading = true;
 
-            await ViewModel.CompressAllPdf(WindowHelper.GetWindowForElement(this), AllQualityComboBox.SelectedIndex);
+            string result = await ViewModel.CompressAllPdf(WindowHelper.GetWindowForElement(this), AllQualityComboBox.SelectedIndex);
+
+            if (result != null)
+            {
+                DialogHelper.CreateDialog("Result", result, this);
+            }
 
             isLoading = false;
         }

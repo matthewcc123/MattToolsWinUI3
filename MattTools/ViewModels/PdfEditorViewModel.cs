@@ -150,9 +150,9 @@ namespace ViewModels
             pdf.Dispose();
         }
 
-        public async Task OrganizePDF(Window window)
+        public async Task<string> OrganizePDF(Window window)
         {
-
+            string compressResult = null;
             FileSavePicker savePicker = new FileSavePicker();
 
             // Retrieve the window handle (HWND) of the current WinUI 3 window.
@@ -169,31 +169,43 @@ namespace ViewModels
             StorageFile file = await savePicker.PickSaveFileAsync();
 
             if (file == null)
-                return;
+                return null;
 
-            //Output Doc
-            PdfDocument outputPdf = new();
-
-            // Merging pages
-            foreach (var page in Pages)
+            try
             {
-                // Add page to outputPdf
-                PdfPage newPage = outputPdf.AddPage(page.PdfSharpPage);
+                //Output Doc
+                PdfDocument outputPdf = new();
+
+                // Merging pages
+                foreach (var page in Pages)
+                {
+                    // Add page to outputPdf
+                    PdfPage newPage = outputPdf.AddPage(page.PdfSharpPage);
+                }
+
+                //SaveFile
+                outputPdf.Save(file.Path);
+                compressResult = $"PDF successfully compressed as {savePicker.SuggestedFileName}";
+            }
+            catch
+            {
+                compressResult = $"Failed to organize PDF.";
             }
 
-            //SaveFile
-            outputPdf.Save(file.Path);
+            return compressResult;
 
         }
 
-        public async Task CompressPDF(string inputPath, string outputPath, PDoc Document)
+        public async Task<bool> CompressPDF(string inputPath, string outputPath, PDoc Document)
         {
+            bool result = false;
+
             try
             {
                 Document.IsCompressing = true;
-                string compressQuality = new[] { "printer", "ebook", "screen" }[Document.CompressQuality];
+                string compressQuality = new[] { "prepress", "printer", "ebook" }[Document.CompressQuality];
 
-                string arguments = $"-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/{compressQuality} -dNOPAUSE -dQUIET -dBATCH -sOutputFile=\"{outputPath}\" \"{inputPath}\"";
+                string arguments = $"-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/{compressQuality} -dDownsampleColorImages=true -dColorImageResolution=100 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=\"{outputPath}\" \"{inputPath}\"";
 
                 ProcessStartInfo processStartInfo = new ProcessStartInfo()
                 {
@@ -214,12 +226,16 @@ namespace ViewModels
             finally
             {
                 Document.IsCompressing = false;
+                result = true;
             }
+
+            return result;
         }
 
-        public async Task CompressSinglePDF(PDoc Document, Window window)
+        public async Task<string> CompressSinglePDF(PDoc Document, Window window)
         {
             string compressPath = string.Empty;
+            string compressResult = null;
 
             try
             {
@@ -230,31 +246,44 @@ namespace ViewModels
                 savePicker.FileTypeChoices.Add("PDF File", new List<string>() { ".pdf" });
                 StorageFile file = await savePicker.PickSaveFileAsync();
 
-                if (file == null) return;
+                if (file == null) return null;
                 compressPath = file.Path;
 
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
+                return null;
             }
 
             if (compressPath != string.Empty)
             {
                 Document.IsCompressing = true;
                 string outputPath = compressPath; // You might want to change this to a different output directory
-                await CompressPDF(Document.Path, outputPath, Document);
+                bool Success = await CompressPDF(Document.Path, outputPath, Document);
 
-                PdfDocument pdf = PdfReader.Open(compressPath, PdfDocumentOpenMode.InformationOnly);
-                Document.CompressedFileSize = $"{(pdf.FileSize / 1_000_000.0):F2} MB";
-                pdf.Dispose();
+                if (Success)
+                {
+                    PdfDocument pdf = PdfReader.Open(compressPath, PdfDocumentOpenMode.InformationOnly);
+                    Document.CompressedFileSize = $"{(pdf.FileSize / 1_000_000.0):F2} MB";
+                    pdf.Dispose();
+                    compressResult = $"\u2022 {Document.FileName} compressed from {Document.FileSize} to {Document.CompressedFileSize}";
+                }
+                else
+                {
+                    compressResult = $"\u2022 Compression of {Document.FileName} failed";
+                }
+
             }
+
+            return compressResult;
 
         }
 
-        public async Task CompressAllPdf(Window window, int quality)
+        public async Task<string> CompressAllPdf(Window window, int quality)
         {
             string compressPath = string.Empty;
+            string compressResult = null;
 
             try
             {
@@ -273,7 +302,7 @@ namespace ViewModels
                 StorageFolder folder = await folderPicker.PickSingleFolderAsync();
 
                 if (folder == null)
-                    return;
+                    return null;
 
                 compressPath = folder.Path;
 
@@ -281,6 +310,7 @@ namespace ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
+                return null;
             }
 
             if (compressPath != string.Empty)
@@ -294,19 +324,45 @@ namespace ViewModels
                 foreach (var Document in Documents)
                 {
                     string outputPath = Path.Combine(compressPath,$"{Document.FileName.Replace(".pdf", string.Empty)}_compressed.pdf");
-                    await CompressPDF(Document.Path, outputPath, Document);
+                    bool Success = await CompressPDF(Document.Path, outputPath, Document);
 
-                    PdfDocument pdf = PdfReader.Open(outputPath, PdfDocumentOpenMode.InformationOnly);
-                    Document.CompressedFileSize = $"{(pdf.FileSize / 1_000_000.0):F2} MB";
-                    pdf.Dispose();
+                    if (Success)
+                    {
+                        PdfDocument pdf = PdfReader.Open(outputPath, PdfDocumentOpenMode.InformationOnly);
+                        Document.CompressedFileSize = $"{(pdf.FileSize / 1_000_000.0):F2} MB";
+                        pdf.Dispose();
+                        compressResult += $"\u2022 {Document.FileName} compressed from {Document.FileSize} to {Document.CompressedFileSize}{Environment.NewLine}";
+                    }
+                    else
+                    {
+                        compressResult += $"\u2022 {Document.FileName} compression Failed{Environment.NewLine}";
+                    }
 
                 }
 
             }
 
+            return compressResult;
+
         }
 
+        private PdfDocument OptimizedPDF(string path)
+        {
+            // Open the original document
+            PdfDocument originalDocument = PdfReader.Open(path, PdfDocumentOpenMode.Import);
 
+            // Create a new document
+            PdfDocument optimizedDocument = new PdfDocument();
+
+            // Copy each page from the original document to the new document
+            foreach (PdfPage page in originalDocument.Pages)
+            {
+                optimizedDocument.AddPage(page);
+            }
+
+            // Save the optimized document
+            return optimizedDocument;
+        }
         private void RenameFormFields(PdfPage page, int pageIndex)
         {
             //PdfItem annotations = page.Elements.GetDictionary("/Annots");
