@@ -27,6 +27,8 @@ using MattTools.Models.Rossum;
 using NPOI.HPSF;
 using PdfSharp.Pdf.Advanced;
 using Org.BouncyCastle.Asn1.Cmp;
+using MattTools.Settings;
+using Newtonsoft.Json;
 
 
 namespace ViewModels
@@ -119,7 +121,7 @@ namespace ViewModels
 
         }
 
-        private void AddPDFFile(StorageFile file, bool pageThumbnail)
+        public async Task AddPDFFile(StorageFile file, bool pageThumbnail)
         {
             SolidColorBrush color = RandomizeBorderColor();
             PdfDocument pdf = PdfReader.Open(file.Path, PdfDocumentOpenMode.Import);
@@ -200,12 +202,32 @@ namespace ViewModels
         {
             bool result = false;
 
+            string appDataRoamingPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+            StorageFolder roamingFolder = await StorageFolder.GetFolderFromPathAsync(appDataRoamingPath);
+            StorageFolder mattFolder = await roamingFolder.CreateFolderAsync("MattTools", CreationCollisionOption.OpenIfExists);
+            StorageFolder compressFolder = await mattFolder.CreateFolderAsync("CompressionCache", CreationCollisionOption.OpenIfExists);
+
+            string inputFilePath = Path.Combine(compressFolder.Path, Document.FileName);
+
+            //Output Doc
+            PdfDocument outputPdf = new();
+
+            // Merging pages
+            foreach (var page in Pages)
+            {
+                // Add page to outputPdf
+                PdfPage newPage = outputPdf.AddPage(page.PdfSharpPage);
+            }
+
+            outputPdf.Save(inputFilePath);
+
             try
             {
                 Document.IsCompressing = true;
                 string compressQuality = new[] { "prepress", "printer", "ebook" }[Document.CompressQuality];
 
-                string arguments = $"-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/{compressQuality} -dDownsampleColorImages=true -dColorImageResolution=100 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=\"{outputPath}\" \"{inputPath}\"";
+                string arguments = $"-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/{compressQuality} -dDownsampleColorImages=true -dColorImageResolution=100 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=\"{outputPath}\" \"{inputFilePath}\"";
 
                 ProcessStartInfo processStartInfo = new ProcessStartInfo()
                 {
@@ -225,6 +247,8 @@ namespace ViewModels
             }
             finally
             {
+                StorageFile file = await compressFolder.GetFileAsync(Document.FileName);
+                await file.DeleteAsync();
                 Document.IsCompressing = false;
                 result = true;
             }
@@ -236,6 +260,7 @@ namespace ViewModels
         {
             string compressPath = string.Empty;
             string compressResult = null;
+            string compressName = string.Empty;
 
             try
             {
@@ -248,6 +273,7 @@ namespace ViewModels
 
                 if (file == null) return null;
                 compressPath = file.Path;
+                compressName = file.Name;
 
             }
             catch (Exception ex)
@@ -267,11 +293,11 @@ namespace ViewModels
                     PdfDocument pdf = PdfReader.Open(compressPath, PdfDocumentOpenMode.InformationOnly);
                     Document.CompressedFileSize = $"{(pdf.FileSize / 1_000_000.0):F2} MB";
                     pdf.Dispose();
-                    compressResult = $"\u2022 {Document.FileName} compressed from {Document.FileSize} to {Document.CompressedFileSize}";
+                    compressResult = $"\u2022 {compressName} compressed from {Document.FileSize} to {Document.CompressedFileSize}";
                 }
                 else
                 {
-                    compressResult = $"\u2022 Compression of {Document.FileName} failed";
+                    compressResult = $"\u2022 Compression of {compressName} failed";
                 }
 
             }

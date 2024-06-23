@@ -56,12 +56,12 @@
                     BorderThickness="1"
                     CornerRadius="4">
                     <StackPanel>
-                        <StackPanel x:ConnectionId='15'
+                        <StackPanel x:ConnectionId='17'
                             x:Name="MainBoardControl"
                             Margin="14"
                             Spacing="14">
 
-                            <Button x:ConnectionId='17'
+                            <Button x:ConnectionId='19'
                                 x:Name="SelectButton"
                                 Padding="12,8,12,8"
                                 HorizontalAlignment="Stretch"
@@ -78,7 +78,7 @@
                                 </StackPanel>
                             </Button>
 
-                            <Button x:ConnectionId='18'
+                            <Button x:ConnectionId='20'
                                 x:Name="OrganizeButton"
                                 Padding="12,8,12,8"
                                 HorizontalAlignment="Stretch"
@@ -98,12 +98,12 @@
                             </Button>
 
                         </StackPanel>
-                        <ProgressBar x:ConnectionId='16' x:Name="MainProgressBar" Visibility="Collapsed" />
+                        <ProgressBar x:ConnectionId='18' x:Name="MainProgressBar" Visibility="Collapsed" />
                     </StackPanel>
 
                 </Border>
 
-                <Border x:ConnectionId='9'
+                <Border x:ConnectionId='11'
                     x:Name="SelectedFilesListContainer"
                     Grid.Row="1"
                     Margin="24,12,0,24"
@@ -125,7 +125,7 @@
                             Padding="12"
                             Orientation="Vertical"
                             Spacing="4">
-                            <Button x:ConnectionId='14'
+                            <Button x:ConnectionId='16'
                                 x:Name="ResetButton"
                                 Padding="12,8,12,8"
                                 HorizontalAlignment="Stretch"
@@ -146,7 +146,7 @@
                         </StackPanel>
 
                         <ScrollView Grid.Row="1" Margin="0,0,0,12">
-                            <ListView x:ConnectionId='10'
+                            <ListView x:ConnectionId='12'
                                 x:Name="SelectedFileListView"
                                 Padding="12,0,12,0"
                                 AllowDrop="True"
@@ -187,7 +187,7 @@
                                                     Text="{Binding FileName}"
                                                     TextTrimming="CharacterEllipsis"
                                                     TextWrapping="NoWrap" />
-                                                <Button x:ConnectionId='13'
+                                                <Button x:ConnectionId='15'
                                                     HorizontalAlignment="Left"
                                                     VerticalAlignment="Stretch"
                                                                                 >
@@ -208,14 +208,20 @@
             </Grid>
 
 
-            <Grid Grid.Column="1" Padding="24,12,24,24">
+            <Grid x:ConnectionId='3'
+                Grid.Column="1"
+                Padding="24,12,24,24"
+                AllowDrop="True"
+                                                 
+                                                 
+                                       >
 
                 <Border
                     BorderBrush="{ThemeResource ControlStrokeColorDefaultBrush}"
                     BorderThickness="1"
                     CornerRadius="4" />
 
-                <GridView x:ConnectionId='3'
+                <GridView x:ConnectionId='4'
                     x:Name="PdfGridView"
                     Grid.Column="0"
                     HorizontalAlignment="Stretch"
@@ -260,7 +266,7 @@
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
-                                    <Button x:ConnectionId='7'
+                                    <Button x:ConnectionId='9'
                                         Grid.Column="0"
                                         HorizontalAlignment="Stretch"
                                         VerticalAlignment="Stretch"
@@ -280,7 +286,7 @@
                                             Text="{Binding PageNumber}" />
                                     </Grid>
 
-                                    <Button x:ConnectionId='8'
+                                    <Button x:ConnectionId='10'
                                         Grid.Column="2"
                                         HorizontalAlignment="Stretch"
                                         VerticalAlignment="Stretch"
@@ -299,7 +305,7 @@
                     </GridView.ItemTemplate>
                 </GridView>
 
-                <StackPanel x:ConnectionId='4'
+                <StackPanel x:ConnectionId='5'
                     x:Name="EmptyMessage"
                     Padding="24,0,24,128"
                     VerticalAlignment="Center"
@@ -320,6 +326,27 @@
                         TextAlignment="Center"
                         TextWrapping="Wrap" />
                 </StackPanel>
+
+                <Grid x:ConnectionId='6'
+                    x:Name="DropMessage"
+                    VerticalAlignment="Stretch"
+                    Background="#B9000000"
+                    Visibility="Collapsed">
+                    <StackPanel
+                        Padding="24,0,24,128"
+                        VerticalAlignment="Center"
+                        Spacing="12">
+                        <Viewbox Width="40" HorizontalAlignment="Center">
+                            <SymbolIcon Symbol="Upload" />
+                        </Viewbox>
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            FontSize="32"
+                            Style="{StaticResource TitleLargeTextBlockStyle}"
+                            Text="Drop your PDF here!" />
+
+                    </StackPanel>
+                </Grid>
 
             </Grid>
 

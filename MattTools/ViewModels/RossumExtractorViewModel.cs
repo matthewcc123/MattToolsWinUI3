@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
+using PdfSharp.Pdf.Filters;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -171,7 +172,7 @@ namespace MattTools.ViewModels
                     foreach (var document in documents.Results)
                     {
                         //Get Annotation from document
-                        Annotation annotation = await _rossumService.GetAnnotation(document.AnnotationsURL[0], UserKey);
+                        Annotation annotation = await _rossumService.GetAnnotationURL(document.AnnotationsURL[0], UserKey);
 
                         //Check if from the same QueueID
                         string annotationQueue = annotation.QueueURL.Split("/").Last();
@@ -196,6 +197,52 @@ namespace MattTools.ViewModels
                     }
 
                 }
+            }
+
+            foreach (var item in NewItems)
+            {
+                RossumItems.Add(item);
+            }
+
+        }
+
+        public async Task Find(DateTime from, DateTime to, string queueID)
+        {
+            RossumItems.Clear();
+            List<RossumItem> NewItems = new List<RossumItem>();
+
+            //Get Annotations
+            PagingObject<Annotation> annotations = await _rossumService.GetAnnotation(from, to, queueID, UserKey);
+
+            if (annotations != null)
+            {
+
+                foreach (var annotation in annotations.Results)
+                {
+                    //Check if from the same QueueID
+                    string annotationQueue = annotation.QueueURL.Split("/").Last();
+
+                    if (queueID == annotationQueue)
+                    {
+
+                        //Get Document from annotation
+                        Document document = await _rossumService.GetDocumentURL(annotation.DocumentURL, UserKey);
+
+                        //Setup RossumItem
+                        RossumItem rossumItem = new RossumItem();
+
+                        //Fill Current RossumItem Data
+                        rossumItem.Name = document.FileName.Replace(".pdf", string.Empty);
+                        rossumItem.DocumentID = document.Id;
+                        rossumItem.AnnotationID = annotation.Id;
+                        rossumItem.Status = annotation.Status;
+                        rossumItem.CreateDate = document.CreateDate.ToLocalTime();
+                        //Add To List Complete Item
+                        NewItems.Add(rossumItem);
+                    }
+
+                }
+
             }
 
             foreach (var item in NewItems)

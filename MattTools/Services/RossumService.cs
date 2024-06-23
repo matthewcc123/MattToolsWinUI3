@@ -247,6 +247,29 @@ namespace MattTools.Services
 
         }
 
+        public async Task<Document> GetDocumentURL(string url, string key)
+        {
+            Document document = null;
+
+            try
+            {
+                HttpResponseMessage response = await GET(url.Replace(client.BaseAddress.ToString(), string.Empty), key);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string result = response.Content.ReadAsStringAsync().Result;
+
+                    document = JsonConvert.DeserializeObject<Document>(result);
+                }
+
+                return document;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
+            }
+        }
+
         public async Task<PagingObject<Document>> GetDocument(string name, string key)
         {
 
@@ -282,7 +305,7 @@ namespace MattTools.Services
 
         }
 
-        public async Task<Annotation> GetAnnotation(string url, string key)
+        public async Task<Annotation> GetAnnotationURL(string url, string key)
         {
             Annotation annotation = null;
 
@@ -303,6 +326,44 @@ namespace MattTools.Services
             {
                 throw new Exception(ex.ToString());
             }
+        }
+
+        public async Task<PagingObject<Annotation>> GetAnnotation(DateTime from, DateTime to,string queueID, string key)
+        {
+
+            PagingObject<Annotation> annotations = null;
+
+            try
+            {
+                Dictionary<string, string> parameters = new Dictionary<string, string>
+            {
+                {"queue", queueID },
+                {"ordering", "document__original_file_name" },
+                {"arrived_at_before", to.ToString("yyyy-MM-dd") },
+                {"arrived_at_after", from.ToString("yyyy-MM-dd") }
+            };
+
+                FormUrlEncodedContent dictFormUrlEncoded = new FormUrlEncodedContent(parameters);
+                string queryString = await dictFormUrlEncoded.ReadAsStringAsync();
+
+                string url = $"annotations?{queryString}";
+
+                HttpResponseMessage response = await GET(url, key);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string result = response.Content.ReadAsStringAsync().Result;
+
+                    annotations = JsonConvert.DeserializeObject<PagingObject<Annotation>>(result);
+                }
+
+                return annotations;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
+            }
+
         }
 
         public async Task<string> GetJson(RossumItem rossumItem, string queueID , string key)

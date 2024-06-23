@@ -15,6 +15,9 @@ using Microsoft.UI.Xaml.Navigation;
 using MattTools.Helper;
 using Models.PdfEditor;
 using ViewModels;
+using System.Threading.Tasks;
+using Windows.ApplicationModel.DataTransfer;
+using Windows.Storage;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -119,6 +122,54 @@ namespace Views
             }
 
             isLoading = false;
+        }
+
+        private void PdfGridView_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.DataView.Contains(StandardDataFormats.StorageItems))
+            {
+                e.AcceptedOperation = DataPackageOperation.Move;
+
+                DropMessage.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void PdfGridView_DragLeave(object sender, DragEventArgs e)
+        {
+            DropMessage.Visibility = Visibility.Collapsed;
+        }
+
+        private async void PdfGridView_Drop(object sender, DragEventArgs e)
+        {
+            DropMessage.Visibility = Visibility.Collapsed;
+
+            if (e.DataView.Contains(StandardDataFormats.StorageItems))
+            {
+                var items = await e.DataView.GetStorageItemsAsync();
+
+                if (items.Count > 0)
+                {
+                    isLoading = true;
+
+                    await Task.Delay(1000);
+
+                    foreach (IStorageItem item in items)
+                    {
+                        // Handle the dropped files
+                        if (item is StorageFile file)
+                        {
+                            if (file.FileType.ToLower() == ".pdf")
+                            {
+                                await ViewModel.AddPDFFile(file, false);
+                            }
+                        }
+                    }
+
+                    isLoading = false;
+                    UpdateView();
+                }
+            }
+
         }
     }
 }

@@ -63,15 +63,15 @@
                     FontSize="24"
                     Style="{StaticResource TitleLargeTextBlockStyle}"
                     Text="Connect to Rossum" />
-                <TextBox x:ConnectionId='36'
+                <TextBox x:ConnectionId='38'
                     x:Name="LoginEmailBox"
                     FontSize="12"
                     PlaceholderText="Email" />
-                <PasswordBox x:ConnectionId='37'
+                <PasswordBox x:ConnectionId='39'
                     x:Name="LoginPasswordBox"
                     FontSize="12"
                     PlaceholderText="Password" />
-                <Button x:ConnectionId='38'
+                <Button x:ConnectionId='40'
                     x:Name="LoginButton"
                     Height="40"
                     HorizontalAlignment="Stretch"
@@ -80,7 +80,7 @@
                     Content="Log In"
                     Style="{ThemeResource AccentButtonStyle}" />
             </StackPanel>
-            <ProgressBar x:ConnectionId='35'
+            <ProgressBar x:ConnectionId='37'
                 x:Name="LoginProgressBar"
                 VerticalAlignment="Bottom"
                 Visibility="Collapsed" />
@@ -105,7 +105,7 @@
                     VerticalAlignment="Center"
                     Style="{StaticResource TitleTextBlockStyle}"
                     Text="Rossum Extractor" />
-                <DropDownButton x:ConnectionId='32'
+                <DropDownButton x:ConnectionId='34'
                     x:Name="LogoutButton"
                     Padding="12,8,8,12"
                     HorizontalAlignment="Right"
@@ -117,14 +117,14 @@
                         <Viewbox Height="12" VerticalAlignment="Bottom">
                             <SymbolIcon Symbol="Contact" />
                         </Viewbox>
-                        <TextBlock x:ConnectionId='33'
+                        <TextBlock x:ConnectionId='35'
                             x:Name="LoggedAccountText"
                             VerticalAlignment="Center"
                             Style="{StaticResource CaptionTextBlockStyle}" />
                     </StackPanel>
                     <DropDownButton.Flyout>
                         <MenuFlyout Placement="BottomEdgeAlignedRight">
-                            <MenuFlyoutItem x:ConnectionId='34'
+                            <MenuFlyoutItem x:ConnectionId='36'
                                                     
                                 FontSize="{StaticResource CaptionTextBlockFontSize}"
                                 Text="Log Out">
@@ -183,7 +183,23 @@
                                 FontSize="11"
                                 Header="Search"
                                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                                                               
                                 TextWrapping="Wrap" />
+                            <StackPanel
+                                HorizontalAlignment="Stretch"
+                                Orientation="Horizontal"
+                                Spacing="6">
+                                <CalendarDatePicker x:ConnectionId='28'
+                                    x:Name="FromCalendar"
+                                                            
+                                    FontSize="10"
+                                    Header="From" />
+                                <CalendarDatePicker x:ConnectionId='29'
+                                    x:Name="ToCalendar"
+                                                            
+                                    FontSize="10"
+                                    Header="To" />
+                            </StackPanel>
                             <Button x:ConnectionId='24'
                                 x:Name="FindButton"
                                 Padding="12,8,12,8"

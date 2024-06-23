@@ -35,6 +35,8 @@ namespace MattTools.Views
     {
 
         public RossumExtractorViewModel ViewModel { get; set; }
+        private DateTime _lastFromDate { get; set; }
+        private DateTime _lastToDate { get; set; }
 
         public RossumExtractorView()
         {
@@ -43,6 +45,9 @@ namespace MattTools.Views
             this.DataContext = ViewModel;
 
             NavigationCacheMode = NavigationCacheMode.Required;
+
+            _lastFromDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
+            _lastToDate = DateTime.Today;
         }
 
         private bool LoginViewIsEnabled
@@ -61,6 +66,8 @@ namespace MattTools.Views
                 WorkspaceComboBox.IsEnabled = value;
                 QueueComboBox.IsEnabled = value;
                 FindTextBox.IsEnabled = value;
+                ToCalendar.IsEnabled = value ? (FindTextBox.Text != string.Empty || FindTextBox.Text == "") : false;
+                FromCalendar.IsEnabled = value ? (FindTextBox.Text != string.Empty || FindTextBox.Text == "") : false;
                 FindButton.IsEnabled = value;
                 ExtractButton.IsEnabled = value;
                 LogoutButton.IsEnabled = value;
@@ -120,6 +127,9 @@ namespace MattTools.Views
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
 
+            FromCalendar.Date = _lastFromDate;
+            ToCalendar.Date = _lastToDate;
+
             if (ViewModel.IsHaveUserKey && !ViewModel.IsLoggedIn)
             {
                 LoginEmailBox.Text = ViewModel.SavedUsername;
@@ -174,13 +184,17 @@ namespace MattTools.Views
             string[] filterToFind = filters.Split(',');
             filterToFind = filterToFind.Distinct().ToArray();
 
+            string QueueID = ViewModel.Queues[QueueComboBox.SelectedIndex].Id.ToString();
+
             if (filterToFind.Length == 0 || (filterToFind.Length > 0 && filterToFind[0] == ""))
             {
-                DialogHelper.CreateDialog("Error", "Fill the search form.", this);
+                await ViewModel.Find(FromCalendar.Date.Value.DateTime, ToCalendar.Date.Value.DateTime, QueueID);
+                await Task.Delay(1000);
+                EnableRossumItemListView(true);
             }
             else
             {
-                await ViewModel.Find(filterToFind, ViewModel.Queues[QueueComboBox.SelectedIndex].Id.ToString());
+                await ViewModel.Find(filterToFind, QueueID);
                 await Task.Delay(1000);
                 EnableRossumItemListView(true);
             }
@@ -308,6 +322,42 @@ namespace MattTools.Views
 
             if (result != null)
                 DialogHelper.CreateDialog("Result", result, this);
+        }
+
+        private void UpdateDate(CalendarDatePicker sender, CalendarDatePickerDateChangedEventArgs args)
+        {
+
+            if (!FromCalendar.Date.HasValue)
+            {
+                FromCalendar.Date = _lastFromDate;
+            }
+            else if (!ToCalendar.Date.HasValue)
+            {
+                ToCalendar.Date = _lastToDate;
+            }
+
+            if (FromCalendar.Date > ToCalendar.Date)
+            {
+                FromCalendar.Date = ToCalendar.Date;
+            }
+
+            _lastFromDate = FromCalendar.Date.Value.DateTime;
+            _lastToDate = ToCalendar.Date.Value.DateTime;
+
+        }
+
+        private void FindTextBox_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            if (FindTextBox.Text != string.Empty || FindTextBox.Text != "")
+            {
+                ToCalendar.IsEnabled = false;
+                FromCalendar.IsEnabled = false;
+            }
+            else
+            {
+                ToCalendar.IsEnabled = true;
+                FromCalendar.IsEnabled = true;
+            }
         }
     }
 }

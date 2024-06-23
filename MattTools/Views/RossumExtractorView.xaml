@@ -183,7 +183,23 @@
                                 FontSize="11"
                                 Header="Search"
                                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                SelectionChanged="FindTextBox_SelectionChanged"
                                 TextWrapping="Wrap" />
+                            <StackPanel
+                                HorizontalAlignment="Stretch"
+                                Orientation="Horizontal"
+                                Spacing="6">
+                                <CalendarDatePicker
+                                    x:Name="FromCalendar"
+                                    DateChanged="UpdateDate"
+                                    FontSize="10"
+                                    Header="From" />
+                                <CalendarDatePicker
+                                    x:Name="ToCalendar"
+                                    DateChanged="UpdateDate"
+                                    FontSize="10"
+                                    Header="To" />
+                            </StackPanel>
                             <Button
                                 x:Name="FindButton"
                                 Padding="12,8,12,8"

@@ -15,5 +15,7 @@ namespace MattTools.Models.Rossum
         public string Status { get; set; }
         [JsonProperty("queue")]
         public string QueueURL { get; set; }
+        [JsonProperty("document")]
+        public string DocumentURL { get; set; }
     }
 }

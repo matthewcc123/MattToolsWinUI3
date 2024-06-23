@@ -16,6 +16,8 @@ namespace MattTools.Models.Rossum
         public DateTime CreateDate { get; set; }
         [JsonProperty("annotations")]
         public List<string> AnnotationsURL { get; set; }
+        [JsonProperty("original_file_name")]
+        public string FileName;
 
     }
 }
