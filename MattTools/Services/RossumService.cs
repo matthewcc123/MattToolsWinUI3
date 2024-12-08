@@ -338,6 +338,7 @@ namespace MattTools.Services
                 Dictionary<string, string> parameters = new Dictionary<string, string>
             {
                 {"queue", queueID },
+                {"status", "to_review,confirmed,exported,deleted"},
                 {"ordering", "document__original_file_name" },
                 {"arrived_at_before", to.ToString("yyyy-MM-dd") },
                 {"arrived_at_after", from.ToString("yyyy-MM-dd") }

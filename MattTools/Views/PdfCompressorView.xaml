@@ -276,7 +276,8 @@
                 <Grid
                     x:Name="DropMessage"
                     VerticalAlignment="Stretch"
-                    Background="#B9000000"
+                    Background="#90000000"
+                    CornerRadius="4"
                     Visibility="Collapsed">
                     <StackPanel
                         Padding="24,0,24,128"
