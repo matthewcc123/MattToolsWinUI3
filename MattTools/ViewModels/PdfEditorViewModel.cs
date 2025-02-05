@@ -230,7 +230,7 @@ namespace ViewModels
             try
             {
                 Document.IsCompressing = true;
-                string compressQuality = new[] { "prepress", "printer", "ebook" }[Document.CompressQuality];
+                string compressQuality = new[] { "printer", "ebook", "screen" }[Document.CompressQuality];
 
                 string arguments = $"-sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dPDFSETTINGS=/{compressQuality} -dDownsampleColorImages=true -dColorImageResolution=150 -dColorImageResolution=150 -dGrayImageResolution=150 -dMonoImageResolution=300 -dCompressFonts=true -dSubsetFonts=true -dNOPAUSE -dQUIET -dBATCH -sOutputFile=\"{outputPath}\" \"{inputFilePath}\"";
 
