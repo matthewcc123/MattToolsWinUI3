@@ -32,6 +32,9 @@ using MattTools.Settings;
 using MattTools.Helper;
 using System.Threading.Tasks;
 using Views;
+using WinUIEx;
+using MathNet.Numerics;
+using System.Drawing;
 
 
 // To learn more about WinUI, the WinUI project structure,
@@ -186,7 +189,25 @@ namespace MattTools
             mergedDictionaries.Add(newThemeDictionary);
 
             //Change Requested Theme
-            //(this.Content as FrameworkElement).RequestedTheme = theme;
+            (this.Content as FrameworkElement).RequestedTheme = theme;
+
+            AppWindow appWindow = this.AppWindow;
+
+            if (AppWindowTitleBar.IsCustomizationSupported())
+            {
+
+                Debug.WriteLine(Application.Current.Resources.MergedDictionaries.Count);
+
+                foreach (var md in Application.Current.Resources.MergedDictionaries)
+                {
+                    foreach (var item in md)
+                    {
+                        Debug.WriteLine(item.Key.ToString());
+                    }
+                }
+
+            }
+
         }
 
     }

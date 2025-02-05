@@ -84,7 +84,12 @@ namespace Views
             if (sender is Button button && button.DataContext is PPage page)
             {
                 int currentRotation = page.PdfSharpPage.Rotate;
+
+                //Update Metadata
                 page.PdfSharpPage.Rotate = (currentRotation + 90) % 360;
+
+                //Editor Rotation
+                page.PageRotation = (page.PageRotation + 90) % 360;
 
                 page.ThumbnailImage = PdfHelper.GetPdfThumbnail(page);
             }

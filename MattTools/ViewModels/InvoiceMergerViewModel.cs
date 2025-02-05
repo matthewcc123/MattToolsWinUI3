@@ -155,16 +155,19 @@ namespace MattTools.ViewModels
                     bool invoiceFound = false;
                     bool taxFound = false;
 
+                    invoiceFound = PdfHelper.FindText(SortedTaxPaths[i], mergeFile.InvoiceNumber);
+                    taxFound = PdfHelper.FindText(SortedTaxPaths[i], mergeFile.TaxNumberFormarted);
+
                     //Find by InvoiceNumber
-                    for (int p = 0; p < taxPdf.PageCount; p++)
-                    {
+                    //for (int p = 0; p < taxPdf.PageCount; p++)
+                    //{
 
-                        if (!invoiceFound)
-                            invoiceFound = FindText(ContentReader.ReadContent(taxPdf.Pages[p]), mergeFile.InvoiceNumber);
+                    //    if (!invoiceFound)
+                    //        invoiceFound = FindText(ContentReader.ReadContent(taxPdf.Pages[p]), mergeFile.InvoiceNumber);
 
-                        if (!taxFound)
-                            taxFound = FindText(ContentReader.ReadContent(taxPdf.Pages[p]), mergeFile.TaxNumberFormarted);
-                    }
+                    //    if (!taxFound)
+                    //        taxFound = FindText(ContentReader.ReadContent(taxPdf.Pages[p]), mergeFile.TaxNumberFormarted);
+                    //}
 
                     //If Match
                     if (invoiceFound && taxFound)
@@ -177,9 +180,12 @@ namespace MattTools.ViewModels
                     }
                     else if (!taxFound)
                     {
-                        //Errors.Add($"{mergeFile.InvoiceNumber} not found it's tax invoice.");
                         mergeFile.FileStatus = MergeFileStatus.NotMatch;
                     }
+
+                    //string taxFoundTxt = taxFound ? "TaxFound" : "No Tax in TAXPDF";
+                    //string invoiceFoundTxt = invoiceFound ? "InvoiceFound" : "No Invoice in TAXPDF";
+                    //Errors.Add($"{mergeFile.InvoiceNumber} - {taxFoundTxt} - {invoiceFoundTxt}");
                 }
                 catch (Exception ex)
                 {

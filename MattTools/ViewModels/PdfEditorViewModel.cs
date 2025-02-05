@@ -134,10 +134,15 @@ namespace ViewModels
                 {
                     ParentPdf = pdfDoc,
                     PageIndex = i,
-                    ThumbnailImage = pageThumbnail ? PdfHelper.GetPdfThumbnail(file.Path, i) : null,
                     PdfSharpPage = pdf.Pages[i],
                     ColorBrush = color
                 };
+
+                //Get Thumbnails
+                if (pageThumbnail)
+                {
+                    page.ThumbnailImage = PdfHelper.GetPdfThumbnail(page);
+                }
 
                 RenameFormFields(page.PdfSharpPage, color.Color.R + color.Color.G + color.Color.B);
 
@@ -187,7 +192,7 @@ namespace ViewModels
 
                 //SaveFile
                 outputPdf.Save(file.Path);
-                compressResult = $"PDF successfully compressed as {savePicker.SuggestedFileName}";
+                compressResult = $"PDF successfully organized as {file.Name}";
             }
             catch
             {

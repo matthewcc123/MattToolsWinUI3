@@ -10,14 +10,21 @@
     <LargeTileSource>E:\Projects\Visual Studio\Project\Matt%27s Tools\WinUI3\MattTools\MattTools\Assets\Icons\AppIcon.png</LargeTileSource>
     <SplashScreenSource>E:\Projects\Visual Studio\Project\Matt%27s Tools\WinUI3\MattTools\MattTools\Assets\Icons\AppIcon.png</SplashScreenSource>
     <PackageLogoSource>E:\Projects\Visual Studio\Project\Matt%27s Tools\WinUI3\MattTools\MattTools\Assets\Icons\AppIcon.png</PackageLogoSource>
+    <_LastSelectedProfileId>D:\Projects\Visual Studio\Project\Matt%27s Tools\WinUI3\MattTools\MattTools\Properties\PublishProfiles\win10-x64.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
     <None Update="App.xaml">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="Dialogs\EditTaxNumberDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\PdfCompressorView.xaml">
       <SubType>Designer</SubType>
     </Page>

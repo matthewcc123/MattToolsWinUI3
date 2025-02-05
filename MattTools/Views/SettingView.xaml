@@ -51,6 +51,43 @@
                 <TextBlock
                     Padding="0,0,0,8"
                     Style="{StaticResource BodyStrongTextBlockStyle}"
+                    Text="Unilever" />
+
+                <control:SettingsCard
+                    x:Name="uliMergerSetting"
+                    Description="Transform raw text into a properly formatted tax number."
+                    Header="Tax Number Format">
+                    <control:SettingsCard.HeaderIcon>
+                        <FontIcon Glyph="&#xE70F;" />
+                    </control:SettingsCard.HeaderIcon>
+                    <Button
+                        x:Name="uliTaxNumberBtn"
+                        Click="Button_UnileverTaxFormatSetting"
+                        Content="Edit" />
+                </control:SettingsCard>
+            </StackPanel>
+
+            <!--<StackPanel>
+                <TextBlock
+                    Padding="0,0,0,8"
+                    Style="{StaticResource BodyStrongTextBlockStyle}"
+                    Text="Rossum" />
+
+                <control:SettingsCard
+                    x:Name="rossumSettingCard"
+                    Description="scanning.admin@bizzy.co.id"
+                    Header="Rossum Account">
+                    <control:SettingsCard.HeaderIcon>
+                        <BitmapIcon UriSource="ms-appx:///Assets/Icons/Rossum.png" />
+                    </control:SettingsCard.HeaderIcon>
+                    <Button Content="Log Out" />
+                </control:SettingsCard>
+            </StackPanel>-->
+
+            <StackPanel>
+                <TextBlock
+                    Padding="0,0,0,8"
+                    Style="{StaticResource BodyStrongTextBlockStyle}"
                     Text="About" />
 
                 <control:SettingsCard
@@ -66,16 +103,6 @@
                         Text="Expired Date : " />
                 </control:SettingsCard>
             </StackPanel>
-
-            <!--<control:SettingsCard
-                x:Name="rossumSettingCard"
-                Description="scanning.admin@bizzy.co.id"
-                Header="Rossum Account">
-                <control:SettingsCard.HeaderIcon>
-                    <BitmapIcon UriSource="ms-appx:///Assets/Icons/Rossum.png" />
-                </control:SettingsCard.HeaderIcon>
-                <Button Content="Log Out" />
-            </control:SettingsCard>-->
 
 
         </StackPanel>

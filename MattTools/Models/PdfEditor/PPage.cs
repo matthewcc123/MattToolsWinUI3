@@ -13,6 +13,7 @@ namespace Models.PdfEditor
 
         private BitmapImage _thumbnailImage;
         private PdfPage _pdfSharpPage;
+        private int _pageRotation;
 
         public PDoc ParentPdf { get; set; }
         public BitmapImage ThumbnailImage
@@ -40,6 +41,20 @@ namespace Models.PdfEditor
                 }
             }
         }
+
+        public int PageRotation
+        {
+            get => _pageRotation;
+            set
+            {
+                if (_pageRotation != value)
+                {
+                    _pageRotation = value;
+                    OnPropertyChanged(nameof(PageRotation));
+                }
+            }
+        }
+
         public int PageIndex { get; set; }
         public SolidColorBrush ColorBrush { get; set; }
 

@@ -12,8 +12,9 @@
     <EnableMsixTooling>true</EnableMsixTooling>
     <ApplicationIcon>Assets\Icons\AppIcon32.ico</ApplicationIcon>
 
+    <!--FOR UNPACKAGE VERSION (.EXE)-->
     <WindowsPackageType>None</WindowsPackageType>
-    
+
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Views\Components\**" />
@@ -121,7 +122,7 @@
     <PackageReference Include="CommunityToolkit.WinUI.UI.Controls" Version="7.1.2" />
     <PackageReference Include="CommunityToolkit.WinUI.UI.Media" Version="7.1.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
-    <PackageReference Include="Microsoft.UI.Xaml" Version="2.8.6" />
+    <!--<PackageReference Include="Microsoft.UI.Xaml" Version="2.8.6" />-->
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240404000" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.3233" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
@@ -163,6 +164,12 @@
   </PropertyGroup>
   <ItemGroup>
     <PRIResource Remove="Views\Components\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Assets\StoreLogo.scale-125.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\PdfCompressorView.xaml">

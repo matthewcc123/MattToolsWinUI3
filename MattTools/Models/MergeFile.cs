@@ -1,4 +1,7 @@
-﻿using System;
+﻿using MattTools.Services;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.UI.Xaml;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -18,6 +21,15 @@ namespace MattTools.Models
         private string _TaxPath;
         private bool _Match;
         private MergeFileStatus _FileStatus;
+
+        private IUserService _userService;
+
+        public MergeFile()
+        {
+            //Get Services
+            App app = (App)Application.Current;
+            _userService = app.ServiceProvider.GetService<IUserService>();
+        }
 
         public string InvoiceNumber
         {
@@ -125,7 +137,7 @@ namespace MattTools.Models
             }
         }
 
-        public string TaxNumberFormarted { get { return $"{TaxNumber.Substring(0, 3)}.{TaxNumber.Substring(3, 3)}-{TaxNumber.Substring(6, 2)}.{TaxNumber.Remove(0, 8)}"; } }
+        public string TaxNumberFormarted { get { return FormatTaxNumber(TaxNumber); } }
 
         public string StatusFormated 
         { 
@@ -150,6 +162,54 @@ namespace MattTools.Models
 
                 return text;
             }
+        }
+
+        private string FormatTaxNumber(string taxNumber)
+        {
+            string format = _userService.GetUserSetting<string>("Unilever.TaxFormat"); //"{00}"
+
+            StringBuilder result = new StringBuilder();
+            int inputIndex = 0;
+            bool inFormat = false;
+
+            for (int i = 0; i < format.Length; i++)
+            {
+
+                char c = format[i];
+
+                if (c == '{') //START IN FORMAT
+                {
+                    inFormat = true;
+                    continue;
+                }
+
+                if (c == '}') //END THE FORMAT
+                {
+                    inFormat = false;
+                    continue;
+                }
+
+                if (inFormat && c == '0') //IN FORMAT CHECK ITS 0
+                {
+                    if (inputIndex < taxNumber.Length) // CHECK TAXNUMBER LENGTH > INPUT INDEX
+                    {
+                        result.Append(taxNumber[inputIndex]); //ADD TO STRING BUILDER
+                        inputIndex++;
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
+                else
+                {
+                    result.Append(c); // IF NOT JUST ADD THE CHAR TO BUILDER
+                }
+
+            }
+
+            return result.ToString();
+
         }
 
     }

@@ -19,6 +19,8 @@ using MattTools.Settings;
 using MattTools.Services;
 using Microsoft.Extensions.DependencyInjection;
 using MattTools.Helper;
+using MattTools.Dialogs;
+using MattTools.Models;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -40,8 +42,6 @@ namespace MattTools.Views
             //Get Services
             App app = (App)Application.Current;
             _userService = app.ServiceProvider.GetService<IUserService>();
-
-            ExpiredSettingCardText.Text = "Expired Date : " + _userService.GetUserSetting<DateTime>("App.ExpiredDate").ToLocalTime().ToString();
         }
 
         private void ThemeSetting_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -73,6 +73,7 @@ namespace MattTools.Views
 
         private void ThemeSetting_Loaded(object sender, RoutedEventArgs e)
         {
+            //Theme
             Window window = (Application.Current as App).m_window;
             int themeValue = (int)(window.Content as FrameworkElement).RequestedTheme;
 
@@ -80,7 +81,44 @@ namespace MattTools.Views
 
             ComboBoxItem comboBoxItem = comboBox.Items.FirstOrDefault(item => Convert.ToInt32((item as ComboBoxItem).Tag) == themeValue) as ComboBoxItem;
             comboBox.SelectedItem = comboBoxItem;
+
+            //Unilever
+            uliTaxNumberBtn.Content = _userService.GetUserSetting<string>("Unilever.TaxFormat");
+
+            //About
+            ExpiredSettingCardText.Text = "Expired Date : " + _userService.GetUserSetting<DateTime>("App.ExpiredDate").ToLocalTime().ToString();
         }
 
+        private void Button_UnileverTaxFormatSetting(object sender, RoutedEventArgs e)
+        {
+            Window window = WindowHelper.GetWindowForElement(this);
+
+            EditTaxNumberDialog editDialog = new EditTaxNumberDialog();
+            editDialog.XamlRoot = this.XamlRoot;
+            editDialog.RequestedTheme = (window.Content as FrameworkElement).RequestedTheme;
+            editDialog.TaxFormat = _userService.GetUserSetting<string>("Unilever.TaxFormat");
+            editDialog.PrimaryButtonText = "Save";
+            editDialog.CloseButtonText = "Cancel";
+            editDialog.DefaultButton = ContentDialogButton.Primary;
+
+            DialogHelper.CreateDialog(editDialog);
+
+            editDialog.Closed += UpdateUnileverTaxFormatSetting;
+
+        }
+
+        private void UpdateUnileverTaxFormatSetting(ContentDialog sender, ContentDialogClosedEventArgs args)
+        {
+            EditTaxNumberDialog editDialog = sender as EditTaxNumberDialog;
+
+            if (args.Result == ContentDialogResult.Primary)
+            {
+                //Update Setting
+                _userService.SetUserSetting("Unilever.TaxFormat", editDialog.TaxFormat);
+
+                //Update UI
+                uliTaxNumberBtn.Content = editDialog.TaxFormat;
+            }
+        }
     }
 }
